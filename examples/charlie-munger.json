@@ -437,9 +437,9 @@
       "cat": "product",
       "year": 1994,
       "title": "Treo kiến thức lên khung lưới mô hình",
-      "story": "Munger khẳng định bạn không thể thực sự biết gì nếu chỉ nhớ các sự kiện rời rạc rồi nhại lại; sự kiện phải được treo lên một 'khung lưới lý thuyết' — tức các mô hình trong đầu — mới ở dạng dùng được. Ông ví những sinh viên chỉ học vẹt sẽ thất bại cả ở trường lẫn trong đời. Đây là quy tắc đầu tiên của 'trí tuệ thế gian cơ bản'.",
+      "story": "Munger khẳng định bạn không thể thực sự biết gì nếu chỉ nhớ các sự kiện rời rạc rồi nhại lại; sự kiện phải được gắn kết vào một 'mạng lưới lý thuyết' — tức hệ thống mô hình trong đầu — mới biến thành kiến thức dùng được. Ông ví những sinh viên chỉ học vẹt sẽ thất bại cả ở trường lẫn trong đời. Đây là quy tắc đầu tiên của 'trí tuệ thế gian cơ bản'.",
       "quote": {
-        "vi": "Bạn không thể thực sự biết bất cứ điều gì nếu chỉ nhớ những sự kiện rời rạc rồi cố nhại lại. Nếu các sự kiện không treo chặt trên một khung lưới lý thuyết, bạn không nắm chúng ở dạng có thể dùng được.",
+        "vi": "Bạn không thể thực sự hiểu biết gì nếu chỉ học vẹt những sự kiện rời rạc. Chỉ khi sự kiện được gắn kết thành một mạng lưới lý thuyết trong đầu, bạn mới thực sự sở hữu chúng ở dạng dùng được.",
         "who": "Charlie Munger",
         "en": "you can't really know anything if you just remember isolated facts and try and bang 'em back."
       }
@@ -461,7 +461,7 @@
       "title": "Khi công nghệ giúp và khi nó giết bạn",
       "story": "Bài học lớn của kinh tế vi mô là phân biệt khi công nghệ giúp và khi nó giết bạn. Khi Berkshire làm dệt may — nghề hàng hóa kém — nhân viên báo có máy dệt mới gấp đôi năng suất, Buffett nói 'Mong nó không chạy, vì nếu chạy tôi đóng cửa xưởng': anh biết mọi năng suất tăng sẽ chảy hết về tay người mua vải. Ngược lại, chủ tờ báo độc quyền thay máy mới thì toàn bộ tiết kiệm rơi xuống lợi nhuận.",
       "quote": {
-        "vi": "Bài học lớn trong kinh tế vi mô là phân biệt khi công nghệ sẽ giúp bạn và khi nó sẽ giết bạn.",
+        "vi": "Bài học quan trọng nhất của kinh tế học vi mô là biết phân biệt khi công nghệ giúp được mình, và khi nó giết chết mình.",
         "who": "Charlie Munger",
         "en": "The great lesson in microeconomics is to discriminate between when technology is going to help you and when it's going to kill you."
       }
@@ -472,7 +472,7 @@
       "title": "Thị trường tự do là một hệ sinh thái",
       "story": "Munger khuyên nghĩ về nền kinh tế như một hệ sinh thái, nơi sinh vật thịnh vượng nhờ chiếm ngách. 'Lợi thế quy mô' là yếu tố quyết định doanh nghiệp thắng thua: hiệu ứng kinh nghiệm, quảng cáo truyền thoại, lợi thế thông tin, 'bằng chứng xã hội' tâm lý, tới quy tắc 'số 1 hoặc số 2 hoặc rút lui' của Jack Welch ở GE.",
       "quote": {
-        "vi": "Cũng như động vật thịnh vượng trong các ngách, những người chuyên môn hóa trong kinh doanh thường tìm được nền kinh tế tốt mà họ không thể có được cách nào khác.",
+        "vi": "Cũng như loài vật thịnh vượng nhờ chiếm ngách sinh thái, những người chuyên môn hóa trong kinh doanh — và trở nên xuất sắc nhờ chuyên môn hóa — thường tìm được lợi thế kinh tế mà không cách nào khác mang lại.",
         "who": "Charlie Munger",
         "en": "Just as animals flourish in niches, similarly, people who specialize in the business world frequently find good economics."
       }
@@ -503,9 +503,9 @@
       "cat": "life",
       "year": 1994,
       "title": "Người thọt chân trong cuộc thi đá đít",
-      "story": "Munger nhấn mạnh phải làm chủ toán xác suất cơ bản của Fermat và Pascal. Vấn đề là mạng nơ-ron tự nhiên của não không theo xác suất Pascal — nó dùng lối tắt thô sơ — nên ta phải học cách vận dụng nó có chủ đích. Ai thiếu toán xác suất trong bộ công cụ sẽ đi suốt đời 'như người thọt chân trong cuộc thi đá đít'.",
+      "story": "Munger nhấn mạnh phải làm chủ toán xác suất cơ bản của Fermat và Pascal. Vấn đề là mạng nơ-ron tự nhiên của não không theo xác suất Pascal — nó dùng lối tắt thô sơ — nên ta phải học cách vận dụng nó có chủ đích. Ai thiếu toán xác suất trong bộ công cụ sẽ đi suốt đời trong thế bất lợi — như một người thọt chân cố chạy đua.",
       "quote": {
-        "vi": "Nếu bạn không đưa toán xác suất cơ bản vào bộ công cụ của mình, bạn sẽ đi qua một cuộc đời dài như một người thọt chân trong cuộc thi đá đít.",
+        "vi": "Nếu bạn không đưa toán xác suất cơ bản vào bộ công cụ của mình, bạn sẽ đi qua cả một đời dài với lợi thế bị tước đoạt — như một người thọt chân cố thi đấu với người lành.",
         "who": "Charlie Munger",
         "en": "If you don't get this elementary probability into your repertoire, you go through a long life like a one-legged man in an ass-kicking contest."
       }
@@ -514,9 +514,9 @@
       "cat": "life",
       "year": 1994,
       "title": "Tâm trí: vinh quang cũng là nỗi nhục của vũ trụ",
-      "story": "Munger dẫn lời Pascal: tâm trí con người vừa là vinh quang vừa là nỗi nhục của vũ trụ — sức mạnh to lớn nhưng cũng có những 'hỏng hóc tiêu chuẩn' khiến ta kết luận sai và dễ bị thao túng. Vì vậy ông dùng 'phân tích hai đường': trước hết xem xét lý trí các lợi ích thực, sau đó đánh giá các yếu tố tâm lý tiềm thức khiến ta kết luận sai.",
+      "story": "Munger dẫn lời Pascal: tâm trí con người vừa là niềm vinh quang, vừa là nỗi hổ thượng của vũ trụ — sức mạnh to lớn nhưng cũng có những 'lỗi tiêu chuẩn' bẩm sinh khiến ta kết luận sai và dễ bị thao túng. Vì vậy ông dùng 'phân tích hai đường': trước hết xem xét lý trí các lợi ích thực, sau đó đánh giá các yếu tố tâm lý tiềm thức khiến ta kết luận sai.",
       "quote": {
-        "vi": "Tâm trí con người, cùng một lúc, vừa là vinh quang vừa là nỗi nhục của vũ trụ.",
+        "vi": "Tâm trí con người vừa là niềm vinh quang, vừa là nỗi hổ thượng của vũ trụ.",
         "who": "Charlie Munger (trích Pascal)",
         "en": "The mind of man at one and the same time is both the glory and the shame of the universe."
       }
@@ -525,9 +525,9 @@
       "cat": "life",
       "year": 1995,
       "title": "Lực lượng siêu mạnh của phần thưởng và hình phạt",
-      "story": "Động cơ (incentive) thay đổi hành vi mạnh đến mức ai cũng tưởng mình hiểu nhưng luôn đánh giá thấp. Munger kể Federal Express từng vật lộn với ca đêm: trả lương theo giờ nhân viên cứ kéo dài, đến khi đổi sang trả theo ca và cho về nhà khi xong thì hệ thống mới vận hành êm ru. Ông cũng dẫn chuyện một bác sĩ phẫu thuật ở Lincoln, Nebraska năm này qua năm khác cắt bỏ hàng rổ mật bình thường vì khen thưởng khiến ông tin rằng mật là gốc rễ mọi bệnh.",
+      "story": "Động lực (incentive) — hệ thống thưởng và phạt — thay đổi hành vi mạnh đến mức ai cũng tưởng mình hiểu nhưng luôn đánh giá thấp. Munger kể Federal Express từng vật lộn với ca đêm: trả lương theo giờ nhân viên cứ kéo dài, đến khi đổi sang trả lương theo ca và cho nhân viên về nhà khi xong việc, hệ thống mới vận hành êm ru. Ông cũng dẫn chuyện một bác sĩ phẫu thuật ở Lincoln, Nebraska năm này qua năm khác cắt bỏ hàng rổ mật bình thường vì khen thưởng khiến ông tin rằng mật là gốc rễ mọi bệnh.",
       "quote": {
-        "vi": "Có lẽ quy tắc quan trọng nhất trong quản lý là: Hãy thiết kế động cơ cho đúng.",
+        "vi": "Có lẽ nguyên tắc quan trọng nhất trong quản lý là: Hãy thiết kế hệ thống thưởng-phạt cho đúng.",
         "who": "Charlie Munger",
         "en": "Perhaps the most important rule in management is 'Get the incentives right.'"
       }

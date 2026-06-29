@@ -314,6 +314,9 @@
   }
   .insight-slide__quote .who { display: block; font-style: normal; font-size: 0.82rem; color: var(--fg-muted); margin-top: 0.4rem; }
   .insight-slide__quote .en { display: block; color: var(--accent); font-size: 0.86rem; margin-top: 0.3rem; }
+  /* By default the deck is monolingual: original-language quotes are kept in the data
+     for reference but NOT rendered. The Vietnamese translation stands on its own. */
+  .en { display: none !important; }
   .slide__hint { position: absolute; bottom: 4.5rem; left: 50%; transform: translateX(-50%); font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--fg-muted); opacity: 0.6; text-align: center; }
 
   /* ===== Progress bar ===== */

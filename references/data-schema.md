@@ -103,7 +103,7 @@ And `ACT_IMG`: an array (one per act) naming which image represents that act's s
 - `scene` — a single concrete scene (place, date, action, dialogue). This is what makes it feel like a documentary, not a summary. Prefer `scene`/`scene2` over longer `story`.
 - `motif` — short labels; they recur across milestones and the deck can show them as tags. Powerful when the same motif appears decades apart.
 - `people` — format strictly as `"Name — role + one telling detail"`. The detail is the point (e.g. "râu rậm tóc rối", "biển số MACWIZ").
-- `quotes` — always include `en` (original) when the source isn't Vietnamese.
+- `quotes` — `vi` is the translated Vietnamese (the only version the deck **renders**); `en` is the original, kept in the data for reference but hidden in the UI. Translate into natural Vietnamese — never word-by-word. Domain terms must use the correct Vietnamese equivalent (see `mining-workflow.md` translation rules).
 
 ## INSIGHTS — deep-dive slides (~6 per category)
 

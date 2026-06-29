@@ -52,9 +52,28 @@ Each dossier MUST have these exact fields:
 
 Rules:
 - Density over brevity. The deck's value is in specifics the reader didn't know.
-- Always include the original-language quote alongside the translation when available.
 - If a milestone has no quotes/scene/people, still return it — fill what you can.
 - Cover your whole range. Don't stop after 2 milestones if there are 5.
+
+TRANSLATION (critical — the deck is Vietnamese; bad translation is the #1 quality failure):
+- Translate into NATURAL Vietnamese, not word-by-word. A sentence that reads like a
+  machine translation is a failure even if technically "accurate".
+- Domain terms MUST use the correct Vietnamese equivalent, not the literal one:
+    incentive (business/econ) → "động lực / khuyến khích" (NOT "động cơ" = engine)
+    economics (business advantage) → "lợi thế kinh tế / khả năng sinh lời" (NOT "nền kinh tế")
+    microeconomics → "kinh tế học vi mô"
+    mental models → "mô hình tư duy"
+    circle of competence → "vòng năng lực"
+    margin of safety → "biên an toàn"
+    value investing → "đầu tư giá trị"
+  When unsure whether an English word is a domain term, look it up — do not guess.
+- Idioms/metaphors: translate the MEANING, not the words. "To the man with a hammer,
+  every problem looks like a nail" → "Với người chỉ có búa, mọi vấn đề đều như cái đinh"
+  (keep the image if it works in Vietnamese; otherwise rephrase to land the point).
+- Vulgar/colorful phrases: soften to tasteful Vietnamese, keep the bite. "One-legged man
+  in an ass-kicking contest" → avoid literal "đá đít"; convey "thua đau vì bất lợi".
+- Always include `en` (original English) in quotes — it stays in the data for reference
+  but the deck renders only the Vietnamese (`vi`).
 
 Return ONLY the JSON array of dossiers, no commentary.
 ```
