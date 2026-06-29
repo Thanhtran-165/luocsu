@@ -1,11 +1,20 @@
 ---
 name: timeline-history
-description: Build a cinematic, horizontal-slide-deck biographical timeline ("lược sử một cuộc đời") about any person, from a long-form biography source (PDF, book, articles). Produces a single self-contained index.html — zero dependencies, no build step — with starfield background, 4 narrative acts, per-year milestone cards that open a detail modal, a deep-dive "Khám phá sâu" insight section, depth-of-field transitions, and staggered content reveals. Use whenever the user wants to make a visual timeline / biography show / "tiểu sử" / life-story presentation of a historical figure, leader, artist, scientist, or any individual — even if they don't say "timeline" explicitly.
+description: Build a cinematic, horizontal-slide-deck biographical timeline ("lược sử một cuộc đời") of any person, from a long-form biography source (PDF, book, articles). Produces a single self-contained index.html — zero dependencies, no build step — with starfield background, 4 narrative acts, per-year milestone cards opening a detail modal, a deep-dive "Khám phá sâu" insight section, depth-of-field transitions, and staggered content reveals. Invoke via /timeline-history <subject> or trigger naturally when the user wants a visual timeline / biography show / "tiểu sử" / "lược sử một cuộc đời" / life-story presentation / interactive biography of a historical figure, leader, artist, scientist, or any individual — even if they never say the word "timeline".
 ---
 
 # Timeline History
 
 Build a single-file `index.html` that presents a person's life as a cinematic **horizontal slide deck** — like a museum exhibit crossed with a documentary. One self-contained file, zero dependencies, rich content mined from a long biography.
+
+## Invocation
+
+```
+/timeline-history <subject>            # e.g. /timeline-history Albert Einstein
+/timeline-history <subject> từ <pdf>   # e.g. /timeline-history Marie Curie từ ~/Downloads/bio.pdf
+```
+
+Or just describe it in natural language ("làm timeline tiểu sử của X", "build a biography deck of Y") and the skill triggers automatically via its description. When the source (PDF path / book / URLs) isn't given, ask for it before mining — the whole format is built around *dense, story-driven content* from a long source, not Wikipedia bullets.
 
 ## When to use
 
