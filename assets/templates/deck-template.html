@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Steve Jobs — Lược sử một cuộc đời</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0f1a;
+    --bg-elev: #161a2b;
+    --fg: #eef1f8;
+    --fg-muted: #9aa3bd;
+    --accent: #e8b14d;
+    --accent-2: #6a8cff;
+    --border: rgba(255,255,255,0.09);
+    --card: rgba(255,255,255,0.035);
+    --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; overflow: hidden; }
+
+  /* ===== Animated starfield background (canvas behind everything) ===== */
+  #starfield {
+    position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  }
+  .deck, .topnav, .deck-arrows, .deck-progress, .ruler, #detail-backdrop { position: fixed; }
+  .deck, .topnav, .deck-arrows, .deck-progress, .ruler { z-index: 10; }
+  .slide { z-index: 1; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: clamp(1rem, 0.94rem + 0.3vw, 1.1rem);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ===== Horizontal slide deck ===== */
+  .deck {
+    display: flex;
+    width: 100vw; height: 100vh;
+    overflow-x: auto; overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .deck::-webkit-scrollbar { display: none; }
+  .slide {
+    flex: 0 0 100vw;
+    width: 100vw; height: 100vh;
+    scroll-snap-align: start;
+    overflow-y: auto; overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(232,177,77,0.3) transparent;
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative;
+    background: linear-gradient(180deg, rgba(13,15,26,0.55), rgba(13,15,26,0.78));
+    opacity: 0.32; transform: scale(0.96);
+    transition: opacity 0.55s var(--ease), transform 0.55s var(--ease), filter 0.55s var(--ease);
+    filter: blur(2px) saturate(0.7);
+  }
+  .slide.is-current { opacity: 1; transform: scale(1); filter: blur(0) saturate(1); }
+  .slide::-webkit-scrollbar { width: 5px; }
+  .slide::-webkit-scrollbar-thumb { background: rgba(232,177,77,0.3); border-radius: 3px; }
+  @media (prefers-reduced-motion: reduce) { .deck { scroll-behavior: auto; } }
+
+  /* ===== Directional slide transition + cascading content reveal =====
+     When a slide becomes current, its inner blocks rise + fade in sequence,
+     staggered by --reveal-i (set per element below). */
+  .slide__reveal {
+    opacity: 0; transform: translateY(26px);
+    transition: opacity 0.6s var(--ease), transform 0.6s var(--ease);
+    transition-delay: calc(var(--reveal-i, 0) * 0.08s + 0.12s);
+  }
+  .slide.is-current .slide__reveal { opacity: 1; transform: translateY(0); }
+  /* Picture slide-in: image scales & brightens slightly delayed after the text. */
+  .slide__reveal-img {
+    opacity: 0; transform: translateX(34px) scale(0.97);
+    transition: opacity 0.7s var(--ease), transform 0.7s var(--ease);
+    transition-delay: 0.3s;
+  }
+  .slide.is-current .slide__reveal-img { opacity: 1; transform: translateX(0) scale(1); }
+  @media (prefers-reduced-motion: reduce) {
+    .slide__reveal, .slide__reveal-img { opacity: 1 !important; transform: none !important; transition: none !important; }
+  }
+
+  /* ===== Overview mode (zoom out all slides) ===== */
+  .deck.overview {
+    scroll-snap-type: none;
+    gap: 1rem; padding: 2rem;
+    align-items: center;
+    flex-wrap: wrap;                  /* thumbnails wrap into rows instead of one long line */
+  }
+  .deck.overview .slide {
+    flex: 0 0 240px; height: 150px;
+    transform: scale(1); transform-origin: center;
+    scroll-snap-align: none;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.2s, transform 0.2s;
+    font-size: 0.5rem;
+    pointer-events: auto;
+    /* In overview, treat each slide as a thumbnail card: dark backdrop,
+       centered title. All detailed children are hidden so nothing overlaps. */
+    flex-direction: column; justify-content: center; align-items: center;
+    text-align: center; padding: 0.7rem 0.8rem !important;
+    background: linear-gradient(160deg, rgba(28,32,52,0.92), rgba(13,15,26,0.96));
+  }
+  .deck.overview .slide:hover { border-color: var(--accent); transform: scale(1.05); z-index: 2; }
+  .deck.overview .slide.is-current { border-color: var(--accent); box-shadow: 0 0 20px rgba(232,177,77,0.4); }
+
+  /* The compact thumbnail badge: hidden normally, shown only in overview. */
+  .ov-thumb { display: none; }
+  .deck.overview .slide::before { display: none; }                 /* watermark bg */
+  .deck.overview .slide > *:not(.ov-thumb) { display: none !important; }
+  .deck.overview .ov-thumb {
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    gap: 0.3rem; text-align: center; padding: 0.4rem;
+  }
+  .ov-thumb__kicker {
+    font-size: 0.5rem; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--accent-2); font-weight: 600;
+  }
+  .ov-thumb__title {
+    font-family: "Playfair Display", serif; font-weight: 800;
+    font-size: 0.82rem; line-height: 1.15; color: var(--fg);
+    display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; overflow: hidden;
+  }
+
+  /* ===== Slide controls (arrows + progress) ===== */
+  .deck-arrows {
+    position: fixed; top: 50%; right: 1.5rem; transform: translateY(-50%);
+    z-index: 60; display: flex; flex-direction: column; gap: 0.6rem;
+  }
+  .deck-arrow {
+    width: 44px; height: 44px; border-radius: 50%;
+    background: rgba(13,15,26,0.7); backdrop-filter: blur(10px);
+    border: 1px solid var(--border); color: var(--fg);
+    font-size: 1.2rem; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: background 0.2s, border-color 0.2s, transform 0.2s, opacity 0.2s;
+  }
+  .deck-arrow:hover { background: rgba(232,177,77,0.15); border-color: var(--accent); transform: scale(1.08); }
+  .deck-arrow:disabled { opacity: 0.25; cursor: default; }
+  .deck-progress {
+    position: fixed; bottom: 1.4rem; left: 50%; transform: translateX(-50%);
+    z-index: 60; display: flex; align-items: center; gap: 0.7rem;
+    background: rgba(13,15,26,0.7); backdrop-filter: blur(10px);
+    border: 1px solid var(--border); border-radius: 30px;
+    padding: 0.5rem 1rem; font-size: 0.78rem; color: var(--fg-muted);
+  }
+  .deck-progress-bar { width: 140px; height: 4px; background: rgba(255,255,255,0.1); border-radius: 2px; overflow: hidden; }
+  .deck-progress-fill { height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent-2)); width: 0%; transition: width 0.3s var(--ease); }
+  @media (max-width: 640px) {
+    .deck-arrows { display: none; }
+    .deck-progress { bottom: 1rem; font-size: 0.7rem; }
+    .deck-progress-bar { width: 90px; }
+  }
+
+  /* ===== Timeline ruler (1955 → 2011) ===== */
+  .ruler {
+    position: fixed; left: 1.5rem; top: 50%; transform: translateY(-50%);
+    z-index: 55; width: 3px; height: 60vh;
+    display: flex; flex-direction: column; justify-content: space-between;
+    pointer-events: none;
+  }
+  .ruler__line {
+    position: absolute; left: 50%; top: 0; bottom: 0; width: 2px;
+    background: linear-gradient(to bottom, transparent, var(--border) 12%, var(--border) 88%, transparent);
+    transform: translateX(-50%);
+  }
+  .ruler__tick {
+    position: relative; width: 11px; height: 11px; border-radius: 50%;
+    background: var(--bg); border: 2px solid var(--border);
+    pointer-events: auto; cursor: pointer;
+    transition: all 0.25s var(--ease);
+  }
+  .ruler__tick:hover { border-color: var(--accent-2); transform: scale(1.25); }
+  .ruler__tick.is-active { background: var(--accent); border-color: var(--accent); box-shadow: 0 0 14px rgba(232,177,77,0.6); transform: scale(1.2); }
+  .ruler__tick-label {
+    position: absolute; left: 18px; top: 50%; transform: translateY(-50%);
+    font-size: 0.68rem; color: var(--fg-muted); white-space: nowrap;
+    opacity: 0; transition: opacity 0.2s; pointer-events: none;
+    font-family: "Playfair Display", serif;
+  }
+  .ruler__tick:hover .ruler__tick-label,
+  .ruler__tick.is-active .ruler__tick-label { opacity: 1; color: var(--accent); }
+  @media (max-width: 640px) { .ruler { display: none; } }
+
+  /* ===== Slide-internal layouts ===== */
+  .slide--hero { align-items: center; text-align: center; }
+  /* Slide padding accounts for: topnav (64px), bottom progress bar (~50px),
+     left ruler (~40px), right arrows (~60px) — so content never overlaps them. */
+  .slide--act { padding: 5rem 4.5rem 5.5rem 4.5rem; justify-content: flex-start; }
+  .slide--insight { padding: 5rem 4.5rem 5.5rem 4.5rem; align-items: stretch; background: rgba(13,15,26,0.4); }
+  .slide--legacy { padding: 5rem 4.5rem 5.5rem 4.5rem; align-items: center; background: rgba(13,15,26,0.4); }
+  .slide--hero { padding-top: 0; background: radial-gradient(ellipse at center, rgba(20,20,28,0.3) 0%, rgba(13,15,26,0.7) 70%); }
+  .act__head { max-width: 900px; margin: 0 auto 0.8rem; text-align: center; }
+  .act__label { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin-bottom: 0.5rem; }
+  .act__title { font-family: "Playfair Display", serif; font-weight: 900; font-size: clamp(1.8rem, 1.4rem + 2vw, 2.8rem); line-height: 1.1; margin-bottom: 0.6rem; }
+  .act__range { color: var(--accent); letter-spacing: 0.15em; font-size: 0.85rem; }
+  .act__cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 1.1rem; max-width: 1140px; width: 100%; margin: 0 auto; }
+  @media (min-width: 900px) { .act__cards { grid-template-columns: repeat(3, 1fr); } }
+  .act__cards .milestone {
+    margin-left: 0; margin-bottom: 0; width: auto; text-align: left !important;
+    padding: 1.1rem 1.3rem;
+    transition: transform 0.15s ease-out, border-color 0.25s, box-shadow 0.25s;
+  }
+  .act__cards .milestone:hover {
+    border-color: rgba(232,177,77,0.5);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.35), 0 0 28px rgba(232,177,77,0.12);
+  }
+  .act__cards .milestone__dot { display: none; }
+  /* In act slides, keep cards COMPACT: hide chapter, clip story, simplify */
+  .act__cards .milestone__chapter { display: none; }
+  .act__cards .milestone__story {
+    display: -webkit-box; -webkit-line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden;
+    font-size: 0.88rem; line-height: 1.55; margin-bottom: 0.8rem;
+  }
+  .act__cards .milestone__hook {
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+    font-size: 0.88rem; margin-bottom: 0.7rem;
+  }
+  /* In act slides: cards are MINIMAL — hook/chapter/motif live in the modal.
+     Only year + title + 1-line story + button, so 5 cards fit one viewport. */
+  .act__cards .milestone__media { display: none; }
+  .act__cards .milestone__chapter { display: none; }
+  .act__cards .milestone__hook { display: none; }
+  .act__cards .milestone__motifs { display: none; }
+  .act__cards .milestone__title { font-size: 1.02rem; margin-bottom: 0.4rem; line-height: 1.25; }
+  .act__cards .milestone__story {
+    -webkit-line-clamp: 2; font-size: 0.82rem; line-height: 1.45; margin-bottom: 0.6rem;
+  }
+  .act__cards .milestone__year { font-size: 1.6rem; margin-bottom: 0.2rem; }
+  .act__cards .milestone__explore { padding: 0.35rem 0.8rem; font-size: 0.72rem; }
+  /* Magazine-split layout: text panel (left) + real image (right).
+     Solves BOTH problems: (a) title/content no longer stack into the image,
+     (b) the photo is fully visible as a design element, not a faint watermark. */
+  .insight-slide__split {
+    display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 0.85fr);
+    gap: 2.5rem; width: 100%; height: 100%; align-items: stretch;
+    max-width: 1180px; margin: 0 auto;
+    /* The split fills the slide's content box (already padded for nav/progress),
+       so children can size to it instead of overflowing. */
+    min-height: 0;
+  }
+  .insight-slide__panel {
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative; z-index: 2; padding-right: 0.5rem;
+    /* Constrain panel height so long stories never overflow into the progress bar. */
+    max-height: 100%; overflow: hidden;
+  }
+  .insight-slide__media {
+    position: relative; border-radius: 14px; overflow: hidden;
+    box-shadow: 0 24px 60px rgba(0,0,0,0.55), 0 0 0 1px rgba(232,177,77,0.18);
+    align-self: center; width: 100%; max-height: 78vh;
+  }
+  .insight-slide__media img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+    filter: contrast(1.05) saturate(1.05);
+  }
+  .insight-slide__media::after {
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    box-shadow: inset 0 0 90px rgba(13,15,26,0.45);
+  }
+  /* Interactive media: subtle zoom + a warm spotlight that tracks the cursor,
+     plus a floating sheen sweep on hover. */
+  .insight-slide__media { transition: transform 0.4s var(--ease), box-shadow 0.4s var(--ease); }
+  .insight-slide__media img { transition: transform 0.5s var(--ease); }
+  .insight-slide__media:hover img { transform: scale(1.06); }
+  .insight-slide__media:hover {
+    box-shadow: 0 30px 70px rgba(0,0,0,0.6), 0 0 0 1px rgba(232,177,77,0.45), 0 0 50px rgba(232,177,77,0.18);
+  }
+  .insight-slide__media::before {
+    content: ""; position: absolute; inset: 0; z-index: 1; pointer-events: none;
+    opacity: 0; transition: opacity 0.35s;
+    background: radial-gradient(circle at var(--mx, 50%) var(--my, 50%), rgba(232,177,77,0.22), transparent 55%);
+  }
+  .insight-slide__media:hover::before { opacity: 1; }
+  /* Fallback: when an insight has NO image, the panel centers like before. */
+  .insight-slide__media--empty { display: none; }
+  .insight-slide__inner--solo { max-width: 760px; width: 100%; position: relative; z-index: 2; }
+  /* Act slides keep their own bg watermark (faint), since act slides are card grids. */
+  .slide--act::before, .slide--legacy::before {
+    content: ""; position: absolute; inset: 0;
+    background-image: var(--bg-img, none);
+    background-size: cover; background-position: center 28%;
+    opacity: 0.08; filter: grayscale(0.4) contrast(1.05);
+    z-index: 0;
+  }
+  .slide--act, .slide--legacy { position: relative; }
+  .slide--act > *, .slide--legacy > * { position: relative; z-index: 1; }
+  .insight-slide__cat { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent-2); font-weight: 600; margin-bottom: 0.5rem; }
+  .insight-slide__year { font-family: "Playfair Display", serif; font-weight: 700; color: var(--accent); font-size: 1.1rem; margin-bottom: 0.4rem; }
+  .insight-slide__title { font-size: clamp(1.5rem, 1.2rem + 1.4vw, 2.15rem); font-weight: 700; line-height: 1.2; margin-bottom: 1.1rem; }
+  .insight-slide__story { color: var(--fg); font-size: 1rem; line-height: 1.65; margin-bottom: 1.3rem;
+    /* Clamp long stories so they never push the quote off-screen on short viewports. */
+    display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 7; overflow: hidden; }
+  .insight-slide__quote { border-left: 3px solid var(--accent); padding-left: 1.1rem; font-style: italic; font-size: 1rem; line-height: 1.5; }
+  /* On narrow viewports the split collapses to a single column (image below text). */
+  @media (max-width: 860px) {
+    .insight-slide__split { grid-template-columns: 1fr; gap: 1.2rem; }
+    .insight-slide__media { max-height: 38vh; order: -1; }
+  }
+  .insight-slide__quote .who { display: block; font-style: normal; font-size: 0.82rem; color: var(--fg-muted); margin-top: 0.4rem; }
+  .insight-slide__quote .en { display: block; color: var(--accent); font-size: 0.86rem; margin-top: 0.3rem; }
+  .slide__hint { position: absolute; bottom: 4.5rem; left: 50%; transform: translateX(-50%); font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--fg-muted); opacity: 0.6; text-align: center; }
+
+  /* ===== Progress bar ===== */
+  #progress {
+    position: fixed; top: 0; left: 0; height: 3px; width: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    transform: scaleX(0); transform-origin: left center;
+    z-index: 101;
+  }
+
+  /* ===== Sticky top navigation ===== */
+  .topnav {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0.8rem clamp(1rem, 4vw, 2.5rem);
+    background: rgba(13, 15, 26, 0.72);
+    backdrop-filter: blur(14px) saturate(140%);
+    -webkit-backdrop-filter: blur(14px) saturate(140%);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s, background 0.3s;
+  }
+  .topnav.scrolled { border-bottom-color: var(--border); }
+  .topnav__brand {
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 700; font-size: 1.05rem;
+    color: var(--fg); text-decoration: none;
+    letter-spacing: 0.01em;
+    transition: color 0.3s, text-shadow 0.3s;
+  }
+  .topnav__brand:hover, .topnav.scrolled .topnav__brand {
+    color: var(--accent);
+    text-shadow: 0 0 18px rgba(232,177,77,0.5);
+  }
+  .topnav__links { display: flex; gap: 0.3rem; }
+  .topnav__link {
+    font-size: 0.88rem; font-weight: 500;
+    color: var(--fg-muted); text-decoration: none;
+    padding: 0.45rem 0.9rem; border-radius: 20px;
+    transition: color 0.2s, background 0.2s, transform 0.2s;
+    cursor: pointer; position: relative;
+  }
+  .topnav__link:hover { color: var(--fg); background: rgba(255,255,255,0.05); transform: translateY(-1px); }
+  .topnav__link.is-active {
+    color: var(--accent); background: rgba(232,177,77,0.12);
+    box-shadow: 0 0 16px rgba(232,177,77,0.15);
+  }
+  .topnav__toggle {
+    display: none; background: none; border: 1px solid var(--border);
+    color: var(--fg); font-size: 1.1rem; cursor: pointer;
+    border-radius: 8px; padding: 0.35rem 0.6rem; line-height: 1;
+  }
+  @media (max-width: 640px) {
+    .topnav__toggle { display: block; }
+    .topnav__links {
+      position: absolute; top: 100%; right: clamp(1rem, 4vw, 2.5rem);
+      flex-direction: column; gap: 0.2rem;
+      background: rgba(13, 15, 26, 0.96);
+      backdrop-filter: blur(14px);
+      border: 1px solid var(--border);
+      border-radius: 12px; padding: 0.5rem;
+      opacity: 0; visibility: hidden; transform: translateY(-8px);
+      transition: opacity 0.25s, transform 0.25s, visibility 0.25s;
+    }
+    .topnav__links.open { opacity: 1; visibility: visible; transform: translateY(0); }
+    .topnav__link { padding: 0.6rem 1rem; }
+  }
+
+  /* ===== Hero ===== */
+  .hero {
+    min-height: 100vh;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center; padding: 2rem;
+    scroll-margin-top: 0;
+  }
+  section, main { scroll-margin-top: 70px; }
+  .hero__portrait {
+    width: clamp(150px, 20vw, 230px); height: clamp(150px, 20vw, 230px);
+    border-radius: 50%; overflow: hidden;
+    border: 3px solid var(--accent);
+    box-shadow: 0 0 60px rgba(232,177,77,0.22);
+    margin-bottom: 1.8rem;
+    position: relative;
+    animation: portraitGlow 4s ease-in-out infinite;
+  }
+  @keyframes portraitGlow {
+    0%, 100% { box-shadow: 0 0 60px rgba(232,177,77,0.22); }
+    50% { box-shadow: 0 0 90px rgba(232,177,77,0.4), 0 0 30px rgba(106,140,255,0.2); }
+  }
+  .hero__portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center 25%; display: block; }
+  .hero__title {
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 900;
+    font-size: clamp(2.8rem, 3rem + 4vw, 6rem);
+    line-height: 1.02; letter-spacing: -0.02em;
+    margin-bottom: 0.6rem;
+    opacity: 0; transform: translateY(20px);
+    animation: heroFade 0.9s var(--ease) 0.2s forwards;
+    background: linear-gradient(110deg, #f4f4f6 20%, var(--accent) 50%, #f4f4f6 80%);
+    background-size: 200% auto;
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: heroFade 0.9s var(--ease) 0.2s forwards, shimmer 5s linear infinite 1.1s;
+  }
+  @keyframes shimmer { to { background-position: 200% center; } }
+  @keyframes heroFade { to { opacity: 1; transform: translateY(0); } }
+  .hero__tagline {
+    color: var(--fg-muted); max-width: 38ch;
+    font-size: clamp(1.05rem, 1rem + 0.4vw, 1.35rem);
+    opacity: 0; transform: translateY(20px);
+    animation: heroFade 0.9s var(--ease) 0.4s forwards;
+  }
+  .hero__years {
+    color: var(--accent); letter-spacing: 0.22em; margin-top: 1rem; font-weight: 500;
+    opacity: 0; transform: translateY(20px);
+    animation: heroFade 0.9s var(--ease) 0.6s forwards;
+  }
+  .hero__scroll {
+    margin-top: 3rem; color: var(--fg-muted); font-size: 0.78rem;
+    letter-spacing: 0.25em; text-transform: uppercase;
+    animation: bob 2.2s ease-in-out infinite;
+  }
+  @keyframes bob { 0%,100% { transform: translateY(0); opacity: 0.5; } 50% { transform: translateY(7px); opacity: 1; } }
+
+  /* ===== Timeline ===== */
+  .timeline {
+    max-width: 880px; margin: 0 auto;
+    padding: clamp(3rem, 8vh, 6rem) 1.5rem 4rem;
+    position: relative;
+  }
+  .timeline__spine {
+    position: absolute; left: 20px; top: 0; bottom: 0; width: 2px;
+    background: linear-gradient(to bottom, transparent, var(--accent) 15%, var(--accent-2) 85%, transparent);
+    transform: scaleY(0); transform-origin: top;
+    transition: transform 1.8s var(--ease);
+    box-shadow: 0 0 12px rgba(232,177,77,0.4);
+  }
+  .timeline__spine.drawn { transform: scaleY(1); }
+
+  .milestone {
+    position: relative;
+    margin-left: 50px;
+    margin-bottom: clamp(2.5rem, 6vh, 4rem);
+    padding: clamp(1.5rem, 2.5vw, 2rem);
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    opacity: 0; transform: translateY(32px) scale(0.98);
+    transition: opacity 0.7s var(--ease), transform 0.7s var(--ease), border-color 0.3s, box-shadow 0.3s;
+  }
+  .milestone.visible { opacity: 1; transform: translateY(0) scale(1); }
+  .milestone:hover {
+    border-color: rgba(232,177,77,0.35);
+    box-shadow: 0 12px 36px rgba(0,0,0,0.25), 0 0 24px rgba(232,177,77,0.08);
+  }
+
+  .milestone__dot {
+    position: absolute; left: -38px; top: 1.7rem;
+    width: 16px; height: 16px; border-radius: 50%;
+    background: var(--accent); border: 3px solid var(--bg);
+    box-shadow: 0 0 0 2px var(--accent), 0 0 18px rgba(232,177,77,0.5);
+    animation: dotPulse 2.5s ease-in-out infinite;
+  }
+  @keyframes dotPulse {
+    0%, 100% { box-shadow: 0 0 0 2px var(--accent), 0 0 18px rgba(232,177,77,0.5); }
+    50% { box-shadow: 0 0 0 4px rgba(232,177,77,0.3), 0 0 28px rgba(232,177,77,0.7); }
+  }
+  .milestone__year {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    font-family: "Playfair Display", Georgia, serif;
+    font-weight: 900; font-size: clamp(1.9rem, 1.5rem + 2vw, 2.7rem);
+    color: var(--accent); line-height: 1; margin-bottom: 0.3rem;
+    background: none; border: none; cursor: pointer; padding: 0;
+    text-align: left; font-style: normal;
+    transition: color 0.2s;
+  }
+  .milestone__year:hover { color: var(--accent-2); }
+  .milestone__year-arrow {
+    font-size: 0.5em; opacity: 0; transform: translateX(-4px);
+    transition: opacity 0.2s, transform 0.2s;
+  }
+  .milestone__year:hover .milestone__year-arrow { opacity: 0.8; transform: translateX(0); }
+  .milestone__chapter {
+    display: block; font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase;
+    color: var(--fg-muted); font-style: italic; margin-bottom: 0.8rem;
+  }
+  .milestone__title {
+    font-size: clamp(1.2rem, 1.1rem + 0.6vw, 1.5rem);
+    font-weight: 600; line-height: 1.25; margin-bottom: 0.8rem;
+  }
+  .milestone__hook {
+    color: var(--accent); font-style: italic; font-size: 0.98rem;
+    line-height: 1.5; margin-bottom: 0.9rem; padding-left: 0.9rem;
+    border-left: 2px solid var(--accent);
+  }
+  .milestone__story { color: var(--fg); margin-bottom: 1rem; }
+  .milestone__motifs { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.9rem; }
+  .milestone__motif {
+    font-size: 0.72rem; color: var(--accent-2);
+    background: rgba(106,140,255,0.08); border: 1px solid rgba(106,140,255,0.25);
+    border-radius: 20px; padding: 0.2rem 0.7rem;
+  }
+  .milestone__explore {
+    display: inline-block; font-size: 0.8rem; color: var(--accent);
+    background: none; border: 1px solid rgba(232,177,77,0.3);
+    border-radius: 6px; padding: 0.5rem 1rem; cursor: pointer;
+    font-family: inherit; transition: background 0.2s, border-color 0.2s;
+  }
+  .milestone__explore:hover { background: rgba(232,177,77,0.1); border-color: var(--accent); }
+  .milestone__media {
+    width: 100%; aspect-ratio: 16/10; object-fit: cover;
+    border-radius: 10px; border: 1px solid var(--border);
+    margin-bottom: 1rem; max-height: 340px;
+  }
+  .milestone__scene {
+    border-left: 2px solid var(--accent-2);
+    padding: 0.6rem 0 0.6rem 1rem; margin: 1rem 0;
+    color: var(--fg); font-size: 0.95rem;
+    background: rgba(106,140,255,0.05);
+    border-radius: 0 6px 6px 0;
+  }
+  .milestone__label {
+    display: block; font-size: 0.66rem; letter-spacing: 0.18em;
+    text-transform: uppercase; color: var(--accent-2);
+    opacity: 0.8; margin-bottom: 0.35rem; font-weight: 600;
+  }
+  .milestone__product {
+    font-size: 0.88rem; color: var(--fg-muted); line-height: 1.55;
+    margin: 0.8rem 0; padding-top: 0.8rem; border-top: 1px solid var(--border);
+  }
+  .milestone__people { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.8rem 0; }
+  .milestone__person {
+    font-size: 0.76rem; color: var(--fg-muted);
+    background: rgba(255,255,255,0.04); border: 1px solid var(--border);
+    border-radius: 5px; padding: 0.2rem 0.55rem;
+  }
+  .milestone__quotes { display: flex; flex-direction: column; gap: 0.6rem; margin-top: 1rem; }
+  .milestone__quote {
+    border-left: 2px solid var(--accent);
+    padding-left: 0.9rem; font-style: italic; color: var(--fg);
+    font-size: 0.95rem;
+  }
+  .milestone__quote .who {
+    display: block; font-style: normal; font-size: 0.78rem;
+    color: var(--fg-muted); margin-top: 0.2rem;
+  }
+  .milestone__quote .en { color: var(--accent); font-style: italic; font-size: 0.82rem; }
+
+  /* ===== Closing ===== */
+  .closing {
+    text-align: center; padding: clamp(5rem, 12vh, 9rem) 1.5rem 4rem;
+    border-top: 1px solid var(--border);
+  }
+  .closing__quote {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(1.6rem, 1.3rem + 1.8vw, 2.6rem);
+    line-height: 1.2; max-width: 22ch; margin: 0 auto 1.2rem;
+    text-shadow: 0 0 40px rgba(232,177,77,0.25);
+  }
+  .closing__attr { color: var(--fg-muted); letter-spacing: 0.15em; text-transform: uppercase; font-size: 0.8rem; }
+  .credits { text-align: center; padding: 2rem 1.5rem 4rem; font-size: 0.78rem; color: var(--fg-muted); line-height: 1.7; }
+  .credits a { color: var(--accent-2); text-decoration: none; }
+
+  /* ===== Legacy section ===== */
+  .legacy {
+    max-width: 1000px; margin: 0 auto;
+    padding: clamp(4rem, 10vh, 7rem) 1.5rem 5rem;
+    text-align: center;
+  }
+  .legacy__heading {
+    font-family: "Playfair Display", Georgia, serif; font-weight: 900;
+    font-size: clamp(2.2rem, 1.7rem + 3vw, 3.5rem);
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .legacy__intro {
+    color: var(--fg-muted); max-width: 52ch; margin: 0 auto 3rem;
+    font-size: 1.05rem; line-height: 1.6; font-style: italic;
+  }
+  .legacy__quote {
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(1.5rem, 1.2rem + 1.6vw, 2.4rem);
+    line-height: 1.25; max-width: 24ch; margin: 0 auto 4rem;
+    text-shadow: 0 0 40px rgba(232,177,77,0.25);
+  }
+  .legacy__quote cite {
+    display: block; font-family: "Inter", sans-serif; font-style: normal;
+    font-size: 0.78rem; color: var(--fg-muted); margin-top: 1rem;
+    letter-spacing: 0.12em; text-transform: uppercase;
+  }
+  .legacy__block { margin-bottom: 4rem; }
+  .legacy__block-title {
+    font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--accent); font-weight: 600; margin-bottom: 2rem;
+  }
+  .legacy__products {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem; text-align: left;
+  }
+  .legacy__product {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 1.2rem 1.4rem;
+    transition: transform 0.25s var(--ease), border-color 0.25s;
+    opacity: 0; transform: translateY(16px);
+  }
+  .legacy__product.visible { opacity: 1; transform: translateY(0); }
+  .legacy__product:hover { transform: translateY(-4px); border-color: rgba(232,177,77,0.4); }
+  .legacy__product-year {
+    font-family: "Playfair Display", serif; font-weight: 700;
+    color: var(--accent); font-size: 0.92rem; margin-bottom: 0.2rem;
+  }
+  .legacy__product-name { font-weight: 600; font-size: 1.05rem; margin-bottom: 0.4rem; }
+  .legacy__product-desc { font-size: 0.85rem; color: var(--fg-muted); line-height: 1.5; }
+  .legacy__stats {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1.2rem;
+  }
+  .legacy__stat {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 1.4rem 1rem;
+    opacity: 0; transform: translateY(16px);
+    transition: opacity 0.5s var(--ease), transform 0.5s var(--ease), border-color 0.25s;
+  }
+  .legacy__stat.visible { opacity: 1; transform: translateY(0); }
+  .legacy__stat:hover { border-color: rgba(106,140,255,0.4); }
+  .legacy__stat-big {
+    font-family: "Playfair Display", serif; font-weight: 900;
+    font-size: clamp(1.6rem, 1.3rem + 1.5vw, 2.4rem);
+    background: linear-gradient(135deg, var(--accent), var(--accent-2));
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1; margin-bottom: 0.5rem;
+  }
+  .legacy__stat-label { font-size: 0.82rem; color: var(--fg); line-height: 1.4; margin-bottom: 0.3rem; }
+  .legacy__stat-desc { font-size: 0.74rem; color: var(--fg-muted); }
+  .legacy__verdict { display: flex; flex-direction: column; gap: 1.5rem; max-width: 680px; margin: 0 auto; }
+  .legacy__verdict-quote {
+    border-left: 2px solid var(--accent); padding-left: 1.3rem; text-align: left;
+    font-size: 1rem; line-height: 1.6; font-style: italic;
+  }
+  .legacy__verdict-quote .who { display: block; font-style: normal; font-size: 0.8rem; color: var(--fg-muted); margin-top: 0.5rem; }
+  .legacy__verdict-quote .en { display: block; color: var(--accent); font-size: 0.84rem; margin-top: 0.3rem; }
+  .legacy__credo {
+    margin-top: 4rem; padding: 2.5rem 2rem;
+    background: linear-gradient(135deg, rgba(232,177,77,0.06), rgba(106,140,255,0.06));
+    border: 1px solid rgba(232,177,77,0.2); border-radius: 16px;
+    font-size: clamp(1.1rem, 1rem + 0.6vw, 1.4rem); line-height: 1.5;
+    max-width: 600px; margin-left: auto; margin-right: auto;
+    font-style: italic;
+  }
+  .legacy__credo cite {
+    display: block; font-style: normal; font-size: 0.8rem;
+    color: var(--fg-muted); margin-top: 1rem;
+    letter-spacing: 0.12em; text-transform: uppercase;
+  }
+
+  /* ===== Insights section ===== */
+  .insights {
+    max-width: 1100px; margin: 0 auto;
+    padding: clamp(3rem, 8vh, 6rem) 1.5rem 4rem;
+  }
+  .insights__title {
+    font-family: "Playfair Display", Georgia, serif; font-weight: 900;
+    font-size: clamp(2rem, 1.6rem + 2.5vw, 3rem); text-align: center;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, var(--fg), var(--accent));
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .insights__subtitle { text-align: center; color: var(--fg-muted); margin-bottom: 2.5rem; max-width: 50ch; margin-left: auto; margin-right: auto; }
+  .insights__tabs {
+    display: flex; justify-content: center; gap: 0.6rem; flex-wrap: wrap;
+    margin-bottom: 2.5rem;
+  }
+  .insights__tab {
+    font-family: inherit; font-size: 0.92rem; font-weight: 500;
+    color: var(--fg-muted); cursor: pointer;
+    background: rgba(255,255,255,0.03); border: 1px solid var(--border);
+    border-radius: 30px; padding: 0.6rem 1.3rem;
+    transition: all 0.25s var(--ease);
+    display: inline-flex; align-items: center; gap: 0.5rem;
+  }
+  .insights__tab:hover {
+    color: var(--fg); border-color: rgba(255,255,255,0.2);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+  }
+  .insights__tab.is-active {
+    color: var(--bg); background: var(--accent); border-color: var(--accent);
+    box-shadow: 0 6px 22px rgba(232,177,77,0.35);
+    transform: translateY(-2px);
+  }
+  .insights__count {
+    font-size: 0.72rem; opacity: 0.7;
+    background: rgba(255,255,255,0.1); border-radius: 10px; padding: 0.1rem 0.45rem;
+  }
+  .insights__tab.is-active .insights__count { background: rgba(0,0,0,0.15); }
+  .insights__grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 1.4rem;
+  }
+  .insight-card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 14px; padding: 1.7rem 1.8rem; cursor: pointer;
+    transition: transform 0.3s var(--ease), border-color 0.3s, background 0.3s, box-shadow 0.3s;
+    display: flex; flex-direction: column;
+    opacity: 0; transform: translateY(20px);
+    position: relative; overflow: hidden;
+  }
+  .insight-card::before {
+    content: ""; position: absolute; top: 0; left: 0; width: 100%; height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--accent-2));
+    transform: scaleX(0); transform-origin: left;
+    transition: transform 0.4s var(--ease);
+  }
+  .insight-card.visible { opacity: 1; transform: translateY(0); }
+  .insight-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(232,177,77,0.4);
+    background: rgba(255,255,255,0.05);
+    box-shadow: 0 16px 40px rgba(0,0,0,0.3), 0 0 24px rgba(232,177,77,0.1);
+  }
+  .insight-card:hover::before { transform: scaleX(1); }
+  .insight-card__cat {
+    font-size: 0.66rem; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--accent-2); font-weight: 600; margin-bottom: 0.4rem;
+  }
+  .insight-card__year {
+    font-family: "Playfair Display", Georgia, serif; font-weight: 700;
+    font-size: 1.05rem; color: var(--accent); margin-bottom: 0.5rem;
+  }
+  .insight-card__title {
+    font-size: 1.15rem; font-weight: 600; line-height: 1.3; margin-bottom: 0.7rem;
+  }
+  .insight-card__preview {
+    font-size: 0.9rem; color: var(--fg-muted); line-height: 1.6;
+    display: -webkit-box; -webkit-line-clamp: 6; -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .insight-card__quote-mini {
+    margin-top: auto; padding-top: 0.9rem; font-style: italic;
+    font-size: 0.86rem; color: var(--accent); border-top: 1px solid var(--border);
+    line-height: 1.5;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .insight-card { opacity: 1 !important; transform: none !important; }
+  }
+
+  /* ===== Detail modal (opens on year click) ===== */
+  #detail-backdrop {
+    position: fixed; inset: 0; z-index: 90;
+    background: rgba(5, 7, 16, 0.7);
+    backdrop-filter: blur(3px);
+    opacity: 0; visibility: hidden;
+    transition: opacity 0.35s ease, visibility 0.35s;
+  }
+  #detail-backdrop.open { opacity: 1; visibility: visible; }
+  #detail-modal {
+    position: fixed; top: 50%; left: 50%;
+    transform: translate(-50%, -48%) scale(0.94);
+    width: min(740px, 92vw); max-height: 88vh; overflow-y: auto;
+    z-index: 100; padding: 2.2rem 2.4rem 2.4rem;
+    background: var(--bg-elev); border: 1px solid var(--border);
+    border-radius: 16px;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.5), 0 0 60px rgba(232,177,77,0.08);
+    opacity: 0; visibility: hidden;
+    transition: opacity 0.4s ease, transform 0.45s cubic-bezier(0.34, 1.4, 0.64, 1), visibility 0.4s;
+    scrollbar-width: thin; scrollbar-color: rgba(232,177,77,0.4) transparent;
+  }
+  #detail-modal.open { opacity: 1; visibility: visible; transform: translate(-50%, -50%) scale(1); }
+  #detail-modal::-webkit-scrollbar { width: 6px; }
+  #detail-modal::-webkit-scrollbar-thumb { background: rgba(232,177,77,0.4); border-radius: 3px; }
+  .detail__close {
+    position: absolute; top: 1rem; right: 1.2rem;
+    width: 36px; height: 36px; border-radius: 50%;
+    background: rgba(255,255,255,0.06); border: 1px solid var(--border);
+    color: var(--fg-muted); font-size: 1.1rem; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    transition: background 0.2s, color 0.2s;
+  }
+  .detail__close:hover { background: rgba(255,255,255,0.12); color: var(--fg); }
+  .detail__year {
+    font-family: "Playfair Display", Georgia, serif; font-weight: 900;
+    font-size: clamp(2.5rem, 2rem + 3vw, 3.5rem); color: var(--accent); line-height: 1;
+  }
+  .detail__chapter { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--fg-muted); font-style: italic; margin: 0.4rem 0 0.3rem; }
+  .detail__title { font-size: clamp(1.4rem, 1.2rem + 1vw, 1.9rem); font-weight: 600; line-height: 1.2; margin-bottom: 1.4rem; }
+  .detail__media {
+    display: block; width: 100%;
+    /* Fit the whole photo without cropping — photos range from landscape
+       to portrait, so use `contain` and let height follow the image's own
+       aspect ratio rather than forcing a fixed 16/10 frame. */
+    height: auto; max-height: 46vh; object-fit: contain;
+    border-radius: 10px; border: 1px solid var(--border); margin-bottom: 1.4rem;
+    background: rgba(0,0,0,0.25);
+  }
+  .detail__section { margin-bottom: 1.5rem; }
+  .detail__label {
+    display: block; font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--accent); margin-bottom: 0.5rem; font-weight: 600;
+  }
+  .detail__scene { border-left: 2px solid var(--accent-2); padding-left: 1rem; line-height: 1.6; background: rgba(106,140,255,0.05); border-radius: 0 6px 6px 0; padding: 0.7rem 0 0.7rem 1rem; }
+  .detail__product { color: var(--fg-muted); line-height: 1.6; padding-top: 0.8rem; border-top: 1px solid var(--border); }
+  .detail__people { display: flex; flex-direction: column; gap: 0.4rem; }
+  .detail__person { font-size: 0.88rem; color: var(--fg); padding: 0.4rem 0.7rem; background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 6px; line-height: 1.45; }
+  .detail__quotes { display: flex; flex-direction: column; gap: 0.7rem; }
+  .detail__quote { border-left: 2px solid var(--accent); padding-left: 1rem; font-style: italic; }
+  .detail__quote .who { display: block; font-style: normal; font-size: 0.78rem; color: var(--fg-muted); margin-top: 0.2rem; }
+  .detail__quote .en { display: block; color: var(--accent); font-size: 0.82rem; margin-top: 0.15rem; }
+  .detail__motifs { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .detail__motif { font-size: 0.82rem; color: var(--accent-2); background: rgba(106,140,255,0.1); border: 1px solid rgba(106,140,255,0.3); border-radius: 20px; padding: 0.3rem 0.9rem; }
+  .detail__world { list-style: none; }
+  .detail__world li { font-size: 0.9rem; color: var(--fg); padding: 0.5rem 0 0.5rem 1.2rem; position: relative; line-height: 1.5; border-bottom: 1px solid var(--border); }
+  .detail__world li:last-child { border-bottom: none; }
+  .detail__world li::before { content: "▸"; position: absolute; left: 0; color: var(--accent); }
+  @media (prefers-reduced-motion: reduce) {
+    #detail-modal, #detail-backdrop { transition: none; }
+  }
+
+  @media (min-width: 720px) {
+    .timeline__spine { left: 50%; transform-origin: top center; }
+    .milestone { width: 44%; margin-left: 0; }
+    .milestone:nth-child(odd) { margin-right: auto; text-align: right; }
+    .milestone:nth-child(even) { margin-left: auto; }
+    .milestone:nth-child(odd) .milestone__dot { left: auto; right: -38px; }
+    .milestone:nth-child(even) .milestone__dot { left: -38px; }
+    .milestone:nth-child(odd) .milestone__scene { border-left: none; border-right: 2px solid var(--accent-2); padding-left: 0; padding-right: 1rem; border-radius: 6px 0 0 6px; text-align: right; }
+    .milestone:nth-child(odd) .milestone__people { justify-content: flex-end; }
+    .milestone:nth-child(odd) .milestone__quote { border-left: none; border-right: 2px solid var(--accent); padding-left: 0; padding-right: 0.9rem; text-align: right; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .milestone { opacity: 1 !important; transform: none !important; }
+    .hero__scroll { animation: none; }
+    html { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Sticky top navigation -->
+<nav class="topnav" id="topnav">
+  <a href="#hero" class="topnav__brand" data-scroll>● Steve Jobs</a>
+  <button class="topnav__toggle" id="topnav-toggle" aria-label="Mở menu">☰</button>
+  <div class="topnav__links" id="topnav-links">
+    <a href="#hero" class="topnav__link is-active" data-scroll>Lược sử</a>
+    <a href="#insights" class="topnav__link" data-scroll>Khám phá sâu</a>
+    <a href="#legacy" class="topnav__link" data-scroll>Di sản</a>
+  </div>
+</nav>
+
+<div id="progress"></div>
+
+<!-- Animated starfield background -->
+<canvas id="starfield"></canvas>
+
+<!-- Horizontal slide deck (rendered by JS) -->
+<div class="deck" id="deck"></div>
+
+<!-- Slide controls -->
+<div class="deck-arrows">
+  <button class="deck-arrow" id="prev-slide" aria-label="Slide trước">↑</button>
+  <button class="deck-arrow" id="next-slide" aria-label="Slide kế">↓</button>
+  <button class="deck-arrow" id="overview-btn" aria-label="Xem tổng quan (O)" title="Xem tổng quan (phím O)">▦</button>
+</div>
+
+<!-- Timeline ruler (1955 → 2011) -->
+<div class="ruler" id="ruler"><div class="ruler__line"></div></div>
+<div class="deck-progress">
+  <span id="slide-num">1</span>
+  <div class="deck-progress-bar"><div class="deck-progress-fill" id="progress-fill"></div></div>
+  <span id="slide-total">28</span>
+</div>
+
+<!-- Detail modal -->
+<div id="detail-backdrop"></div>
+<aside id="detail-modal" role="dialog" aria-modal="true" aria-labelledby="detail-title">
+  <button class="detail__close" data-action="close" aria-label="Đóng">×</button>
+  <div id="detail-content"></div>
+</aside>
+
+<script>
+/* ===== Load subject data from sibling data.json, then build the deck. =====
+   This template is generic — it renders whatever data.json provides.
+   To build a new subject: copy this file + a data.json (see examples/) into a folder,
+   serve it, and open. No other changes needed.
+   data.json shape: { META, IMG, IMG_BY_YEAR:[{max,img}], ACT_IMG:[keys], ACTS, MILESTONES, INSIGHTS, LEGACY } */
+const DATA_URL = (() => {
+  const p = new URLSearchParams(location.search).get("data");
+  return p || "data.json";
+})();
+fetch(DATA_URL).then(r => r.json()).then((DATA) => {
+  window.DATA = DATA;
+  const { META, IMG, ACTS, MILESTONES, INSIGHTS, LEGACY } = DATA;
+  const IMG_BY_YEAR_FN = (year) => {
+    const y = parseInt(year);
+    for (const rule of (DATA.IMG_BY_YEAR || [])) { if (y <= rule.max) return IMG[rule.img]; }
+    return IMG.portrait;
+  };
+  const ACT_IMG_URLS = (DATA.ACT_IMG || []).map(k => IMG[k]);
+  // Expose as globals the instrument expects (bare identifier lookup resolves to these).
+  window.MILESTONES = MILESTONES;
+  window.INSIGHTS = INSIGHTS;
+  window.LEGACY = LEGACY;
+  window.IMG = IMG;
+  window.ACTS = ACTS;
+  window.IMG_BY_YEAR = IMG_BY_YEAR_FN;
+  window.INSIGHT_IMG_BY_YEAR = IMG_BY_YEAR_FN;  // alias the instrument references this name
+  window.ACT_IMG = ACT_IMG_URLS;
+  window.CAT_LABELS = { product: META.catProduct || "Sản phẩm", life: META.catLife || "Sự kiện đời", quote: META.catQuote || "Câu nói" };
+  window.META = META;
+  window.reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  window.deck = document.getElementById("deck");
+  // Personalize the static hero markup from META.
+  const titleEl = document.querySelector(".hero__title");
+  if (titleEl && META.name) titleEl.textContent = META.name;
+  const tagEl = document.querySelector(".hero__tagline");
+  if (tagEl && META.tagline) tagEl.textContent = META.tagline;
+  const yrsEl = document.querySelector(".hero__years");
+  if (yrsEl && META.years) yrsEl.textContent = META.years;
+  const portraitEl = document.querySelector(".hero__portrait img");
+  if (portraitEl && META.portrait) portraitEl.src = META.portrait;
+  document.title = (META.name || "Timeline") + " — Lược sử một cuộc đời";
+  initInstrument();
+}).catch(err => {
+  console.error("Failed to load data.json:", err);
+  document.body.innerHTML = '<div style="color:#eef1f8;font-family:sans-serif;padding:3rem">' +
+    '<h2>Không tải được data.json</h2><p>' + err.message + '</p>' +
+    '<p>Phục vụ thư mục này qua <code>python3 -m http.server</code> và đảm bảo data.json tồn tại cùng cấp index.html.</p></div>';
+});
+
+function initInstrument() {
+/* ===== Animated starfield background (pure canvas, no library) ===== */
+(function starfield() {
+  if (reduceMotion) return;
+  const cvs = document.getElementById("starfield");
+  const ctx = cvs.getContext("2d");
+  let w, h, stars = [], t = 0;
+  function resize() {
+    w = cvs.width = innerWidth; h = cvs.height = innerHeight;
+    const count = Math.min(160, Math.floor(w * h / 9000));
+    stars = Array.from({ length: count }, () => ({
+      x: Math.random() * w, y: Math.random() * h,
+      r: Math.random() * 1.4 + 0.3,
+      tw: Math.random() * Math.PI * 2,          // twinkle phase
+      sp: Math.random() * 0.4 + 0.15,            // drift speed
+      hue: Math.random() > 0.85 ? 41 : (Math.random() > 0.5 ? 215 : 0),  // gold/blue/white
+    }));
+  }
+  function loop() {
+    ctx.clearRect(0, 0, w, h);
+    t += 0.012;
+    for (const s of stars) {
+      s.tw += 0.03;
+      const alpha = 0.35 + Math.sin(s.tw) * 0.3;
+      s.x -= s.sp;                                // slow leftward drift
+      if (s.x < -2) s.x = w + 2;
+      const col = s.hue === 41 ? `232,177,77` : (s.hue === 215 ? `106,140,255` : `255,255,255`);
+      ctx.beginPath();
+      ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(${col},${alpha})`;
+      ctx.fill();
+    }
+    requestAnimationFrame(loop);
+  }
+  resize();
+  addEventListener("resize", resize);
+  loop();
+})();
+const CAT_LABELS = { product: "Sản phẩm", life: "Sự kiện đời", quote: "Câu nói" };
+
+// Act structure: which milestone indices belong to each act
+const ACTS = [
+  { title: "Hồi 1 — Vươn lên", range: "1955 — 1984", idxs: [0,1,2,3,4] },
+  { title: "Hồi 2 — Sụp đổ & Lưu đày", range: "1985 — 1986", idxs: [5,6] },
+  { title: "Hồi 3 — Phục hưng", range: "1997 — 2003", idxs: [7,8,9,10] },
+  { title: "Hồi 4 — Đỉnh cao", range: "2007 — 2011", idxs: [11,12] },
+];
+// Nav target slide indices (computed after build)
+let NAV_TARGETS = {};
+
+function milestoneCardHTML(m, i) {
+  const motif = (m.motif || []).map(t => `<span class="milestone__motif">${t}</span>`).join("");
+  return `
+    <article class="milestone visible" data-idx="${i}">
+      <button class="milestone__year" data-action="open">${m.year}<span class="milestone__year-arrow">→</span></button>
+      <span class="milestone__chapter">${m.chapter}</span>
+      <h3 class="milestone__title">${m.title}</h3>
+      ${m.hook ? `<p class="milestone__hook">${m.hook}</p>` : ""}
+      ${m.img ? `<img class="milestone__media" src="${m.img}" alt="${m.title}" loading="lazy">` : ""}
+      <p class="milestone__story">${m.story}</p>
+      ${motif ? `<div class="milestone__motifs">${motif}</div>` : ""}
+      <button class="milestone__explore" data-action="open">Khám phá ${m.year} →</button>
+    </article>`;
+}
+
+function buildDeck() {
+  // Slide 1: Hero
+  const hero = document.createElement("section");
+  hero.className = "slide slide--hero";
+  hero.dataset.nav = "hero";
+  hero.innerHTML = `
+    <div class="hero__portrait"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Steve_Jobs_Headshot_2010-CROP.jpg/960px-Steve_Jobs_Headshot_2010-CROP.jpg" alt="Chân dung Steve Jobs"></div>
+    <h1 class="hero__title">Steve Jobs</h1>
+    <p class="hero__tagline">Kẻ theo đuổi sự hoàn hảo — người đặt máy tính, âm nhạc và điện thoại vào tay hàng tỷ người.</p>
+    <p class="hero__years">1955 — 2011</p>
+    <div class="hero__scroll">Dùng ← → để khám phá →</div>`;
+  deck.appendChild(hero);
+  NAV_TARGETS.hero = 0;
+
+  // Slides 2-5: Acts
+  ACTS.forEach((act, actI) => {
+    const slide = document.createElement("section");
+    slide.className = "slide slide--act";
+    slide.dataset.nav = "act" + actI;
+    slide.style.setProperty("--bg-img", `url("${ACT_IMG[actI]}")`);
+    slide.innerHTML = `
+      <div class="act__head slide__reveal" style="--reveal-i:0">
+        <div class="act__label">Lược sử · ${act.range}</div>
+        <h2 class="act__title">${act.title}</h2>
+      </div>
+      <div class="act__cards slide__reveal" style="--reveal-i:1">${act.idxs.map(i => milestoneCardHTML(MILESTONES[i], i)).join("")}</div>
+      <div class="slide__hint">← → chuyển slide · bấm năm để xem chi tiết</div>`;
+    deck.appendChild(slide);
+  });
+  NAV_TARGETS.timeline = 1;  // first act = "Lược sử"
+
+  // Slides 6-27: Insights (each insight = 1 slide), grouped: product, life, quote
+  let firstInsightSlide = deck.children.length;
+  ["product", "life", "quote"].forEach((cat) => {
+    INSIGHTS.filter(i => i.cat === cat).forEach((ins) => {
+      const realIdx = INSIGHTS.indexOf(ins);
+      const slide = document.createElement("section");
+      slide.className = "slide slide--insight";
+      const imgSrc = INSIGHT_IMG_BY_YEAR(ins.year);
+      slide.innerHTML = `
+        <div class="insight-slide__split">
+          <div class="insight-slide__panel">
+            <div class="insight-slide__cat slide__reveal" style="--reveal-i:0">${CAT_LABELS[ins.cat]} · ${ins.year}</div>
+            <div class="insight-slide__year slide__reveal" style="--reveal-i:1">${ins.year}</div>
+            <h2 class="insight-slide__title slide__reveal" style="--reveal-i:2">${ins.title}</h2>
+            <p class="insight-slide__story slide__reveal" style="--reveal-i:3">${ins.story}</p>
+            <blockquote class="insight-slide__quote slide__reveal" style="--reveal-i:4">"${ins.quote.vi}"
+              ${ins.quote.who ? `<span class="who">— ${ins.quote.who}</span>` : ""}
+              ${ins.quote.en ? `<span class="en">${ins.quote.en}</span>` : ""}
+            </blockquote>
+          </div>
+          <figure class="insight-slide__media slide__reveal-img">
+            <img src="${imgSrc}" alt="${ins.title}" loading="lazy">
+          </figure>
+        </div>
+        <div class="slide__hint">← → chuyển slide</div>`;
+      slide.dataset.insightIdx = realIdx;
+      deck.appendChild(slide);
+    });
+  });
+  NAV_TARGETS.insights = firstInsightSlide;
+
+  // Slide 28: Legacy
+  const legacySlide = document.createElement("section");
+  legacySlide.className = "slide slide--legacy";
+  legacySlide.dataset.nav = "legacy";
+  legacySlide.style.setProperty("--bg-img", `url("${IMG.portrait}")`);
+  const productsHTML = LEGACY.products.map(p =>
+    `<div class="legacy__product visible"><div class="legacy__product-year">${p.year}</div><div class="legacy__product-name">${p.name}</div><div class="legacy__product-desc">${p.desc}</div></div>`).join("");
+  const statsHTML = LEGACY.stats.map(s =>
+    `<div class="legacy__stat visible"><div class="legacy__stat-big">${s.big}</div><div class="legacy__stat-label">${s.label}</div><div class="legacy__stat-desc">${s.desc}</div></div>`).join("");
+  const verdictHTML = LEGACY.verdict.map(q =>
+    `<blockquote class="legacy__verdict-quote">"${q.vi}"<span class="who">— ${q.who}</span>${q.en ? `<span class="en">${q.en}</span>` : ""}</blockquote>`).join("");
+  legacySlide.innerHTML = `
+    <h2 class="legacy__heading">Di sản</h2>
+    <p class="legacy__intro">"Và chính Apple, mà Jobs coi là sáng tạo vĩ đại nhất — trở thành công ty giá trị nhất trên trái đất."</p>
+    <blockquote class="legacy__quote">"Perhaps it's like an on-off switch. Click! And you're gone."<cite>Steve Jobs · 2011</cite></blockquote>
+    <div class="legacy__block"><h3 class="legacy__block-title">Sản phẩm định hình kỷ nguyên</h3><div class="legacy__products">${productsHTML}</div></div>
+    <div class="legacy__block"><h3 class="legacy__block-title">Bằng con số</h3><div class="legacy__stats">${statsHTML}</div></div>
+    <div class="legacy__block"><h3 class="legacy__block-title">Phán quyết</h3><div class="legacy__verdict">${verdictHTML}</div></div>
+    <blockquote class="legacy__credo">"Sản phẩm, không phải lợi nhuận, mới là động lực."<cite>Steve Jobs</cite></blockquote>`;
+  deck.appendChild(legacySlide);
+  NAV_TARGETS.legacy = deck.children.length - 1;
+
+  document.getElementById("slide-total").textContent = deck.children.length;
+}
+buildDeck();
+
+/* Overview thumbnails: each slide gets a compact "ov-thumb" badge (kicker + title)
+   shown only in overview mode, so the tiny 240×150 cards stay clean and readable
+   instead of cramming the full story/quote/image into a postage stamp. */
+(function buildOverviewThumbs() {
+  const slides = [...document.querySelectorAll("#deck .slide")];
+  slides.forEach((s) => {
+    const kicker = s.querySelector(".act__label, .insight-slide__cat, .hero__years, .legacy__heading");
+    const title =
+      s.querySelector(".hero__title")?.textContent ||
+      s.querySelector(".act__title")?.textContent ||
+      s.querySelector(".insight-slide__title")?.textContent ||
+      s.querySelector(".legacy__heading")?.textContent || "Slide";
+    let kickerText = "";
+    if (s.classList.contains("slide--hero")) kickerText = "Mở đầu";
+    else if (s.classList.contains("slide--act")) kickerText = s.querySelector(".act__label")?.textContent || "Hồi";
+    else if (s.classList.contains("slide--insight")) kickerText = s.querySelector(".insight-slide__cat")?.textContent || "Khám phá";
+    else if (s.classList.contains("slide--legacy")) kickerText = "Kết";
+    const thumb = document.createElement("div");
+    thumb.className = "ov-thumb";
+    thumb.innerHTML = `<span class="ov-thumb__kicker">${kickerText}</span><span class="ov-thumb__title">${title}</span>`;
+    s.appendChild(thumb);
+  });
+})();
+
+/* ===== Detail modal ===== */
+const detailModal = document.getElementById("detail-modal");
+const detailBackdrop = document.getElementById("detail-backdrop");
+const detailContent = document.getElementById("detail-content");
+
+function openDetail(idx) {
+  const m = MILESTONES[idx];
+  if (!m) return;
+  const quotes = (m.quotes || []).map(q => `<blockquote class="detail__quote">"${q.vi}"${q.who ? `<span class="who">— ${q.who}</span>` : ""}${q.en ? `<span class="en">${q.en}</span>` : ""}</blockquote>`).join("");
+  const people = (m.people || []).map(p => `<div class="detail__person">${p}</div>`).join("");
+  const motif = (m.motif || []).map(t => `<span class="detail__motif">${t}</span>`).join("");
+  const world = (m.world || []).map(w => `<li>${w}</li>`).join("");
+  detailContent.innerHTML = `
+    <div class="detail__year">${m.year}</div>
+    <div class="detail__chapter">${m.chapter}</div>
+    <h2 class="detail__title" id="detail-title">${m.title}</h2>
+    ${m.img ? `<img class="detail__media" src="${m.img}" alt="${m.title}">` : ""}
+    ${m.hook ? `<p class="milestone__hook">${m.hook}</p>` : ""}
+    <p class="milestone__story">${m.story}</p>
+    ${motif ? `<div class="detail__section"><span class="detail__label">Chủ đề xuyên suốt</span><div class="detail__motifs">${motif}</div></div>` : ""}
+    ${m.scene ? `<div class="detail__section"><span class="detail__label">Cảnh cụ thể</span><div class="detail__scene">${m.scene}</div></div>` : ""}
+    ${m.scene2 ? `<div class="detail__section"><div class="detail__scene">${m.scene2}</div></div>` : ""}
+    ${m.product ? `<div class="detail__section"><span class="detail__label">Sản phẩm / số liệu</span><div class="detail__product">${m.product}</div></div>` : ""}
+    ${people ? `<div class="detail__section"><span class="detail__label">Nhân vật</span><div class="detail__people">${people}</div></div>` : ""}
+    ${quotes ? `<div class="detail__section"><span class="detail__label">Câu nói</span><div class="detail__quotes">${quotes}</div></div>` : ""}
+    ${(m.subevents && m.subevents.length) ? `<div class="detail__section"><span class="detail__label">Sự kiện phụ</span><ul class="detail__world">${m.subevents.map(s=>`<li>${s}</li>`).join("")}</ul></div>` : ""}
+    ${world ? `<div class="detail__section"><span class="detail__label">Bối cảnh thế giới ${m.year}</span><ul class="detail__world">${world}</ul></div>` : ""}`;
+  detailModal.classList.add("open");
+  detailBackdrop.classList.add("open");
+  detailModal.scrollTop = 0;
+  document.body.style.overflow = "hidden";
+}
+function closeDetail() {
+  detailModal.classList.remove("open");
+  detailBackdrop.classList.remove("open");
+  document.body.style.overflow = "";
+}
+// delegated click on whole deck for [data-action="open"] (milestone cards)
+deck.addEventListener("click", (e) => {
+  const btn = e.target.closest('[data-action="open"]');
+  if (!btn) return;
+  const card = btn.closest(".milestone");
+  if (card && card.dataset.idx != null) { openDetail(Number(card.dataset.idx)); return; }
+});
+detailBackdrop.addEventListener("click", closeDetail);
+detailModal.addEventListener("click", (e) => { if (e.target.dataset.action === "close") closeDetail(); });
+window.addEventListener("keydown", (e) => { if (e.key === "Escape") closeDetail(); });
+
+/* ===== Deck navigation: arrows, keyboard, wheel, progress, scrollspy ===== */
+const totalSlides = deck.children.length;
+const slideNumEl = document.getElementById("slide-num");
+const progressFill = document.getElementById("progress-fill");
+const prevBtn = document.getElementById("prev-slide");
+const nextBtn = document.getElementById("next-slide");
+let currentSlide = 0;
+let wheelLock = false;
+
+function goToSlide(idx) {
+  idx = Math.max(0, Math.min(totalSlides - 1, idx));
+  const target = deck.children[idx];
+  if (!target) return;
+  const dir = idx > currentSlide ? "fwd" : (idx < currentSlide ? "back" : "");
+  if (dir && !reduceMotion) deck.dataset.dir = dir;   // recorded for any future directional styling
+  currentSlide = idx;
+  deck.scrollTo({ left: target.offsetLeft, behavior: reduceMotion ? "auto" : "smooth" });
+}
+function updateUI() {
+  slideNumEl.textContent = currentSlide + 1;
+  progressFill.style.width = ((currentSlide + 1) / totalSlides * 100) + "%";
+  prevBtn.disabled = currentSlide === 0;
+  nextBtn.disabled = currentSlide === totalSlides - 1;
+  // scrollspy nav
+  navLinks.forEach(l => l.classList.remove("is-active"));
+  let activeNav = "hero";
+  if (currentSlide >= NAV_TARGETS.insights && currentSlide < NAV_TARGETS.legacy) activeNav = "insights";
+  else if (currentSlide >= NAV_TARGETS.legacy) activeNav = "legacy";
+  else if (currentSlide >= NAV_TARGETS.timeline) activeNav = "hero"; // acts still "Lược sử"
+  const activeLink = document.querySelector(`.topnav__link[data-nav="${activeNav}"]`);
+  if (activeLink) activeLink.classList.add("is-active");
+  // ruler: highlight the tick for the current slide
+  document.querySelectorAll(".ruler__tick").forEach(t => t.classList.toggle("is-active", Number(t.dataset.slide) === currentSlide));
+  // overview: mark current slide thumbnail
+  [...deck.children].forEach((s, i) => s.classList.toggle("is-current", i === currentSlide));
+}
+
+/* Build the timeline ruler — one tick per slide that has a year (acts + insights),
+   plus hero & legacy as bookends. Clicking a tick jumps to that slide. */
+(function buildRuler() {
+  const ruler = document.getElementById("ruler");
+  const ticks = [];
+  // hero bookend
+  ticks.push({ year: "★", slide: 0 });
+  // acts: one tick per act, labeled with its year range start
+  ACTS.forEach((act, i) => ticks.push({ year: String(parseInt(act.range)), slide: 1 + i }));
+  // insights: one tick each, labeled with its year
+  for (let s = NAV_TARGETS.insights; s < NAV_TARGETS.legacy; s++) {
+    const el = deck.children[s];
+    const ins = INSIGHTS[Number(el.dataset.insightIdx)];
+    if (ins) ticks.push({ year: ins.year, slide: s });
+  }
+  // legacy bookend
+  ticks.push({ year: "✦", slide: NAV_TARGETS.legacy });
+  ticks.forEach(t => {
+    const tick = document.createElement("button");
+    tick.className = "ruler__tick";
+    tick.dataset.slide = t.slide;
+    tick.setAttribute("aria-label", "Đi tới slide " + (t.slide + 1));
+    tick.innerHTML = `<span class="ruler__tick-label">${t.year}</span>`;
+    tick.addEventListener("click", () => goToSlide(t.slide));
+    ruler.appendChild(tick);
+  });
+})();
+
+// arrow buttons
+prevBtn.addEventListener("click", () => goToSlide(currentSlide - 1));
+nextBtn.addEventListener("click", () => goToSlide(currentSlide + 1));
+document.getElementById("overview-btn").addEventListener("click", toggleOverview);
+
+// keyboard
+window.addEventListener("keydown", (e) => {
+  if (detailModal.classList.contains("open")) return;  // don't hijack when modal open
+  if (e.key === "ArrowRight" || e.key === "PageDown" || e.key === " ") { e.preventDefault(); goToSlide(currentSlide + 1); }
+  else if (e.key === "ArrowLeft" || e.key === "PageUp") { e.preventDefault(); goToSlide(currentSlide - 1); }
+  else if (e.key === "Home") { e.preventDefault(); goToSlide(0); }
+  else if (e.key === "End") { e.preventDefault(); goToSlide(totalSlides - 1); }
+  else if (e.key === "o" || e.key === "O") { e.preventDefault(); toggleOverview(); }
+});
+
+/* ===== Overview mode (Reveal.js-style): zoom out to see all slides as thumbnails ===== */
+let overviewActive = false;
+function toggleOverview() {
+  overviewActive = !overviewActive;
+  deck.classList.toggle("overview", overviewActive);
+  if (!overviewActive) {
+    // exiting: snap back to current slide
+    goToSlide(currentSlide);
+  } else {
+    // entering: scroll so current slide is centered
+    const t = deck.children[currentSlide];
+    if (t) deck.scrollTo({ left: t.offsetLeft - window.innerWidth / 2 + t.offsetWidth / 2, behavior: "smooth" });
+  }
+}
+deck.addEventListener("click", (e) => {
+  if (!overviewActive) return;
+  const slide = e.target.closest(".slide");
+  if (slide) { currentSlide = [...deck.children].indexOf(slide); goToSlide(currentSlide); toggleOverview(); }
+}, true);
+
+// wheel → slide (debounced: 1 wheel gesture = 1 slide)
+deck.addEventListener("wheel", (e) => {
+  // if the active slide is itself scrollable and not at edge, let it scroll vertically
+  const active = deck.children[currentSlide];
+  if (active) {
+    const atTop = active.scrollTop <= 1;
+    const atBottom = active.scrollTop + active.clientHeight >= active.scrollHeight - 1;
+    const canScrollV = active.scrollHeight > active.clientHeight + 4;
+    if (canScrollV && !((e.deltaY > 0 && atBottom) || (e.deltaY < 0 && atTop))) return;
+  }
+  if (wheelLock) { e.preventDefault(); return; }
+  e.preventDefault();
+  wheelLock = true;
+  goToSlide(currentSlide + (e.deltaY > 0 ? 1 : -1));
+  setTimeout(() => { wheelLock = false; }, 550);
+}, { passive: false });
+
+// update currentSlide on manual scroll (touch/drag)
+let scrollTick = false;
+deck.addEventListener("scroll", () => {
+  if (scrollTick) return;
+  scrollTick = true;
+  requestAnimationFrame(() => {
+    const idx = Math.round(deck.scrollLeft / window.innerWidth);
+    if (idx !== currentSlide) { currentSlide = idx; updateUI(); }
+    scrollTick = false;
+  });
+}, { passive: true });
+
+/* ===== Topnav: now navigates slides ===== */
+const topnav = document.getElementById("topnav");
+const topnavToggle = document.getElementById("topnav-toggle");
+const topnavLinks = document.getElementById("topnav-links");
+const navLinks = document.querySelectorAll(".topnav__link");
+
+// tag nav links with data-nav for scrollspy
+navLinks.forEach((l, i) => { l.dataset.nav = ["hero", "insights", "legacy"][i]; });
+
+navLinks.forEach(link => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    const navKey = link.dataset.nav;
+    if (NAV_TARGETS[navKey] != null) goToSlide(NAV_TARGETS[navKey]);
+    topnavLinks.classList.remove("open");
+  });
+});
+document.querySelector(".topnav__brand").addEventListener("click", (e) => {
+  e.preventDefault(); goToSlide(0); topnavLinks.classList.remove("open");
+});
+topnavToggle.addEventListener("click", () => topnavLinks.classList.toggle("open"));
+
+/* ===== 3D tilt on milestone cards (pointer-follow) + glow ===== */
+deck.addEventListener("pointermove", (e) => {
+  const card = e.target.closest(".milestone");
+  if (!card) return;
+  const r = card.getBoundingClientRect();
+  const px = (e.clientX - r.left) / r.width - 0.5;
+  const py = (e.clientY - r.top) / r.height - 0.5;
+  card.style.transform = `perspective(800px) rotateY(${px * 6}deg) rotateX(${-py * 6}deg) translateY(-4px)`;
+});
+deck.addEventListener("pointerout", (e) => {
+  const card = e.target.closest(".milestone");
+  if (card) card.style.transform = "";
+});
+
+/* ===== Spotlight + subtle parallax on insight media (pointer-follow) ===== */
+deck.addEventListener("pointermove", (e) => {
+  const media = e.target.closest(".insight-slide__media");
+  if (!media) return;
+  const r = media.getBoundingClientRect();
+  const mx = Math.round(((e.clientX - r.left) / r.width) * 100);
+  const my = Math.round(((e.clientY - r.top) / r.height) * 100);
+  media.style.setProperty("--mx", mx + "%");
+  media.style.setProperty("--my", my + "%");
+});
+
+updateUI();
+} // end initInstrument
+</script>
+</body>
+</html>

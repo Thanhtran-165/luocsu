@@ -1,0 +1,1139 @@
+{
+  "META": {
+    "name": "Steve Jobs",
+    "tagline": "Kẻ theo đuổi sự hoàn hảo — người đặt máy tính, âm nhạc và điện thoại vào tay hàng tỷ người.",
+    "years": "1955 — 2011",
+    "portrait": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Steve_Jobs_Headshot_2010-CROP.jpg/960px-Steve_Jobs_Headshot_2010-CROP.jpg",
+    "lang": "vi"
+  },
+  "IMG": {
+    "portrait": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Steve_Jobs_Headshot_2010-CROP.jpg/960px-Steve_Jobs_Headshot_2010-CROP.jpg",
+    "garage": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Apple_Garage.jpg/960px-Apple_Garage.jpg",
+    "mac": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Steve_Jobs_and_Macintosh_computer%2C_January_1984%2C_by_Bernard_Gotfryd_-_edited.jpg/960px-Steve_Jobs_and_Macintosh_computer%2C_January_1984%2C_by_Bernard_Gotfryd_-_edited.jpg",
+    "wwdc": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Steve_Jobs_WWDC07.jpg/960px-Steve_Jobs_WWDC07.jpg",
+    "iphone": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Steve_Jobs_presents_iPhone_%28cropped%29.jpg/960px-Steve_Jobs_presents_iPhone_%28cropped%29.jpg"
+  },
+  "IMG_BY_YEAR": [
+    {
+      "max": 1974,
+      "img": "garage"
+    },
+    {
+      "max": 1984,
+      "img": "mac"
+    },
+    {
+      "max": 1998,
+      "img": "wwdc"
+    },
+    {
+      "max": 2007,
+      "img": "iphone"
+    },
+    {
+      "max": 9999,
+      "img": "portrait"
+    }
+  ],
+  "ACT_IMG": [
+    "mac",
+    "garage",
+    "wwdc",
+    "iphone"
+  ],
+  "ACTS": [
+    {
+      "title": "Hồi 1 — Vươn lên",
+      "range": "1955 — 1984",
+      "idxs": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "title": "Hồi 2 — Sụp đổ & Lưu đày",
+      "range": "1985 — 1986",
+      "idxs": [
+        5,
+        6
+      ]
+    },
+    {
+      "title": "Hồi 3 — Phục hưng",
+      "range": "1997 — 2003",
+      "idxs": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "title": "Hồi 4 — Đỉnh cao",
+      "range": "2007 — 2011",
+      "idxs": [
+        11,
+        12
+      ]
+    }
+  ],
+  "MILESTONES": [
+    {
+      "year": "1955",
+      "chapter": "Chương 1 · Childhood: Abandoned and Chosen",
+      "title": "Đứa trẻ bị bỏ rơi, được chọn",
+      "hook": "Một bé trai bị chính cặp luật sư được chỉ định từ chối vì 'họ muốn một bé gái' — và chính sự từ chối ấy đã gửi đứa trẻ đến tay một thợ máy bỏ học. Làm sao cuộc hoán đổi điên rồ ấy lại đẻ ra Steve Jobs?",
+      "story": "Mẹ ruột Joanne Schieble — sinh viên Wisconsin gốc Đức — yêu Abdulfattah Jandali, trợ lý giảng dạy Syria, nhưng cha bà đe dọa cắt đứt nếu cưới người Hồi giáo. Đầu 1955 Joanne ra San Francisco sinh con trong bí mật, yêu cầu duy nhất: gia đình nhận nuôi phải tốt nghiệp đại học. Nhưng khi bé trai ra đời, cặp luật sư đổi ý muốn con gái rồi rút lui. Đứa trẻ rơi vào tay Paul Jobs — thợ máy bỏ học, từng làm 'repo man' tịch thu xe — và vợ Clara. Khi Joanne biết cha mẹ nuôi chưa tốt nghiệp phổ thông, bà từ chối ký giấy nhiều tuần, nằng nặc đòi họ cam kết lập quỹ tiết kiệm đại học cho con.",
+      "motif": [
+        "Bị bỏ rơi & được chọn"
+      ],
+      "world": [
+        "Rosa Parks từ chối nhường ghế trên xe buýt ở Montgomery, khởi đầu phong trào dân quyền Mỹ.",
+        "Albert Einstein qua đời ở tuổi 76 tại Princeton.",
+        "Walt Disney khánh thành Disneyland đầu tiên tại Anaheim."
+      ],
+      "scene": "Cảnh huyền thoại ở bãi cỏ: năm 6-7 tuổi, cô bé hàng xóm hỏi 'Thế có nghĩa là bố mẹ ruột không cần con à?' 'Như có sét đánh trong đầu' — Jobs chạy ào vào nhà, khóc. Paul và Clara nhìn thẳng vào mắt cậu, nói chậm rãi nhấn từng chữ: 'Chính chúng tôi đã chọn cậu.' Khoảnh khắc định hình: Bị bỏ rơi. Được chọn. Đặc biệt.",
+      "scene2": "Bài học tay nghề từ cha: Paul đánh dấu một góc bàn trong gara — 'Steve, đây là bàn làm việc của con rồi'. Ông dạy làm đúng cả những phần khuất: 'Ông ấy yêu làm việc đúng. Ông ấy quan tâm cả vẻ của những phần mà bạn không nhìn thấy.' Năm mươi năm sau, hàng rào ông dựng vẫn bao quanh nhà Mountain View — Jobs vuốt ve các tấm ván kể lại điều cha ghim. Đó chính là hạt giống của sự ám ảnh 'hoàn hảo cả bên trong' trong mọi sản phẩm Apple.",
+      "people": [
+        "Joanne Schieble — mẹ ruột, kiên quyết đòi cha mẹ nuôi có bằng đại học, từ chối ký giấy nhận nuôi",
+        "Abdulfattah 'John' Jandali — cha ruột Syria, gia tộc từng 'control giá lúa mì' quanh Damascus-Homs",
+        "Paul Jobs — cha nuôi, thợ máy/repo man, dạy con 'làm đúng cả phần khuất'",
+        "Clara Jobs (Hagopian) — mẹ nuôi gốc Armenia, từng mang thai ngoài tử cung nên không thể có con",
+        "Chrisann Brennan — người tình sau này, mẹ Lisa: 'kẻ bị bỏ rơi rồi cũng trở thành kẻ bỏ rơi'",
+        "Bill Hewlett — đồng sáng lập HP, teenage Jobs gọi điện nhà xin linh kiện rồi được nhận làm hè"
+      ],
+      "quotes": [
+        {
+          "vi": "Như có sét đánh trong đầu. Tôi nhớ mình đã chạy ào vào nhà, khóc.",
+          "who": "Jobs, nhớ khoảnh khắc bãi cỏ",
+          "en": "Lightning bolts went off in my head. I remember running into the house, crying."
+        },
+        {
+          "vi": "Chính chúng tôi đã chọn cậu.",
+          "who": "Paul & Clara Jobs, nhấn từng chữ",
+          "en": "We specifically picked you out."
+        },
+        {
+          "vi": "Tôi chưa bao giờ cảm thấy bị bỏ rơi. Tôi luôn thấy mình đặc biệt. Cha mẹ đã khiến tôi thấy vậy.",
+          "who": "Jobs, bác bỏ phân tâm học",
+          "en": "I've never felt abandoned. I've always felt special."
+        },
+        {
+          "vi": "Họ là cha mẹ tôi 1000%... Còn họ chỉ là ngân hàng tinh trùng và trứng của tôi thôi.",
+          "who": "Jobs, về cha mẹ nuôi so với cha mẹ ruột",
+          "en": "They were my parents 1,000%... a sperm bank thing."
+        }
+      ],
+      "subevents": [
+        "Hàng xóm Larry Lang cho Steve xem micro than chì + loa khuếch đại không cần khuếch đại — cậu phát hiện cha 'không biết mọi thứ', cảm thấy 'tremendous shame'.",
+        "Giáo viên lớp 4 'Teddy' Hill — 'một trong những thánh của đời tôi' — mua chuộc cậu bằng kẹo mút khổng lồ + 5 đô la để làm sách bài tập; cậu đạt trình độ học sinh lớp 10.",
+        "Tháng 7/1968, Jobs mang bìa Life ảnh trẻ em đói Biafra chất vấn mục sư: 'Nếu tôi nhấc ngón tay, Chúa có biết trước tôi sẽ nhấc ngón nào không?' — rồi không bao giờ quay lại nhà thờ."
+      ],
+      "img": null
+    },
+    {
+      "year": "1972",
+      "chapter": "Chương 3 · The Dropout: Turn On, Tune In…",
+      "title": "Reed College, thư pháp & chất gây ảo giác",
+      "hook": "Một sinh viên bỏ học Reed College, đi chân đất giữa mùa tuyết, sống trong garage 20 đô/tháng thu vỏ chai — và tình cờ nghe lén một lớp thư pháp. Làm sao lớp 'vô dụng' ấy quyết định font chữ trên mọi máy tính thế giới?",
+      "story": "Mùa xuân 1972, Jobs nhất quyết chỉ nộp vào Reed College — một trong những trường đắt nhất nước Mỹ — ra tối hậu thư 'nếu không được Reed thì không đi đâu cả'. Khi gia đình đưa cậu đến Portland, cậu không cho họ bước vào khuôn viên, không nói lời từ biệt — điều cậu sau này 'thực sự thấy hổ thẹn'. Tại Reed cậu kết bạn Daniel Kottke, cùng đọc Be Here Now, thiền trong gác xép, say mê cực đoan ăn kiêng (chỉ ăn táo cả tuần, da cam vì cà rốt). Cậu bị thu hút bởi Robert Friedland — cựu tù nhân từng bị bắt vì 24.000 viên LSD — người dạy cậu 'thực địa bóp méo thực tại'. Rồi cậu bỏ học, nghe lén lớp thư pháp.",
+      "motif": [
+        "Nghệ thuật gặp công nghệ",
+        "Giản dị / Zen"
+      ],
+      "world": [
+        "Tổng thống Nixon thăm Trung Quốc, mở cửa ngoại giao sau hàng thập kỷ.",
+        "Phim 'Bố Già' (The Godfather) ra mắt, trở thành kiệt tác điện ảnh.",
+        "Apollo 17 hoàn tất sứ mệnh, lần cuối cùng con người đặt chân lên Mặt Trăng."
+      ],
+      "scene": "Bài học vô dụng nhất, có công dụng lớn nhất. Khi thôi đóng học phí, Jobs nghe lén lớp thư pháp: 'Tôi học về serif và sans-serif, về thay đổi khoảng cách giữa các tổ hợp chữ, về điều làm nên typography vĩ đại. Nó đẹp, mang tính lịch sử, tinh tế nghệ thuật theo cách mà khoa học không thể nắm bắt.' Mười năm sau, khi thiết kế Mac, những bài học ấy trỗi dậy: 'Nếu tôi chưa từng nghe lén lớp đó, Mac sẽ không có nhiều bộ chữ. Mà vì Windows chỉ chép Mac, có lẽ chẳng máy tính cá nhân nào có chúng.'",
+      "scene2": "Robert Friedland — guru-kẻ lừa đảo. Jobs bắt gặp Friedland đang quan hệ tình dục với bạn gái khi mang máy đánh chữ đến bán, được mời 'ngồi chờ đến khi xong'. Friedland, hơn Jobs 4 tuổi, từng bị bắt với 24.000 viên LSD trị giá $125.000, lĩnh 2 năm tù liên bang. Mùa hè 1973 sang Ấn Độ thăm guru Neem Karoli Baba, về đi dép sandal áo chùng. Kottke: 'Friedland dạy Steve thực địa bóp méo thực tại. Ông ta có sức hút và hơi là kẻ lừa đảo, có thể bẻ cong tình huống theo ý mình mạnh mẽ... Steve ngưỡng mộ điều đó, và trở nên giống hơn.' Nhiều năm sau, khi Friedland thành tỷ phú khai khoáng, Jobs ghê tởm gọi ông là 'kẻ đào vàng' — biểu tượng thật của kẻ đội lốt linh hồn.",
+      "people": [
+        "Robert Friedland — cựu tù nhân LSD (24.000 viên) trở thành 'guru', dạy Jobs thực địa bóp méo thực tại; sau bị Jobs chê là 'kẻ đào vàng'",
+        "Daniel Kottke — bạn cùng phòng, chia sẻ Dylan, Zen, LSD; 'Steve rất Zen... anh ấy thấy điều đó trong thẩm mỹ tối giản và tập trung mãnh liệt'",
+        "Chrisann Brennan — bạn gái đầu tiên: 'Steve hơi điên. Đó là lý do tôi bị thu hút'",
+        "Jack Dudman — trưởng phòng học vụ Reed, cho phép Jobs nghe lén lớp và ngủ lại ký túc dù không đóng học phí",
+        "Elizabeth Holmes — bạn gái Kottke, nấu ăn nuôi Jobs và 'điều phối' cờ Kriegspiel khi họ đang 'tripping on acid'"
+      ],
+      "quotes": [
+        {
+          "vi": "Bỗng nhiên cả cánh đồng lúa mì đang chơi Bach. Cảm giác tuyệt vời nhất đời tôi tính đến lúc đó. Tôi như vị chỉ huy dàn giao hưởng với Bach vọng lên từ lúa.",
+          "who": "Jobs, về lần đầu dùng LSD ngoài đồng",
+          "en": "All of a sudden the wheat field was playing Bach."
+        },
+        {
+          "vi": "Tôi không muốn ai biết tôi có cha mẹ. Tôi muốn như một đứa trẻ mồ côi phiêu bạt khắp đất nước bằng tàu hỏa, vừa hiện ra từ hư không.",
+          "who": "Jobs, hối hận vì lạnh nhạt với cha mẹ lúc đến Reed",
+          "en": "I wanted to be like an orphan who had bummed around the country on trains."
+        },
+        {
+          "vi": "Nếu tôi chưa từng nghe lén lớp đó, Mac sẽ không có nhiều kiểu chữ. Mà vì Windows chỉ chép Mac, có lẽ chẳng máy tính cá nhân nào có chúng.",
+          "who": "Jobs, bài phát biểu Stanford",
+          "en": "If I had never dropped in on that single course, the Mac would have never had multiple typefaces."
+        },
+        {
+          "vi": "Dùng LSD là trải nghiệm sâu sắc, một trong những điều quan trọng nhất đời tôi. Nó củng cố ý thức về điều quan trọng — tạo ra vĩ đại thay vì kiếm tiền.",
+          "who": "Jobs",
+          "en": "Taking LSD was a profound experience, one of the most important things in my life."
+        }
+      ],
+      "subevents": [
+        "Phòng thiền gác xép: Jobs và Kottke biến gác mái trên phòng Holmes thành phòng thiền trải thảm dhurrie, nến, trầm, đệm — 'chúng tôi đôi khi dùng thuốc ảo giác ở đó, nhưng chủ yếu là thiền định'.",
+        "All One Farm — nông trại táo 220 mẫu: Friedland giao cho Jobs 'chạy trang trại táo' — dẫn 'đội ngũ freaks cắt tỉa vườn'. (Tên 'Apple' sau này có gốc rễ ở đây.)",
+        "Chế độ ăn cực đoan theo Arnold Ehret: Jobs từng ăn chỉ táo cả tuần, nói 'sau một tuần bạn bắt đầu thấy tuyệt vời... tôi thấy mình có thể đứng dậy và đi bộ đến San Francisco bất cứ lúc nào.'"
+      ],
+      "img": null
+    },
+    {
+      "year": "1974",
+      "chapter": "Chương 4 · Atari and India",
+      "title": "Ấn Độ, dao cạo và sự thật của trực giác",
+      "hook": "Một 'hippie có mùi' đi chân đất xông vào sảnh Atari đòi việc, rồi được thả sang Ấn Độ tìm guru, bị cạo trọc đầu bởi một đạo sĩ cười điên cuồng, và về nhà lừa bạn thân ăn cắp tiền thưởng. Làm sao một năm điên rồ ấy rèn nên 'thực địa bóp méo thực tại'?",
+      "story": "Tháng 2/1974, Jobs đi dép vào sảnh Atari, không chịu đi cho tới khi được thuê. Trưởng nhân sự gọi Al Alcorn: 'Có đứa hippie trong sảnh, gọi công an hay cho vào?' Lương $5/giờ — một trong 50 nhân viên đầu tiên. Vì mùi cơ thể và thái độ, founder Nolan Bushnell đẩy ông sang ca đêm 'để cứu hắn'. Rồi Friedland thúc giục đi Ấn Độ tìm guru Neem Karoli Baba. Tại New Delhi ông mắc lỵ, sốt cao, sụt từ 72kg xuống 54kg trong một tuần; tìm được guru thì ngài đã mất. Bảy tháng sau về nhà: đầu trọc, áo bông Ấn, da nâu đỏ — cha mẹ đi ngang năm lần mới nhận ra.",
+      "motif": [
+        "Giản dị / Zen",
+        "Nghệ thuật gặp công nghệ"
+      ],
+      "world": [
+        "Tổng thống Nixon từ chức amid bê bối Watergate, đầu tiên trong lịch sử Mỹ.",
+        "Muhammad Ali đánh bại George Foreman trong trận 'Rumble in the Jungle' tại Zaire.",
+        "Các nhà cổ sinh vật học phát hiện 'Lucy', bộ xương tổ tiên người 3,2 triệu tuổi ở Ethiopia."
+      ],
+      "scene": "Một thánh nhân trẻ ở vùng Himalaya chỉ tay vào Jobs giữa đám đông, 'bắt đầu cười điên cuồng', chạy đến túm lấy ông, phát tiếng 'tooting' và nói: 'Ông giống như một đứa trẻ'. Nắm tay dẫn lên đồi giếng nước, rút ra một con dao cạo thẳng. 'Tôi nghĩ ổng là kẻ điên và bắt đầu lo. Rồi ổng lấy ra một bánh xà phòng... xà phòng lên tóc tôi và cạo trọc đầu tôi. Ổng bảo ổng đang cứu sức khoẻ tôi.'",
+      "scene2": "Vụ lừa tiền thưởng Breakout. Cuối hè 1975, Bushnell phác trò Pong một người chơi, hứa thưởng cho mỗi chip dưới 50. Jobs mời Wozniak giúp, giấu hai điều: hạn 4 ngày là do Jobs tự đặt (vì phải về nông trại thu hoạch táo), và có tiền thưởng gắn số chip. Woz thức 4 đêm liên tiếp, kết quả chỉ 45 chip. Nhưng 'Jobs chỉ đưa Wozniak một nửa phí cơ bản, không phải tiền thưởng'. 10 năm sau Woz mới biết qua cuốn Zap. Woz, với khoảng lặng dài: 'Tôi ước gì anh ấy chỉ cần thành thật. Nếu anh ấy nói cần tiền... Anh ấy là bạn. Người ta giúp bạn bè.'",
+      "people": [
+        "Nolan Bushnell — founder Atari, lái Rolls hút cần họp trong bồn nước nóng; dạy Jobs: 'Giả vờ kiểm soát hoàn toàn, người ta sẽ mặc định đúng vậy'",
+        "Al Alcorn — sếp kỹ thuật, 'beefy and jovial'; dựng kế hoạch gửi Jobs qua Munich sửa lỗi 50fps để tiện sang Ấn: 'Gửi lời chào guru của ông dùm tôi'",
+        "Ron Wayne — thợ vẽ Atari, từng mở công ty máy đánh bạc thất bại; khai thật mình đồng tính với Jobs",
+        "Daniel Kottke — bạn đi Ấn cùng; 'Có một lỗ hổng trong ông ấy, và ông ấy đang cố lấp nó'; bị ăn cắp túi ngủ, Jobs đài thọ và đưa 100 đô cuối cùng",
+        "Kobun Chino Otogawa — thiền sư Los Altos, gặp Jobs hằng ngày; 17 năm sau chủ trì đám cưới Jobs",
+        "Steve Wozniak — nạn nhân vụ Breakout: 'Đạo đức luôn quan trọng với tôi, tôi vẫn không hiểu tại sao anh ấy lại được trả một thứ và nói với tôi là khác'"
+      ],
+      "quotes": [
+        {
+          "vi": "Tôi mắc lỵ rất nhanh. Bệnh thật, sốt rất cao. Tôi sụt từ 72kg xuống 54kg chỉ trong khoảng một tuần.",
+          "who": "Jobs, về New Delhi",
+          "en": "I dropped from 160 pounds to 120 in about a week."
+        },
+        {
+          "vi": "Ngồi xuống và ổng rút ra một con dao cạo thẳng. Tôi nghĩ ổng là kẻ điên và bắt đầu lo. Rồi ổng lấy ra một bánh xà phòng... cạo trọc đầu tôi.",
+          "who": "Jobs, về đạo sĩ cạo đầu",
+          "en": "He pulled out a bar of soap... and he lathered up my hair and shaved my head."
+        },
+        {
+          "vi": "Tôi ước gì anh ấy chỉ cần thành thật. Nếu anh ấy nói cần tiền... Anh ấy là bạn. Người ta giúp bạn bè.",
+          "who": "Wozniak, về vụ tiền thưởng Breakout",
+          "en": "I wish he had just been honest... He was a friend. You help your friends."
+        },
+        {
+          "vi": "Trực giác là thứ rất mạnh, mạnh hơn trí tuệ theo tôi. Điều đó ảnh hưởng lớn đến công việc của tôi.",
+          "who": "Jobs, ngồi trong vườn Palo Alto, về di sản Ấn Độ",
+          "en": "Intuition is a very powerful thing, more powerful than intellect, in my opinion."
+        }
+      ],
+      "subevents": [
+        "Ca đêm cứu nguy tại Atari: vì 'mùi' và thái độ, đồng nghiệp phàn nàn 'goddamn hippie with b.o.'; Bushnell chuyển Jobs sang ca đêm — 'đó là cách cứu hắn'.",
+        "Đề nghị mở công ty máy đánh bạc với Ron Wayne: Jobs đề xuất vay $50.000 sản xuất slot machine; Wayne từ chối 'đó là cách nhanh nhất mất $50.000' — nhưng ngưỡng mộ 'drive cháy bỏng khởi nghiệp'.",
+        "Liệu pháp primal scream của Janov: cuối 1974 Jobs đăng ký khóa 12 tuần giá $1.000 tại Oregon Feeling Center để xử lý nỗi đau bị bỏ rơi; hay mở bài 'Mother' của Lennon với điệp khúc 'Mama don't go, Daddy come home'."
+      ],
+      "img": null
+    },
+    {
+      "year": "1976",
+      "chapter": "Chương 5 · The Apple I",
+      "title": "Gara Los Altos — khởi thủy của Apple",
+      "hook": "Một kẻ bỏ mạng 10% cổ phần Apple ngày 1/4/1976 với giá 800 đô-la — và mất đi 2,6 tỷ đô-la. Bạn có can đảm đi chuyến đi đó không?",
+      "story": "Đêm 5/3/1975 tại nhà để xe của Gordon French ở Menlo Park, Wozniak bước ra với ý tưởng bùng nổ: ghép vi xử lý vào bàn phím và màn hình. Chủ nhật 29/6/1975 — lần đầu tiên trong lịch sử — một người gõ phím và thấy chữ hiện ngay trên màn hình máy tính của chính mình. Nhưng Woz muốn cho thiết kế đi miễn phí: 'Tôi thiết kế Apple I vì tôi muốn tặng nó miễn phí'. Jobs từ chối: 'Mỗi lần tôi thiết kế ra thứ gì đó tuyệt vời, Steve lại tìm cách kiếm tiền cho chúng ta'. Ngày 1/4/1976, tại căn hộ Mountain View của Ron Wayne, ba người ký cổ phần 45-45-10. Paul Terrell của Byte Shop đặt 50 máy lắp ráp sẵn, ~$500/máy — gara nhà Jobs biến thành xưởng mồ hôi.",
+      "motif": [
+        "Real artists ship",
+        "Vết lõm trong vũ trụ"
+      ],
+      "world": [
+        "Tàu Viking 1 của Mỹ hạ cánh lên sao Hỏa, gửi về hình ảnh bề mặt đầu tiên.",
+        "Nadia Comaneci giành điểm 10 hoàn hảo tại Thế vận hội Montreal.",
+        "Động đất Tangshan tàn phá miền Bắc Trung Quốc, cướp đi hàng trăm nghìn sinh mạng."
+      ],
+      "scene": "Ron Wayne bỏ cuộc sau 11 ngày — cất vàng dưới nệm vì sợ 'tận thế tài chính'. Tự tay viết ba trang hợp đồng bằng 'biên ngữ pháp lý' cầu kỳ: 'Be it noted herewith...'. Nhận $800 rồi thêm $1.500. 'Cả hai đều là những cơn lốc thật sự, và tôi biết dạ dày mình — nó chưa sẵn sàng cho một chuyến đi như vậy.' Đến cuối 2010, 10% đó đáng giá khoảng $2,6 TỶ — còn Wayne sống một mình ở Pahrump, Nevada, chơi máy đánh bạc xu lẻ và sống bằng an sinh xã hội.",
+      "scene2": "Khoảnh khắc máy tính cá nhân chào đời, lặng lẽ không phóng sự. Buổi tối Chủ nhật 29/6/1975 tại văn phòng HP, Wozniak đã gõ thử vài phím sau nhiều tháng viết code bằng tay (không đủ tiền thuê máy): 'Tôi gõ vài phím trên bàn phím và tôi sốc! Các chữ cái hiện lên màn hình'. Woz tuyên bố: 'Đó là lần đầu tiên trong lịch sử, bất kỳ ai gõ một ký tự trên bàn phím và thấy nó hiện lên trên màn hình máy tính của chính mình ngay trước mặt họ.' Một khoảnh khắc lặng lẽ — chỉ một người đàn ông và một bảng mạch — nhưng đó là giây phút máy tính cá nhân thực sự ra đời.",
+      "people": [
+        "Steve Wozniak — kỹ sư thiên tài: 'Chưa bao giờ nghĩ đến việc bán máy tính. Chính Steve nói: cầm lên mà bán vài cái'",
+        "Ron Wayne — đồng sáng lập thứ ba, vẽ logo Newton dưới gốc táo; bỏ cuộc lấy $800 (đáng lẽ $2,6 tỷ)",
+        "Paul Terrell — chủ Byte Shop Menlo Park, đặt 50 máy hoàn chỉnh ~$500/máy, tổng ~$25.000",
+        "Mike Markkula — chủ tịch đầu tiên: 'Nó không hoàn toàn có ý nghĩa... nên nó ép não bạn phải bận tâm về nó'",
+        "Paul Jobs — cha Steve, nhường toàn bộ gara, đóng bàn làm việc, dán sơ đồ lên tường, đóng 'burn box' chiếu đèn nhiệt thử bo qua đêm"
+      ],
+      "quotes": [
+        {
+          "vi": "Dù mất tiền, chúng ta vẫn có một công ty... Lần đầu tiên trong đời, chúng ta có một công ty.",
+          "who": "Jobs thuyết phục Woz trên xe buýt VW",
+          "en": "Even if we lose our money, we'll have a company."
+        },
+        {
+          "vi": "Tôi gõ vài phím và tôi sốc! Các chữ cái hiện lên màn hình.",
+          "who": "Wozniak, Chủ nhật 29/6/1975",
+          "en": "I typed a few keys and I was shocked! The letters were displayed on the screen."
+        },
+        {
+          "vi": "Tôi đã đưa ra quyết định tốt nhất cho tôi vào lúc đó. Cả hai đều là những cơn lốc thật sự, và tôi biết dạ dày mình.",
+          "who": "Ron Wayne, bảo vệ việc rút lui",
+          "en": "Both of them were real whirlwinds, and I knew my stomach."
+        },
+        {
+          "vi": "Tôi đang trong chế độ ăn chỉ trái cây... Nó nghe vui, sôi nổi và không đáng sợ.",
+          "who": "Jobs về cái tên 'Apple'",
+          "en": "It sounded fun, spirited, and not intimidating."
+        }
+      ],
+      "subevents": [
+        "Bức thư nổi tiếng của Bill Gates gửi Homebrew Club: sau khi viết BASIC cho Altair, Gates phẫn nộ vì thành viên sao chép miễn phí — đối lập hoàn toàn với Woz muốn chia sẻ schematic.",
+        "Lễ hội Máy tính Cá nhân đầu tiên ở Atlantic City cuối tuần Lao động 1976: Lee Felsenstein tuyên bố Apple I 'hoàn toàn không ấn tượng'; Jobs đi dạo hội trường thấy SOL-20 đẹp hơn — bài học: máy tính phải được đóng gói hoàn chỉnh.",
+        "Bố mẹ Jobs hy sinh nhà cửa: phòng ngủ cũ của chị Patty (đang mang thai), bàn bếp, gara đều bị trưng dụng; Clara lườm mắt trước chế độ ăn 'tôi chỉ ăn lá được hái bởi trinh nữ dưới ánh trăng'."
+      ],
+      "product": "Apple I — vi xử lý MOS 6502 chỉ $20, 8KB RAM, BASIC do Woz viết, 'bàn phím con người có thể gõ thay vì bảng điều khiển ngu ngốc với đống đèn và công tắc'. Giá $666,66 (Woz: 'tôi luôn thích con số lặp lại'). Vốn ~$1.300 (Woz bán HP 65 được $500 nhưng bị quỵt nửa; Jobs bán VW bus được $1.500). ~200 chiếc được đóng. Năm 2010 bán tại Christie's $213.000.",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Apple_Garage.jpg/960px-Apple_Garage.jpg"
+    },
+    {
+      "year": "1984",
+      "chapter": "Chương 15 · The Launch: A Dent in the Universe",
+      "title": "Macintosh & quảng cáo '1984'",
+      "hook": "Quảng cáo bị hội đồng quản trị tuyên bố là 'tồi tệ nhất họ từng thấy' — vậy mà nó trở thành quảng cáo vĩ đại mọi thời đại, với 96 triệu khán giả nghẹn thở. Làm sao một cái búa tạ cứu được Apple?",
+      "story": "Tháng 10/1983, IBM chiếm 26% thị trường PC chỉ trong 2 năm, Business Week tuyên bố 'người chiến thắng là IBM'. Macintosh — còn 3 tháng ra mắt — trở thành hy vọng cuối. Jobs yêu cầu quảng cáo 'đủ sức khiến người ta đứng sững... một tiếng sét'. Lee Clow cùng Chiat/Day chắp tagline 'Why 1984 won't be like 1984'; Ridley Scott — vừa rời Blade Runner — quay tại London với skinhead thật và nữ ném đĩa. Nhưng tại cuộc họp HĐQT tháng 12/1983, đèn bật lên trong im lặng chết chóc, Philip Schlein úp mặt xuống bàn, Mike Markkula hỏi: 'Ai muốn đề nghị tìm agency mới?' Chỉ nhờ Lee Clow 'không cố' bán suất 60 giây và Bill Campbell quyết 'ném bóng dài' — quảng cáo đã lên sóng.",
+      "motif": [
+        "Impute",
+        "Insanely great"
+      ],
+      "world": [
+        "Thủ tướng Ấn Độ Indira Gandhi bị ám sát bởi các vệ sĩ Sikh.",
+        "Thế vận hội Mùa hè Los Angeles diễn ra amid việc Liên Xô tẩy chay.",
+        "Phim 'Ghostbusters' ra mắt, trở thành hiện tượng văn hóa đại chúng."
+      ],
+      "scene": "Ngày 24/1/1984, Flint Auditorium 2.600 chỗ. Jobs rút đĩa mềm 3,5 inch từ túi áo, nhạc Chariots of Fire vang lên. Rồi: 'Tôi muốn để Macintosh tự nói.' Nhấn chuột, bằng giọng điện tử run run duyên dáng, Mac cất lời: 'Xin chào. Tôi là Macintosh. Thật tuyệt khi thoát khỏi cái túi đó... Đừng bao giờ tin một máy tính mà bạn không thể nhấc lên được... Tôi giới thiệu một người đã như cha đối với tôi, Steve Jobs.' Nổi loạn bùng phát — người ta nhảy lên nhảy xuống đấm tay. Jobs gật đầu chậm, nhìn xuống, nghẹn ngào. Vỗ tay kéo dài 5 PHÚT.",
+      "scene2": "Cuộc khủng hoảng sản phẩm một tuần trước ngày giao. Ngày 16/1 là hạn chót xuất hàng, nhưng một tuần trước các kỹ sư kết luận không thể kịp, xin thêm 2 tuần. Chủ nhật sáng, cuộc gọi hội nghị từ Grand Hyatt Manhattan. Jobs nói bằng giọng lạnh trầm: 'Các bạn thực sự tuyệt vời... Tôi biết các bạn có thể làm được điều này.' Rồi tuyên bố: 'Không có cách nào chúng ta lùi lịch! Tôi sẽ xuất hành mã một tuần nữa với tên các bạn trên đó.' Steve Capps đáp: 'Vậy thì chúng ta phải hoàn thành nó.' Thứ Sáu, Randy Wigginton mang tới túi lớn đậu espresso phủ sô-cô-la cho 3 đêm thức trắng. Sáng thứ Hai, Hertzfeld nằm gần như hôn mê trên ghế sa-lông. Apple Fremont bắt đầu lăn ra những hộp Macintosh. 'Nghệ sĩ đích thực giao hàng' — và đội Mac đã làm được.",
+      "people": [
+        "Lee Clow — giám đốc sáng tạo Chiat/Day, Venice Beach, râu rậm tóc rối, 'chúng tôi bảo không thể bán suất 60 giây, dù thực ra không cố'; gắn bó Jobs 30 năm",
+        "Ridley Scott — đạo diễn (vừa rời Blade Runner), quay London với skinhead thật, nữ ném đĩa, tông xám kim loại lạnh gợi dystopia",
+        "Mike Markkula — chủ tịch HĐQT, sau khi xem: 'Ai muốn đề nghị tìm agency mới?' — cả HĐQT coi đây là quảng cáo tồi tệ nhất",
+        "Bill Campbell — trưởng marketing, cựu huấn luyện viên bóng bầu dục, quyết 'ném bóng dài' cứu quảng cáo",
+        "Andy Hertzfeld — kiến trúc sư phần mềm, biển số MACWIZ, viết nhạc Chariots of Fire trong 2 ngày; sáng hôm xuất hàng nằm hôn mê trên ghế",
+        "Steve Wozniak — ngỏ ý trả nửa $800.000 chỗ Super Bowl khi HĐQT định hủy: 'Tôi sẽ trả một nửa nếu anh chịu trả'"
+      ],
+      "quotes": [
+        {
+          "vi": "Tôi muốn một thứ khiến người ta đứng sững... Tôi muốn một tiếng sét.",
+          "who": "Jobs, mùa xuân 1983, yêu cầu quảng cáo",
+          "en": "I want something that will stop people in their tracks... I want a thunderclap."
+        },
+        {
+          "vi": "Vậy, tôi sẽ trả một nửa nếu anh chịu trả.",
+          "who": "Wozniak, khi nghe HĐQT không cho phát sóng Super Bowl",
+          "en": "Well, I'll pay half if you will."
+        },
+        {
+          "vi": "Đây là khoảnh khắc quan trọng nhất trong toàn bộ cuộc đời tôi... Tôi thực sự lo lắng. Có lẽ anh là người duy nhất biết tôi cảm thấy thế nào.",
+          "who": "Jobs nói với Sculley sau cánh gà",
+          "en": "This is the most important moment in my entire life."
+        },
+        {
+          "vi": "Alexander Graham Bell có làm nghiên cứu thị trường nào trước khi phát minh ra điện thoại không?",
+          "who": "Jobs, đáp phóng viên Popular Science hỏi về market research",
+          "en": "Did Alexander Graham Bell do any market research before he invented the telephone?"
+        }
+      ],
+      "subevents": [
+        "The Dating Game tại Hawaii 10/1983: Jobs mời Bill Gates, Mitch Kapor, Fred Gibbos bay tới trước 750 nhân viên bán hàng. Gates tuyên bố 'nửa doanh thu Microsoft 1984 đến từ phần mềm Mac' — lời tâng bốc mà ngay lúc đó Microsoft đã âm thầm rời bỏ Apple.",
+        "Chiến dịch Newsweek và Rolling Stone 12/1983: Jobs đưa Hertzfeld và Burrell Smith tới NY gặp Katharine Graham; Smith nói 'Tôi muốn chế tạo máy tính của thập niên 90. Chỉ là tôi muốn làm nó vào ngày mai'.",
+        "Đêm diễn tập kéo dài 5 tiếng trước ra mắt: Jobs ghét hoạt ảnh cuộn, liên tục chỉnh; bắt Sculley dịch từ ghế này sang ghế khác để đánh giá ánh sáng 'kiểu bệnh nhân trả lời bác sĩ nhãn khoa'."
+      ],
+      "product": "Macintosh — chip Motorola 68000, 3½-inch floppy, QuickDraw của Bill Atkinson, nhiều font, biểu đồ, cờ vua, bảng tính, tổng hợp giọng nói. Hệ thống khép kín, không khe cắm, cần dụng cụ đặc biệt mở vỏ. Quảng cáo '1984': 60 giây, kinh phí quay $750.000 (chưa từng có), chỗ Super Bowl $800.000, 96 triệu người xem. Cả TV Guide lẫn Advertising Age chọn là quảng cáo vĩ đại nhất mọi thời. 1983: 420.000 Apple II so với 1,3 triệu IBM+clone.",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Steve_Jobs_and_Macintosh_computer%2C_January_1984%2C_by_Bernard_Gotfryd_-_edited.jpg/960px-Steve_Jobs_and_Macintosh_computer%2C_January_1984%2C_by_Bernard_Gotfryd_-_edited.jpg"
+    },
+    {
+      "year": "1985",
+      "chapter": "Chương 17 · Icarus: What Goes Up…",
+      "title": "Sự sụp đổ — Icarus cháy cánh",
+      "hook": "Làm sao người đồng sáng lập, người biến Macintosh thành biểu tượng, lại bị chính công ty do mình sinh ra tống cổ — chỉ 16 tháng sau ngày vinh quang?",
+      "story": "Sau khi Mac ra mắt trong vinh quang, Jobs bay cao hơn bao giờ hết — tặng máy cho Sean Lennon, cho Andy Warhol kẻ một vòng tròn rồi reo lên. Nhưng nửa sau 1984, doanh số Mac lao dốc — tháng 3/1985 chỉ đạt 10% dự báo — vì máy chỉ có 128K RAM, không ổ cứng, không quạt, bị gọi 'lò nướng be'. Tháng 5/1985 Jobs lên kế hoạch đảo chính trong khi Sculley dự định sang Bắc Kinh ký hợp đồng Memorial Day. Gassée phản bại, đặt ngón tay lên xương ức Sculley báo động. Sáng thứ Sáu 24/5, Sculley hủy chuyến, đối mặt ngay tại cuộc họp ban điều hành: 'Đến lượt tôi hoặc Steve, các người bầu ai?' — toàn bộ phòng đứng về phía Sculley. Ngày 28/5, Jobs chỉ còn một 'chiếc hộp chairman' không nối với ai trên sơ đồ tổ chức. Ông gọi điện khóc: 'Xong rồi.'",
+      "motif": [
+        "Thực địa Icarus / Prometheus",
+        "Bị bỏ rơi & được chọn"
+      ],
+      "world": [
+        "Mikhail Gorbachev lên nắm quyền tại Liên Xô, mở kỷ nguyên cải tổ perestroika.",
+        "Concert Live Aid diễn ra đồng thời London và Philadelphia, cứu trợ nạn đói Ethiopia.",
+        "Phim 'Back to the Future' ra mắt, trở thành phim ăn khách nhất năm."
+      ],
+      "scene": "Sáng thứ Sáu 24/5/1985. Jobs bước vào phòng họp muộn, thấy ghế thường ngồi cạnh Sculley đã bị chiếm, đành ngồi cuối bàn, mặc vest cắt đo chính xác. Sculley tuyên bố bỏ qua nghị sự để đối mặt: 'Tôi nghe nói ông muốn đuổi tôi... có đúng không?' Mắt Jobs nheo lại, nhìn chằm chằm không chớp: 'Tôi nghĩ ông có hại cho Apple... ông thực sự nên rời công ty. Ông không biết vận hành và chưa bao giờ biết.' Sculley bỏ phiếu cả phòng: 'Đến lượt tôi hoặc Steve, các người bầu ai?' Del Yocam lên tiếng đầu; rồi Al Eisenstat, Regis McKenna, Bill Campbell — giọng run — từng người về Sculley. Jobs nói 'Tôi đoán biết mình đứng đâu', rồi chạy khỏi phòng. KHÔNG AI ĐUỔI THEO.",
+      "scene2": "Đối đầu trong bãi đỗ với vợ Sculley. Sáng thứ Bảy 25/5, Leezy Sculley — 'một phụ nữ thất thường, chưa bao giờ ưa Jobs' — nhảy vào xe, phóng sang nhà hàng Good Earth, chặn Jobs ngay bãi đỗ: 'Steve, tôi có thể nói chuyện với ông không? Ông có biết đó là vinh dự lớn thế nào khi được biết một người tốt như John Sculley không?' Jobs né tránh ánh mắt. 'Ông không thể nhìn vào mắt tôi khi tôi nói chuyện sao?' Khi ông đưa ra cái nhìn chằm chằm luyện tập lâu năm, bà giật mình: 'Thôi được, đừng nhìn tôi. Khi tôi nhìn vào mắt đa số người, tôi thấy tâm hồn. Khi nhìn mắt ông, tôi thấy một hố không đáy, một lỗ trống, một vùng chết.' Rồi quay lưng bỏ đi.",
+      "people": [
+        "John Sculley — CEO nguyên chủ tịch Pepsi, yêu khao khát tình cảm của Jobs đến mức 'không thể đứng lên chống lại'; thực hiện nước cú bỏ phiếu",
+        "Mike Markkula — mentor 'như cha', chính thức từ chối ủng hộ Jobs đêm tối 27/5 tại dinh thự Woodside: 'Sculley là sếp... không phải làm thế'",
+        "Arthur Rock — thành viên HĐQT 'như cha thứ hai', dạy Jobs nghe opera; bỏ rơi ông: 'tôi không bao giờ nghĩ ông ấy sẽ bỏ rơi tôi'",
+        "Jean-Louis Gassée — quản lý Apple Pháp, phản bại Jobs, đặt ngón tay lên xương ức Sculley báo động về cuộc đảo chính",
+        "Bill Campbell — lãnh đạo marketing, giọng run khi tuyên bố ủng hộ Sculley; sau trở thành người ủng hộ Jobs cuồng nhiệt",
+        "Leezy Sculley — vợ CEO, gọi mắt Jobs là 'hố không đáy, lỗ trống, vùng chết'"
+      ],
+      "quotes": [
+        {
+          "vi": "Tôi nghĩ ông có hại cho Apple, và tôi nghĩ ông là sai người để điều hành công ty. Ông thực sự nên rời công ty. Ông không biết vận hành và chưa bao giờ biết.",
+          "who": "Jobs đối mặt Sculley 24/5/1985",
+          "en": "I think you're bad for Apple... You don't know how to operate and never have."
+        },
+        {
+          "vi": "Đến lượt tôi hoặc Steve, các người bầu cho ai?",
+          "who": "Sculley, nước cú quyết định",
+          "en": "It's me or Steve, who do you vote for?"
+        },
+        {
+          "vi": "Khi tôi nhìn vào mắt đa số người, tôi thấy tâm hồn. Khi nhìn mắt ông, tôi thấy một hố không đáy, một lỗ trống, một vùng chết.",
+          "who": "Leezy Sculley, bãi đỗ Good Earth",
+          "en": "When I look into your eyes, I see a bottomless pit, an empty hole, a dead zone."
+        },
+        {
+          "vi": "Ông ấy đã chọn Sculley thay tôi. Điều đó thực sự làm tôi chao đảo. Tôi không bao giờ nghĩ ông ấy sẽ bỏ rơi tôi.",
+          "who": "Jobs về Arthur Rock",
+          "en": "He chose Sculley over me. That really threw me for a loop."
+        }
+      ],
+      "subevents": [
+        "Tiệc sinh nhật 30 (2/1985): 1.000 người tại St. Francis Hotel SF, Ella Fitzgerald hát, Bill Gates ngồi cùng bàn; Don Valentine trêu 'từ Ho Chi Minh look-alike thành người tự banquet sinh nhật 30 với Ella Fitzgerald'.",
+        "Wozniak rời Apple âm thầm (2/1985): lập công ty điều khiển từ xa, nói với WSJ 'hướng Apple đã sai tồi tệ 5 năm nay'; Jobs viện điều khoản hợp đồng ép design firm ngừng hợp tác với Woz.",
+        "Quảng cáo 'Lemmings' thất bại Super Bowl 1985: các giám đốc bịt mắt rủ nhau xuống vách đá; Debi Coleman đặt thư từ chức lên bàn Jobs."
+      ],
+      "product": "Macintosh 128K — 'lò nướng be', không khe cắm, cần dụng cụ đặc biệt mở vỏ. Trên sơ đồ tổ chức chỉ còn một 'chiếc hộp chairman' nhỏ không nối với ai, vai trò 'global visionary' thuần túy nghi lễ. Sculley công bố với nhà phân tích: 'Về mặt vận hành, không có vai trò nào hôm nay hay tương lai cho Steve Jobs.'",
+      "img": null
+    },
+    {
+      "year": "1986",
+      "chapter": "Chương 18-19 · NeXT & Pixar",
+      "title": "Lưu đày — NeXT thất bại & cược $10M vào Pixar",
+      "hook": "Một người đàn ông vừa bị công ty do mình sáng lập tống cổ, bán sạch cổ phiếu, kiêm luôn công ty đồ họa từ George Lucas và đòi thiết kế máy 'khối lập phương hoàn hảo' 90 độ tuyệt đối — làm sao ông ta không phá sản luôn?",
+      "story": "Từ châu Âu trở về 8/1985, Jobs gọi Paul Berg ở Stanford, nghe khó khăn phòng thí nghiệm sinh học, reo lên: 'Sao không mô phỏng trên máy tính?' — ý tưởng công ty mới chớm nở. Lễ Labor Day ông thuyết phục 5 'phản bội' Apple lập công ty máy trạm cao học. Tại cuộc họp HĐQT 13/9, Jobs nói sẽ chỉ mang theo 'những người cấp thấp' — nhưng Sculley phát hiện đều là nhân vật chủ chốt. Sáng 17/9/1985, Jobs mang thư từ chức in bằng LaserWriter tới nhà Markkula. Cùng lúc mua Pixar từ George Lucas $10 triệu, và đòi NeXT thiết kế khối lập phương magnesium hoàn hảo 1 foot, mỗi góc 90 độ chính xác — ép xưởng đúc Chicago khuôn $650.000.",
+      "motif": [
+        "Sự hoàn hảo",
+        "Nghệ thuật gặp công nghệ"
+      ],
+      "world": [
+        "Thảm họa hạt nhân Chernobyl bùng nổ tại Liên Xô, tai nạn tồi tệ nhất lịch sử.",
+        "Tàu con thoi Challenger phát nổ 73 giây sau khi cất cánh, toàn bộ phi hành đoàn thiệt mạng.",
+        "Maradona ghi 'Bàn tay của Chúa' tại World Cup Mexico, đưa Argentina lên ngôi vô địch."
+      ],
+      "scene": "Paul Rand và logo $100.000. Tháng 1/1986, Rand 71 tuổi bay từ IBM tới Palo Alto, đi dạo cùng Jobs nghe ông tường thuật tầm nhìn 'khối lập phương hoàn hảo'. Khi Jobs xin vài phương án lựa chọn, Rand tuyên bố: 'Tôi sẽ giải quyết vấn đề của ông, và ông sẽ trả tiền cho tôi. Ông có thể dùng cái tôi tạo ra, hoặc không, nhưng tôi sẽ không làm phương án, và dù sao ông cũng phải trả tôi.' Jobs khâm phục, đánh cuộc $100.000 cho một thiết kế duy nhất. Hai tuần sau Rand trở lại với cuốn sách mỏng thanh lịch — logo khối cube nghiêng 28°, chỉ chữ 'e' thường ('connote education, excellence... e=mc²'). Jobs nhìn chằm chằm, ngẩng lên, ôm Rand.",
+      "scene2": "Bức ảnh Sculley bị đập vỡ — và vụ Apple kiện. Sáng 17/9/1985, Jobs mang thư từ chức tới nhà Markkula, ký 'steven p. jobs'. Khi nhân viên cơ sở tới dọn văn phòng Jobs, thấy khung ảnh trên sàn — Jobs và Sculley trò chuyện ân cần, ghi 'Here's to Great Ideas, Great Experiences, and a Great Friendship! John'. Kính vỡ nát. Jobs đã ném khung ảnh xuyên phòng trước khi rời đi. 'Từ ngày đó, ông không bao giờ nói chuyện với Sculley nữa.' Sculley và HĐQT kiện Jobs 'vi phạm nghĩa vụ ủy thác' — tố ông 'bí mật lên kế hoạch, bí mật âm mưu, bí mật lôi kéo nhân viên chủ chốt'. Jobs đáp Newsweek: 'Khó nghĩ rằng một công ty $2 tỷ với 4.300 nhân viên không thể cạnh tranh với sáu người mặc quần jeans.'",
+      "people": [
+        "Paul Rand — nhà thiết kế 71 tuổi, tác giả logo IBM/ABC/UPS; 'tôi sẽ không làm phương án'; đòi $100.000 cho một thiết kế",
+        "Ross Perot — tỷ phú Texas, thấy Jobs trên PBS documentary 11/1986: 'tôi đang kết câu giúp họ'; đầu tư $20M lấy 16%, gọi Jobs là 'soul mate'",
+        "Ed Catmull — đồng sáng lập Lucasfilm computer division, sau CEO Pixar; được Jobs để nguyên điều hành",
+        "John Lasseter — đạo diễn hoạt hình mặc áo Hawaii, văn phòng đầy đồ chơi; Jobs luôn nói 'yes': 'Tất cả những gì tôi yêu cầu ông, John, là làm cho nó tuyệt vời'",
+        "Bill Gates — kẻ hoài nghi: 'Cái máy này là cứt. Vỏ fucking đắt quá. Thứ này buồn cười' và 'Phát triển cho nó? Tôi sẽ tè lên nó'",
+        "Alvy Ray Smith — đồng sáng lập Pixar, phát triển tín hiệu 'gãi mũi kéo tai' khi bị cuốn vào distortion field; xô xát trắng trợn với Jobs rồi từ chức"
+      ],
+      "quotes": [
+        {
+          "vi": "Tôi đã suy nghĩ nhiều, và đã đến lúc tôi phải tiếp tục cuộc đời mình. Rõ ràng tôi phải làm gì đó. Tôi ba mươi tuổi.",
+          "who": "Jobs, đọc trước HĐQT 13/9/1985",
+          "en": "I've been thinking a lot, and it's time for me to get on with my life. I'm thirty years old."
+        },
+        {
+          "vi": "Cuộc tái cơ cấu gần đây để tôi không còn việc gì làm và không có quyền truy cập ngay cả báo cáo quản lý thường lệ. Tôi mới 30 và vẫn muốn đóng góp, đạt thành tựu.",
+          "who": "Thư từ chức 17/9/1985 in bằng LaserWriter",
+          "en": "The company's recent reorganization left me with no work to do."
+        },
+        {
+          "vi": "Tôi sẽ giải quyết vấn đề của ông, và ông sẽ trả tiền cho tôi. Ông có thể dùng cái tôi tạo ra, hoặc không, nhưng tôi sẽ không làm phương án.",
+          "who": "Paul Rand, từ chối thiết kế nhiều logo",
+          "en": "I will solve your problem... but I will not do options."
+        },
+        {
+          "vi": "Tất cả những gì tôi yêu cầu ông, John, là làm cho nó tuyệt vời.",
+          "who": "Jobs duyệt ~$300.000 cho Tin Toy (Oscar 1988)",
+          "en": "All I ask of you, John, is to make it great."
+        }
+      ],
+      "subevents": [
+        "Khối cube hoàn hảo: Jobs ra lệnh mỗi cạnh đúng 1 foot, mỗi góc 90 độ không 'draft angle'; bay tận Chicago đòi làm lại một vết mốc nhỏ; mua máy chà nhám $150.000, phủ đen mờ cả mặt trong 'dù chỉ thợ sửa nhìn thấy'.",
+        "Luxo Jr. tại SIGGRAPH Dallas 8/1986: Lasseter biến đèn Luxo bàn thành nhân vật sống; phim 2 phút cha đèn con đèn đẩy bóng — đứng vỗ tay kéo dài. Jobs reo: 'Ôi, wow! Tôi thực sự hiểu rồi.' Đề cử Oscar.",
+        "Tin Toy thắng Oscar 1988 — phim CGI đầu tiên đoạt giải. Lasseter nâng tượng vàng tại nhà hàng Greens: 'Tất cả những gì ông yêu cầu là làm một bộ phim tuyệt vời.'"
+      ],
+      "product": "NeXT Cube — khối lập phương đen magnesium 1 foot, $6.500 (cố vấn đòi $2.000-3.000), NeXTSTEP OS hướng đối tượng (nền tảng iOS/macOS sau này), kèm Shakespeare Oxford + từ điển + thesaurus (sách điện tử đầu tiên). Pixar: $10 triệu cho 70% (01/1986, trả Lucas $5M + đầu tư $5M). Perot $20M cho 16% (11/1986). Jobs bán sạch 6,5 triệu cổ phiếu Apple (11%, >$100M), giữ đúng 1 cổ phiếu. Đến 1991 đổ gần $50M tiền túi vào Pixar.",
+      "img": null
+    },
+    {
+      "year": "1997",
+      "chapter": "Chương 23 · The Second Coming",
+      "title": "Sự tái lâm — cứu Apple khỏi bờ vực",
+      "hook": "Làm sao một kẻ bị chính công ty mình đuổi việc 11 năm trước, giờ chỉ với danh xưng 'cố vấn không lương', có thể lật đổ CEO, ép cả HĐQT từ chức, và trở lại ngai vàng chỉ trong vài tháng?",
+      "story": "Cuối 1996 Apple hấp hối: thị phần từ 16% xuống 4%, cổ phiếu $70 rơi xuống $14, CEO Gil Amelio để công ty lỗ $1 tỷ năm đầu — 'ít hơn 90 ngày nữa là phá sản'. 2/12/1996 Jobs đặt chân lại Cupertino lần đầu sau 11 năm để thuyết trình NeXT trong cuộc 'bakeoff'. Tại Garden Court Hotel Palo Alto 10/12, NeXT đánh bại Be của Gassée; Jobs bán công ty ~$429 triệu ($120M tiền mặt + $37M cổ phiếu cho riêng ông). Chỉ 7 tháng sau, Jobs lẳng lặng bóc phốt Amelio với chủ tịch Ed Woolard, bán lén cổ phiếu, ép HĐQT sa thải Amelio. Khi quay lại sân khấu chỉ mặc quần đùi áo thun đen, ông gào: 'Sản phẩm thì dở hơi!' — và từ giây đó Apple thuộc về ông.",
+      "motif": [
+        "Sự cứu rỗi / Second Coming",
+        "Giản dị / Zen"
+      ],
+      "world": [
+        "Anh trao trả chủ quyền Hồng Kông cho Trung Quốc sau 156 năm cai trị.",
+        "Cừu Dolly, động vật có vú đầu tiên được nhân bản từ tế bào trưởng thành.",
+        "Công chúa Diana tử nạn ô tô ở Paris, gây chấn động toàn cầu."
+      ],
+      "scene": "Cái bắt tay khép lại 11 năm giông bão. Jobs bước vào phòng họp HĐQT nhìn thấy Mike Markkula — người từng là mentor, là 'father figure', nhưng đã đứng về phía Sculley lật đổ ông năm 1985. 'Họ chưa nói chuyện từ khi Markkula... đứng về Sculley năm 1985. Jobs bước tới và BẮT TAY.' Vết thương 11 năm khép lại bằng một cái bắt tay. Nhưng câu chuyện chưa dừng: một năm sau Jobs buộc đuổi chính Markkula khỏi HĐQT — việc ông không giao ai: tự lái xe đến dinh thự Woodside, rủ đi dạo rừng redwood đến chiếc bàn picnic. Markkula nhớ: 'Ông ấy nói muốn HĐQT mới vì muốn bắt đầu lại. Ông ấy lo tôi có thể phản ứng tồi, và nhẹ nhõm khi tôi không.'",
+      "scene2": "Bakeoff tại Garden Court Hotel — Jobs 'như Olivier diễn Macbeth'. Ngày 10/12/1996, NeXT trình bày trước Amelio, Ellen Hancock và sáu giám đốc. Avie Tevanian thao tác phần mềm trong khi Jobs dùng phép thuật buôn bán — cho máy chạy đồng thời 4 đoạn video, tạo multimedia. Amelio miêu tả: 'Ông ấy khen ngợi ưu điểm và thế mạnh như thể đang tả một buổi diễn Olivier trong vai Macbeth.' Khi Gassée lên tiếng, ông ta hành xử như đã nắm chắc thầu, không trình bày gì mới — 'phiên chớp nhoáng'. Trong lúc Gassée nói chuyện, Jobs và Tevanian dạo phố Palo Alto và tình cờ gặp một giám đốc Apple vừa rời phòng: 'Các người sẽ thắng.'",
+      "people": [
+        "Gil Amelio — CEO bị Jobs vượt mặt; 'hoặc tôi nói thật với ông ta rằng Gil là đồ ngốc, hoặc tôi nói dối... tôi bảo CEO tệ nhất tôi từng thấy'; Wozniak phán: 'Gil gặp Steve, hết game'",
+        "Larry Ellison — CEO Oracle 'best friend', đề nghị gom $3 tỷ thâu tóm Apple Giáng sinh 1995, lập email savapple@us.oracle.com cho công chúng bỏ phiếu",
+        "Mike Markkula — cái bắt tay khép mối thù 11 năm; rồi bị mời rời HĐQT tại rừng redwood; nhưng được mời xem iMac riêng 1998 — vòng tròn khép kín",
+        "Ed Woolard — chủ tịch HĐQT, cựu CEO DuPont; gọi điện từ London thông báo sa thải Amelio; là người duy nhất Jobs cho ở lại, gọi 'a prince'",
+        "Lee Clow — creative director TBWA, không thuyết trình tài khoản 10 năm nhưng bay lên Cupertino 'pitching his heart out' cho Think Different",
+        "Avie Tevanian — bạn Jobs từ NeXT, trực tiếp demo phần mềm tại Garden Court"
+      ],
+      "quotes": [
+        {
+          "vi": "Sản phẩm thì dở hơi! Không còn chút quyến rũ nào trong đó nữa!",
+          "who": "Jobs khi trở lại Apple, cắt ngang nhân viên ấp úng",
+          "en": "The products suck! There's no sex in them anymore!"
+        },
+        {
+          "vi": "Gassée là một trong số ít người trong đời tôi mà tôi dám gọi là thực sự tồi tệ. Hắn đã đâm sau lưng tôi năm 1985.",
+          "who": "Jobs",
+          "en": "Gassée is one of the few people... truly horrible. He knifed me in the back in 1985."
+        },
+        {
+          "vi": "Này, những kẻ khùng. Những kẻ lạc lõng. Những kẻ nổi loạn... Bởi vì những kẻ điên đủ để nghĩ họ có thể thay đổi thế giới, chính là những người làm được điều đó.",
+          "who": "Think Different, Jobs đồng viết câu 'They push the human race forward'",
+          "en": "Here's to the crazy ones..."
+        },
+        {
+          "vi": "Nếu dùng giọng tôi, khi người ta phát hiện ra họ sẽ bảo đó là về tôi. Không phải. Nó là về Apple.",
+          "who": "Jobs, chọn giọng Dreyfuss thay giọng mình",
+          "en": "If we use my voice... It's not. It's about Apple."
+        }
+      ],
+      "subevents": [
+        "Jobs bật khóc khi kể về Lee Clow: nhiều năm sau kể lại việc Clow bay lên Cupertino thuyết trình Think Different sau 10 năm không thuyết trình, Jobs khóc trong văn phòng: 'Nó nghẹn tôi... tôi luôn khóc. Nó luôn chạm vào và nắm lấy tôi.'",
+        "Vụ bán lén cổ phiếu: 6 tháng cam kết giữ hết hạn 6/1997. Khi 1,5 triệu cổ phiếu bị bán, Amelio gọi hỏi, Jobs đáp 'Đúng vậy' khiến Amelio tưởng chưa bán và phát thông cáo. Hồ sơ SEC phơi bày Jobs đã bán thật — 'trong cơn trầm cảm'.",
+        "Bảng 4 ô quyết định chiến lược: Jobs cấm PowerPoint, cắt 70% dòng sản phẩm, vẽ trên whiteboard Consumer/Pro × Desktop/Portable — 'cả phòng im lặng như tượng'. Bốn sản phẩm: Power Mac G3, PowerBook G3, iMac, iBook."
+      ],
+      "product": "Thỏa thuận NeXT ~$429 triệu. Chiến dịch 'Think Different'. Thương vụ Microsoft (8/1997): đầu tư $150 triệu lấy cổ phiếu không biểu quyết, cam kết Office cho Mac — cổ phiếu Apple tăng 33% ngay trong ngày. Apple tài khóa 1997 lỗ $1,04 tỷ — 'ít hơn 90 ngày nữa là phá sản'.",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Steve_Jobs_WWDC07.jpg/960px-Steve_Jobs_WWDC07.jpg"
+    },
+    {
+      "year": "1998",
+      "chapter": "Chương 27 · The iMac: Hello (Again)",
+      "title": "iMac G3 — sự trong suốt và cái quai",
+      "hook": "Một chiếc máy tính để bàn màu xanh biển trong suốt, có tay cầm lõm, không ổ đĩa mềm — với $1.299, làm sao nó trở thành máy tính bán nhanh nhất lịch sử Apple và cứu công ty khỏi phá sản?",
+      "story": "Khi Jobs trở lại, một nhà thiết kế Anh 30 tuổi tên Jony Ive đang định nghỉ việc vì chán văn hóa tối đa hóa lợi nhuận. Bài phát biểu của Jobs về 'sản phẩm tuyệt vời, không phải tiền' đã giữ Ive ở lại — nảy sinh bộ đôi thiết kế vĩ đại nhất thời đại. Ive và phụ tá Danny Coster phác iMac: all-in-one, vỏ nhựa trong suốt xanh bondi (đặt theo bãi biển Úc), có tay cầm lõm. Ive giải thích tay cầm là 'permission to touch' — cho người sợ công nghệ như mẹ Ive. Tới sản xuất, kỹ sư đưa ra 38 lý do không thể, Jobs gạt phăng: 'Vì tôi là CEO, và tôi nghĩ có thể làm được.'",
+      "motif": [
+        "Impute",
+        "Nghệ thuật gặp công nghệ"
+      ],
+      "world": [
+        "Bê bối Clinton–Lewinsky bùng nổ, dẫn tới việc Hạ viện Mỹ khởi luận tổng thống.",
+        "Google chính thức thành lập bởi Larry Page và Sergey Brin tại California.",
+        "Mark McGwire phá kỷ lục home run một mùa giải với 73 cú."
+      ],
+      "scene": "Ive và cái tay cầm 'permission to touch'. Buổi sáng, Jony Ive đứng trước mô hình iMac giải thích cho Jobs về cái tay cầm lõm trên nóc máy. Đây là máy để bàn, chẳng ai xách đi đâu — nhưng Ive hiểu điều kỹ sư không hiểu: 'Lúc đó người ta chưa thoải mái với công nghệ. Nếu bạn sợ thứ gì, bạn sẽ không chạm. Tôi tưởng tượng mẹ mình sợ chạm. Nên tôi nghĩ, nếu có cái quai này, nó tạo mối quan hệ có thể. Nó cho phép bạn CHẠM.' Chế tạo tốn rất nhiều tiền — 'ở Apple cũ, tôi sẽ thua cuộc tranh'. Nhưng Jobs nhìn thấy: 'Cool!' Khi Ive mang cho kỹ sư, họ đưa ra 38 lý do không thể. Jobs: 'Không, chúng ta làm. — Tại sao? — Vì tôi là CEO.'",
+      "scene2": "Vụ nổ giận khay CD và 'Chưa. Đủ. Fucking. Xanh'. Lễ ra mắt sắp diễn ra, Rubinstein lắp ráp 2 nguyên mẫu. Trong tổng duyệt, Jobs thấy nút bấm, ấn thử — khay CD bật ra. 'Cái quái gì đây?!?' Ông nhất quyết phải có khe CD thanh lịch, phủ nhận Rubinstein từng chỉ đúng ổ đĩa này. Gần khóc: 'Tôi suýt khóc vì quá muộn để làm gì.' Suýt hủy lễ ra mắt, cuối cùng bắt Rubinstein hứa chuyển sang slot drive 'càng sớm càng tốt'. Cùng lúc, nhân viên Whole Foods Palo Alto kể trên Gawker: thấy Mercedes bạc đậu chỗ handicapped, Jobs gào trong xe — 'Chưa. Đủ. Fucking. Xanh!!!' — vì màu xanh quảng cáo tạp chí không khớp iMac.",
+      "people": [
+        "Jony Ive — trưởng nhóm thiết kế, người Anh 30 tuổi từ Chingford, con trai thợ bạc; định nghỉ vì ghét văn hóa lợi nhuận; 'ý tưởng từ tôi và đội sẽ hoàn toàn không liên quan... nếu Steve không ở đây'",
+        "Jon Rubinstein (Ruby) — phụ trách phần cứng từ NeXT; cãi nhau với Jobs về khay CD, dự đoán đúng slot drive sẽ làm Apple chậm rip/burn nhạc",
+        "Ken Segall — copywriter TBWA, đề xuất tên 'iMac'; Jobs ban đầu ghét 'tuần này tôi không ghét, nhưng vẫn không thích', rồi in silk-screen lên nguyên mẫu và dần thích",
+        "Lee Clow — chuẩn bị quảng cáo tạp chí nhiều màu, bị Jobs gào 'các người không biết mình đang làm gì!... fucked up'; Clow cãi lại và chứng minh màu khớp",
+        "Danny Coster — phụ tá Ive, cùng phác thảo; Jobs bác chục mô hình foam ban đầu",
+        "Phil Schiller — giám đốc marketing, chứng kiến vụ khay CD: 'đây là lần đầu tôi thấy tư duy nếu không đúng thì không ra mắt'"
+      ],
+      "quotes": [
+        {
+          "vi": "Nó cho bạn phép được chạm vào. Nó mang lại cảm giác máy tính phục tùng bạn.",
+          "who": "Jony Ive về cái tay cầm",
+          "en": "It gives you permission to touch. It gives a sense of its deference to you."
+        },
+        {
+          "vi": "Khi mang cho kỹ sư, họ đưa ra 38 lý do không thể. Tôi nói: 'Không, chúng ta làm.' — 'Tại sao?' — 'Vì tôi là CEO, và tôi nghĩ có thể làm được.'",
+          "who": "Jobs, về 38 lý do phản đối",
+          "en": "Because I'm the CEO, and I think it can be done."
+        },
+        {
+          "vi": "Cái quái gì đây?!?",
+          "who": "Jobs, bấm nút khay CD bật ra trong tổng duyệt",
+          "en": "What the fuck is this?!?"
+        },
+        {
+          "vi": "Trông như nó đến từ hành tinh khác. Một hành tinh tốt. Một hành tinh có designer giỏi hơn.",
+          "who": "Jobs tại Flint Auditorium kéo khăn phủ",
+          "en": "It looks like it's from another planet with better designers."
+        }
+      ],
+      "subevents": [
+        "Bill Gates cười nhạo iMac là 'fad of colors': bảo nhà phân tích Apple chỉ đang 'cung cấp lãnh đạo về màu sắc', chỉ tay PC sơn đỏ đùa cợt. Jobs tức giận: 'Đối thủ nghĩ đó là thời trang... họ nói sẽ tát chút màu lên cái máy rác này.'",
+        "Markkula xem trước riêng và phàn nàn chuột hockey puck: Jobs mời Markkula (người ông đã đuổi khỏi HĐQT năm trước) xem iMac riêng vì gắn bó sentiment với Macintosh gốc. Markkula rất ấn tượng nhưng cảnh báo chuột hình bánh hockey sẽ bị ghét. 'Jobs disagreed, but Markkula was right.'",
+        "Quyết định năm màu trong nửa giờ: Ive đề xuất thêm 4 màu. Ở công ty khác quyết định mất nhiều tháng với nghiên cứu chi phí-lợi ích. Nhưng Jobs 'got totally psyched', gọi giám đốc đến studio. Ive ngạc nhiên: 'Steve làm trong nửa giờ.'"
+      ],
+      "product": "iMac G3 — teardrop trong suốt xanh bondi, $1.299. 278.000 chiếc trong 6 tuần; 800.000 cuối năm — máy tính bán nhanh nhất lịch sử Apple. 32% mua máy tính lần đầu; 12% chuyển từ Windows. Chi phí vỏ >$60/đơn vị (gấp 3 vỏ thường). Apple tài khóa 1998 lãi $309 triệu.",
+      "img": null
+    },
+    {
+      "year": "2001",
+      "chapter": "Chương 29-30 · Apple Stores & Digital Hub",
+      "title": "Apple Store & 1.000 bài hát trong túi quần",
+      "hook": "Làm thế nào một ổ đĩa nhỏ bằng đồng đô-la bạc lại biến một công ty máy tính đang chật vật thành tập đoàn giá trị nhất thế giới?",
+      "story": "Năm 2001 bong bóng dot-com vỡ, NASDAQ rơi 50%, Walt Mossberg tuyên bố PC 'đã chín muồi thành thứ nhàm chán'. Chính trong tang hoang đó, Jobs tung chiến lược 'digital hub' — PC thành trung tâm điều phối camera, máy quay, máy nghe nhạc. Hạt giống là FireWire. Bước ngoặt tháng 2/2001: Jon Rubinstein đi thăm Nhật, kỹ sư Toshiba hờ hững nhắc ổ đĩa 1.8-inch trong phòng thí nghiệm — nhỏ bằng đồng bạc, 5GB, ~1.000 bài hát, chưa biết dùng vào đâu. Rubinstein giữ poker face, tối đó gặp Jobs tại Hotel Okura Tokyo: 'Tôi biết cách làm rồi. Tôi chỉ cần tấm séc $10 triệu.' Jobs phê duyệt ngay — đàm phán độc quyền mọi ổ Toshiba.",
+      "motif": [
+        "End-to-end / kiểm soát toàn bộ widget",
+        "Giản dị / Zen"
+      ],
+      "world": [
+        "Vụ tấn công 11/9 cướp đi gần 3.000 sinh mạng, làm thay đổi địa chính trị toàn cầu.",
+        "Wikipedia ra mắt, khởi đầu kỷ nguyên bách khoa toàn thư mở trên mạng.",
+        "Phim 'Chúa tể những chiếc nhẫn: Hội bảo vệ' ra mắt, làm sống lại dòng phim kỳ ảo."
+      ],
+      "scene": "Buổi họp lịch sử tháng 4/2001, phòng họp tầng 4 Apple. Fadell mang 3 model Styrofoam nhúng chì câu cá; model ưa thích giấu dưới bát gỗ. Model 1 khe thẻ nhớ — Jobs gạt 'phức tạp'. Model 2 RAM động — mất bài khi hết pin. Fadell nâng bát, lộ model ổ cứng hoàn chỉnh. Jobs quyết định ngay. Rồi Phil Schiller: 'Tôi có thể mang ý tưởng ra chưa?' Ông rời phòng, quay lại với máy có trackwheel. 'Tôi đã nghĩ về việc lướt danh sách nhạc. Bạn không thể bấm nút hàng trăm lần. Phải tuyệt nếu có một bánh xe?' Càng xoay lâu cuộn càng nhanh. Jobs hét: 'ĐÓ RỒI!'",
+      "scene2": "Cuộc gọi Hotel Okura và sự độc quyền. Toshiba vừa cho Rubinstein xem ổ 1.8-inch 'cỡ đồng đô-la' 5GB và không biết dùng vào đâu. Rubinstein lập tức nhận ra, nhưng giữ poker face. Tối đó Jobs đang ở Tokyo đọc diễn văn Macworld. Hai người gặp tại khách sạn. 'Tôi biết cách làm rồi. Tôi chỉ cần một tấm séc 10 triệu đô-la.' Jobs phê duyệt tại chỗ. Rubinstein bắt đầu đàm phán độc quyền với Toshiba — mua sạch mọi ổ đĩa họ sản xuất được, chặn chết đối thủ trước khi kịp biết sản phẩm tồn tại. Jony Ive đòi toàn bộ — máy, tai nghe, cả dây và cục sạc — phải trắng tinh khiết: 'Trắng không phải màu trung tính, nó thuần khiết và yên tĩnh.'",
+      "people": [
+        "Jon Rubinstein — trưởng nhóm phần cứng, tìm ổ Toshiba, giữ poker face xin 'tấm séc $10 triệu' tại Okura; sau ép Fadell ký toàn thời gian",
+        "Tony Fadell — 'Podfather' phong cách cyberpunk, từng chào hàng MP3 player cho RealNetworks/Sony/Philips đều thất bại; bị Rubinstein dồn 'Anh vào hay ra? Quyết định ngay'",
+        "Phil Schiller — giám đốc marketing, đóng góp trackwheel: 'Bạn không thể bấm nút hàng trăm lần. Phải tuyệt nếu có một bánh xe?'",
+        "Jony Ive — đòi pure white: 'Tai nghe trắng trở thành biểu tượng — trắng thuần khiết và yên tĩnh'",
+        "Jeff Robbin — cựu kỹ sư Apple, đồng sáng lập SoundJam (Apple mua 7/2000); Jobs coi quý giá đến mức cấm phóng viên in họ ông",
+        "Lee Clow / James Vincent — tạo chiến dịch silhouette nhảy múa với tai nghe trắng, '1,000 songs in your pocket'"
+      ],
+      "quotes": [
+        {
+          "vi": "Chúng tôi là công ty duy nhất sở hữu trọn bộ widget — phần cứng, phần mềm và hệ điều hành... Chúng tôi chịu trách nhiệm toàn bộ trải nghiệm. Chúng tôi làm được điều mà những kẻ khác không thể.",
+          "who": "Jobs với Time",
+          "en": "We're the only company that owns the whole widget."
+        },
+        {
+          "vi": "Đó rồi!",
+          "who": "Jobs khi thấy trackwheel của Schiller",
+          "en": "That's it!"
+        },
+        {
+          "vi": "Một nghìn bài hát trong túi bạn.",
+          "who": "Jobs, slogan iPod",
+          "en": "A thousand songs in your pocket."
+        },
+        {
+          "vi": "Trông như một sản phẩm tuyệt vời... Nó chỉ dành cho Macintosh à?",
+          "who": "Bill Gates ngây người xoay scroll wheel",
+          "en": "It looks like a great product... It's only for Macintosh?"
+        }
+      ],
+      "subevents": [
+        "Adobe từ chối viết Premiere cho Mac 1999 — Jobs rút bài học end-to-end: 'chúng ta không nên bước vào ngành nào mà không kiểm soát cả phần cứng lẫn phần mềm'. Mầm của chiến lược whole-widget và chiến tranh Flash trên iPad.",
+        "iTunes ra mắt Macworld 1/2001 với slogan 'Rip. Mix. Burn.'; 320 triệu đĩa CD trắng bán ở Mỹ năm 2000 so với 281 triệu dân — Jobs thú nhận 'tôi thấy mình như thằng ngốc' vì bỏ lỡ thị trường nhạc.",
+        "Jony Ive và quyết định 'pure white': tai nghe trắng trở thành biểu tượng văn hóa — 'những tai nghe chảy kia... Trắng không chỉ là màu trung tính. Nó thuần khiết và yên tĩnh'."
+      ],
+      "product": "iPod — ổ Toshiba 1.8-inch 5GB (1.000 bài hát), $399, không công tắc on-off ('sự đơn giản Zen nhất'). Sync FireWire 1.000 bài trong 10 phút. Pin đủ nghe trọn 1.000 bài. Jobs chuyển $75 triệu ngân sách quảng cáo từ iMac sang iPod — 'vượt mọi đối thủ gấp khoảng 100 lần'. Thị phần máy nghe nhạc 31%→74% trong 18 tháng. Cửa hàng đầu tiên Tysons Corner 19/5/2001, đến 2004: $1,2 tỷ — kỷ lục ngành.",
+      "img": null
+    },
+    {
+      "year": "2003",
+      "chapter": "Chương 31 · The iTunes Store",
+      "title": "iTunes Store — 'nghiệp tốt'",
+      "hook": "Làm sao một công ty máy tính chiếm 5% thị phần lại bắt năm ông trùm âm nhạc lớn nhất thế giới phải quỳ gối bán từng bài hát 99 xu?",
+      "story": "Năm 2002 ngành nhạc chết chóc: Napster, Kazaa, Grokster bùng nổ, doanh số CD giảm 9%. Năm hãng đĩa chạy loạn tìm chuẩn copy-protection. Tháng 1/2002 phái đoàn Warner-Sony bay đến Cupertino; sau 4 slide Jobs vung tay: 'Các người nhét đầu lên đít rồi.' Paul Vidich mất giọng, sau im lặng dài: 'Ông nói đúng. Chúng tôi không biết làm gì.' Jobs nhận ra cơ hội: cửa hàng trực tuyến, mỗi bài 99 xu, hãng đĩa nhận 70 xu — bóc tách album (cuộc chiến lớn nhất) và SỞ HỮU không thuê. Ông thuyết phục hãng đĩa: 'Mac chỉ 5% thị trường, thử nghiệm ít rủi ro.'",
+      "motif": [
+        "End-to-end / kiểm soát toàn bộ widget",
+        "Vết lõm trong vũ trụ"
+      ],
+      "world": [
+        "Chiến tranh Iraq nổ ra khi liên quân do Mỹ dẫn đầu lật đổ Saddam Hussein.",
+        "Dự án Bản đồ gen người hoàn tất, cột mốc lớn của sinh học thế kỷ 21.",
+        "Phim hoạt hình 'Finding Nemo' của Pixar ra mắt, trở thành hiện tượng phòng vé."
+      ],
+      "scene": "Cuộc họp Warner-Sony tại Cupertino tháng 1/2002. Paul Vidich bị cảm lạnh mất giọng, phó Kevin Gage bắt đầu thuyết trình. Jobs ngồi đầu bàn, bồn chồn bực dọc. Sau 4 slide ông vung tay ngắt lời: 'Các người nhét đầu lên đít rồi.' Cả phòng quay sang Vidich vật lộn lấy giọng. 'Ông nói đúng,' Vidich cuối cùng lên tiếng sau im lặng dài. 'Chúng tôi không biết làm gì. Ông phải giúp chúng tôi tìm ra.' Jobs hơi ngỡ ngàng — và đồng ý Apple sẽ hợp tác. Cơ hội lịch sử mở ra từ một lời sỉ vả thẳng thắn.",
+      "scene2": "Ngày ra mắt 28/4/2003, Moscone Center. Tóc Jobs cắt ngắn, thái độ cạo râu có chủ ý, dạo bước sân khấu. Ông kể Kazaa cho nhạc miễn phí 'nhưng mã hoá bởi những đứa bảy tuổi'. Rồi slide tù nhân kẻ sọc — dịch vụ thuê bao 'coi bạn như tội phạm'. Slide kế là Bob Dylan: 'Người ta muốn sở hữu âm nhạc họ yêu.' Cuối cùng: 'Với iTunes, không còn ăn cắp nữa. Đó là karma tốt.' Vỗ tay to nhất hàng ghế đầu — Doug Morris ngồi cạnh Jimmy Iovine (độiũogiống thường). Eddy Cue dự đoán 1 triệu bài trong 6 tháng — THỰC TẾ 1 TRIỆU TRONG 6 NGÀY. 'Điều này sẽ đi vào lịch sử như bước ngoặt của ngành âm nhạc.'",
+      "people": [
+        "Roger Ames — CEO Warner Music người Anh hào hứng mỉa mai; 'đúng điều chúng tôi đợi chờ'; sau giúp lôi kéo hãng khác",
+        "Doug Morris — thủ lĩnh Universal (U2, Eminem, Mariah Carey); 'Steve đã làm việc xuất sắc... hệ thống trọn gói: cửa hàng, phần mềm, iPod'; gọi Jobs là 'đấng cứu tinh'",
+        "Jimmy Iovine — thủ lĩnh Interscope, bạn thân Morris 30 năm; sau demo gọi 'Anh này độc nhất!' và chê Sony là 'một vụ bết bát lịch sử'",
+        "Eddy Cue — phụ trách iTunes Store; dự đoán 1M/6 tháng, thực tế 6 ngày; sau điều phối toàn bộ dịch vụ",
+        "Andy Lack — tân chủ Sony Music, đòi royalty trên mỗi iPod, bị Jobs chia rẽ cô lập; 'ông ấy bệnh lý... và là thiên tài'",
+        "Dr. Dre — Eminem's mentor; sau Jobs demo: 'Trời ơi, cuối cùng cũng có người làm đúng'"
+      ],
+      "quotes": [
+        {
+          "vi": "Các người nhét đầu lên đít rồi.",
+          "who": "Jobs, ngắt lời phái đoàn Warner-Sony sau 4 slide",
+          "en": "You have your heads up your asses."
+        },
+        {
+          "vi": "Với iTunes, không còn ăn cắp nữa. Đó là karma tốt.",
+          "who": "Jobs tại Moscone 28/4/2003",
+          "en": "With iTunes, it's not stealing anymore. It's good karma."
+        },
+        {
+          "vi": "Chúng ta bị hun khói rồi.",
+          "who": "Jim Allchin (Microsoft), email 5h chiều",
+          "en": "We were smoked."
+        },
+        {
+          "vi": "Khả năng tập trung vào vài điều quan trọng của Steve Jobs, tìm đúng người làm UI, và marketing như cách mạng là những điều phi thường... Điều này thật kỳ lạ với tôi.",
+          "who": "Bill Gates, email 10:46 tối 'Apple's Jobs again'",
+          "en": "Steve Jobs's ability to focus... are amazing things. This is very strange to me."
+        }
+      ],
+      "subevents": [
+        "Dr. Dre đến Apple HQ: Jobs công nhận rap ngoài tầm hiểu nhưng cần Eminem. Sau demo Dr. Dre tuyên bố: 'Trời ơi, cuối cùng cũng có người làm đúng.'",
+        "Wynton Marsalis đến nhà Palo Alto: Jobs demo iTunes suốt 2 giờ liên tục 'Xem nó có thể làm gì!' — Marsalis cuối cùng nhìn Jobs chứ không nhìn máy vì 'say mê đam mê của ông ấy'.",
+        "Tranh cãi mở iPod cho Windows: Jobs từng tuyên 'người dùng Windows sẽ dùng iPod trên xác tôi'; cuối cùng bị 4 phó chủ tịch ép buộc; đầu hàng 'Để mặc các người'. 10/2003 công bố iTunes for Windows với slide 'Hell froze over'."
+      ],
+      "product": "iTunes Store ra mắt 28/4/2003. 200.000 bài lúc mở, 99 xu/bài (hãng đĩa nhận 70 xu). 1M bài trong 6 ngày (dự đoán 6 tháng). 70 triệu bài năm đầu. Bài thứ 1 tỷ (2/2006) — Alex Ostrovsky, 16 tuổi, mua 'Speed of Sound' Coldplay — Jobs gọi điện tặng 10 iPod + iMac + thẻ $10.000. Microsoft Zune <5% thị phần; Sony Connect đóng cửa sau 3 năm. Đến 6/2011: 225 triệu người dùng hoạt động.",
+      "img": null
+    },
+    {
+      "year": "2007",
+      "chapter": "Chương 36 · The iPhone",
+      "title": "iPhone — ba cuộc cách mạng trong một",
+      "hook": "Một chiếc điện thoại đã làm thế nào để khiến Steve Jobs xé bỏ thiết kế chín tháng làm việc, chỉ vì 'tôi không yêu nó'?",
+      "story": "Năm 2005 doanh số iPod tăng vọt — 20 triệu chiếc gấp 4 năm trước, chiếm 45% doanh thu Apple. Nhưng Jobs ám ảnh: 'Thiết bị có thể ăn tươi nuốt sống chúng ta là điện thoại.' Ông thử hợp tác Motorola ROKR — xấu, giới hạn 100 bài, Wired chê bai trang bìa. Tức giận: 'Tôi chán ngấy dealing với mấy công ty ngu ngốc... cứ để chúng ta tự làm.' 825 triệu điện thoại bán 2005 — thị trường khổng lồ. Dự án tablet bí mật đang phát triển multi-touch; Jony Ive đã có demo từ trackpad MacBook Pro, giấu Jobs vì sợ ông 'bóp nát ý tưởng non nớt'. Khi Ive trình bày riêng, Jobs reo: 'Đây là tương lai.' Ông CƯỢC CẢ CÔNG TY.",
+      "motif": [
+        "Bóp méo thực tại",
+        "Nghệ thuật gặp công nghệ"
+      ],
+      "world": [
+        "Cuộc khủng hoảng tài chính toàn cầu bắt đầu từ thế chấp dưới chuẩn ở Mỹ.",
+        "Cuốn Harry Potter cuối cùng ra mắt, sách bán nhanh nhất lịch sử.",
+        "Twitter bùng nổ tại South by Southwest, trở thành nền tảng mạng xã hội hàng đầu."
+      ],
+      "scene": "Câu chuyện kính gorilla. Jobs gọi tổng đài Corning đòi gặp CEO Wendell Weeks; trợ lý từ chối. 'Không, tôi là Steve Jobs. Chuyển tôi qua.' Vẫn từ chối; Jobs phàn nàn 'typical East Coast bullshit'. Weeks trả đũa gọi Apple cũng bị bảo fax. Hai người kết bạn. Khi gặp, Weeks kể Corning phát triển quy trình trao đổi hóa học thập niên 1960, đặt tên 'gorilla glass', cực bền nhưng không có thị trường nên ngừng. Jobs bắt đầu giảng Weeks cách làm kính. Weeks chen: 'Im đi, để tôi dạy ông chút khoa học?' Jobs khựng, im lặng. Weeks đến bảng trắng giảng hóa học trao đổi ion. Rồi Jobs đòi hết gorilla glass trong 6 tháng. 'Chúng tôi không có công suất.' Jobs nhìn không chớp: 'Đừng sợ. Vâng, ông có thể làm được. Mở óc ra.' Nhà máy Harrisburg Kentucky chuyển đổi qua đêm — làm xong dưới 6 tháng.",
+      "scene2": "Design reset đêm không ngủ. Sáng thứ Hai, Jobs sang phòng Ive: 'Tôi không ngủ đêm qua, vì tôi nhận ra mình đơn giản không yêu nó.' iPhone ban đầu đặt màn hình kính vào vỏ nhôm — vỏ cạnh tranh với màn hình thay vì nhường bước. 'Thiết bị quá nam tính, định hướng nhiệm vụ.' 'Các bạn đã giết mình vì thiết kế này 9 tháng qua, nhưng chúng ta sẽ thay đổi nó. Tất cả sẽ phải làm việc đêm và cuối tuần, và nếu muốn, chúng tôi có thể phát súng để các bạn giết chúng tôi ngay bây giờ.' Đội không phản đối mà đồng ý. 'Đó là một trong những khoảnh khắc tôi tự hào nhất ở Apple.' Thiết kế mới chỉ còn viền thép không gỉ mỏng, kính gorilla trải tận mép. 'Các công ty khác có thể đã xuất hàng, nhưng chúng tôi nhấn nút reset và bắt đầu lại.'",
+      "people": [
+        "Tony Fadell — trưởng nhóm iPod/phone; thử trackwheel P1 nhưng thừa nhận không 'crack' được việc quay số; sau làm P2 multi-touch",
+        "Jony Ive — đã có multi-touch từ trackpad MacBook Pro, giấu Jobs vì 'ý tưởng rất mong manh'; là người 'tuyệt đối xấu hổ' khi Jobs tự chỉ ra lỗi thiết kế vỏ nhôm",
+        "Wendell Weeks — CEO Corning, chen 'Im đi, để tôi dạy ông khoa học?'; bị Jobs 'Đừng sợ' ép mở nhà máy Kentucky; giữ tin nhắn 'We couldn't have done it without you' làm kỷ vật",
+        "Phil Schiller — giám đốc marketing; Ed Zander — CEO Motorola, đối tác ROKR thất bại khiến Jobs phát biểu 'chán ngấy mấy công ty ngu ngốc'",
+        "Andy Hertzfeld / Bill Atkinson / Steve Wozniak — đội Mac 1984 được mời dự khán; Atkinson 'đứng xếp hàng cả đêm' tại Apple Store ngày iPhone bán ra"
+      ],
+      "quotes": [
+        {
+          "vi": "Mẹ kiếp, để cho hắn xem một chiếc tablet thực sự có thể là gì.",
+          "who": "Jobs sau bữa tiệc Microsoft khoe tablet có bút",
+          "en": "Fuck this, let's show him what a tablet can really be."
+        },
+        {
+          "vi": "Tôi không ngủ đêm qua, vì tôi nhận ra mình đơn giản không yêu nó.",
+          "who": "Jobs với Ive, quyết định reset thiết kế 9 tháng",
+          "en": "I didn't sleep last night, because I realized that I just don't love it."
+        },
+        {
+          "vi": "Đừng sợ... Vâng, ông có thể làm được. Mở óc ra. Ông có thể làm được.",
+          "who": "Jobs ép Corning sản xuất gorilla glass",
+          "en": "Don't be afraid... Yes, you can do it. Get your mind around it."
+        },
+        {
+          "vi": "Các người hiểu chưa? Đây không phải ba thiết bị riêng biệt, đây là một thiết bị, và chúng tôi gọi nó là iPhone.",
+          "who": "Jobs tại Macworld 9/1/2007",
+          "en": "Are you getting it? These are not three separate devices, this is one device."
+        }
+      ],
+      "subevents": [
+        "Dự án iPad ra đời trước iPhone: multi-touch được Ive phát triển trên trackpad cho tablet, nhưng Jobs nhận ra giải quyết được vấn đề giao diện điện thoại nên tạm dừng tablet.",
+        "'Swipe to Open' sinh ra vì Jobs ghét nút on-off 'kém thanh lịch' — sensor phát hiện tai áp vào máy; mọi icon là rounded rectangle 'nguyên thủy' Jobs từng bắt Atkinson thiết kế cho Mac đầu tiên.",
+        "Sự cố mở bán Apple Store Palo Alto: Jobs đi bộ tới cửa hàng; fan chào như Moses; Atkinson xếp hàng cả đêm — Jobs bảo 'tôi gửi ông ấy một chiếc', Hertzfeld đáp 'ông ấy cần sáu'."
+      ],
+      "product": "iPhone — multi-touch, kính gorilla, viền thép không gỉ, không bàn phím vật lý. Apple mua FingerWorks (Delaware) đầu 2005 lấy patent multi-touch. Corning chuyển nhà máy Kentucky sang gorilla glass — sản xuất kính chưa từng làm trong dưới 6 tháng. Trình bày 9/1/2007 Macworld: 'iPod màn hình rộng + điện thoại + trình duyệt = MỘT thiết bị.' Đến cuối 2010, 90 triệu iPhone bán ra; Apple thu >50% lợi nhuận toàn ngành điện thoại thế giới.",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/Steve_Jobs_presents_iPhone_%28cropped%29.jpg/960px-Steve_Jobs_presents_iPhone_%28cropped%29.jpg"
+    },
+    {
+      "year": "2011",
+      "chapter": "Chương 42 · Legacy",
+      "title": "Di sản — Chòm sao sáng nhất của sáng tạo",
+      "hook": "Người đàn ông tạo ra những thiết bị không có nút on-off đã nghĩ gì về cái chết? 'Clic! Và bạn biến mất.'",
+      "story": "Chương cuối, Isaacson tổng hợp 'lý trường thống nhất': cường độ, tính nhị nguyên hero/shithead, ám ảnh kiểm soát end-to-end — tất cả một hệ thống không thể tách rời, chính những đặc điểm ấy dựng nên sản phẩm. Về dài hạn mô hình Jobs thắng: 5/2000 Apple chỉ bằng 1/20 Microsoft, 5/2010 vượt Microsoft thành công ty công nghệ giá trị nhất, 9/2011 hơn Microsoft 70%. Isaacson phán: 'Ông ấy thông minh không? Không, không đặc biệt. Thay vào đó, ông ấy là thiên tài... Lịch sử sẽ đặt ông cạnh Edison và Ford.' Phần lớn chương là lời tự bộc của Jobs — đam mê xây công ty trường tồn, lý thuyết suy thoái khi 'salesmen run the company'. Coda: một chiều nắng, ông ngồi trong vườn suy ngẫm về cái chết.",
+      "motif": [
+        "Vết lõm trong vũ trụ",
+        "Thực địa Icarus / Prometheus"
+      ],
+      "world": [
+        "Làn sóng Mùa xuân Ả Rập lật đổ nhiều chính quyền tại Trung Đông và Bắc Phi.",
+        "Osama bin Laden bị tiêu diệt bởi lực lượng SEAL Mỹ tại Abbottabad.",
+        "Động đất và sóng thần Fukushima tàn phá Nhật Bản, thảm họa hạt nhân thứ hai lịch sử."
+      ],
+      "scene": "Coda khu vườn. Một buổi chiều nắng, khi không khỏe, Jobs ngồi trong vườn sau nhà suy ngẫm về cái chết. Ông kể trải nghiệm Ấn Độ gần 4 thập kỷ trước, nghiên cứu Phật giáo, quan điểm luân hồi. 'Tôi khoảng năm-mươi-năm về việc tin vào Chúa. Phần lớn cuộc đời tôi cảm thấy phải có nhiều điều hơn so với những gì mắt thường thấy.' Ông thú nhận có thể ước lượng quá cao vì khao khát tin kiếp sau. 'Tôi thích nghĩ rằng có điều gì đó tồn tại sau khi bạn chết... thật kỳ lạ khi nghĩ rằng bạn tích luỹ tất cả kinh nghiệm này, và có thể một chút trí tuệ, rồi nó cứ thế biến mất.' Im lặng rất dài. 'Nhưng mặt khác, có lẽ nó giống như một công tắc on-off. Clic! Và bạn biến mất.' Rồi mỉm cười nhẹ: 'Có lẽ đó là lý do tôi không bao giờ thích đặt công tắc on-off trên thiết bị Apple.' ĐÓ là câu cuối của sách.",
+      "scene2": "Lời tự bộc 'Why I built Apple'. 'Đam mê của tôi là xây dựng một công ty trường tồn nơi con người được thúc đẩy làm ra sản phẩm tuyệt vời. Mọi thứ khác đều thứ yếu.' Ông kể lý thuyết suy thoái: khi công ty thành độc quyền, 'chất lượng sản phẩm trở nên kém quan trọng... những người bán hàng chạy công ty' — dẫn chứng John Akers ở IBM, Sculley ở Apple, Ballmer ở Microsoft. Về Dylan đi electric 1965: khi khán giả hô 'Judas!', Dylan bảo 'Play it fucking loud!' — Jobs rút ra 'bạn luôn phải tiếp tục đẩy đổi mới... nếu bạn không bận rộn được sinh ra, thì bạn bận rộn đang chết.' Cuối cùng: 'đa số người sáng tạo muốn bày tỏ lòng biết ơn vì được hưởng thành quả của người đi trước... chúng tôi cố dùng tài năng để bày tỏ cảm xúc sâu sắc, để cho thấy sự trân trọng tất cả cống hiến đã đến trước.'",
+      "people": [
+        "Walter Isaacson — tác giả, đưa phán quyết cuối: 'ông ấy không đặc biệt thông minh. Ông ấy là thiên tài... magician genius kiểu Mark Kac; sẽ được ghi nhớ một thế kỷ... đặt cạnh Edison và Ford'",
+        "Bill Gates — đối thủ được Jobs phán: 'thực sự không phải người của sản phẩm, ông ấy là doanh nhân... Microsoft không bao giờ có nhân văn trong DNA'; ngược lại Jobs cũng 'ngưỡng mộ công ty ông ấy xây'",
+        "Bob Dylan — sao Bắc nghệ thuật định kỳ xuất hiện; 'Judas!'/'Play it loud!' trở thành triết lý đổi mới suốt đời của Jobs",
+        "Edwin Land, Henry Ford, da Vinci, Michelangelo — anh hùng giao thoa nhân văn-khoa học mà Isaacson đặt Jobs cạnh",
+        "Laurene Powell — vợ, 'một con hổ đẹp bảo vệ ông'; Andy Hertzfeld — đặt câu hỏi 'tại sao đôi khi ông lại tàn nhẫn?'"
+      ],
+      "quotes": [
+        {
+          "vi": "Nhưng mặt khác, có lẽ nó giống như công tắc on-off. Clic! Và ông biến mất.",
+          "who": "Jobs, câu cuối sách, trong vườn",
+          "en": "But on the other hand, perhaps it's like an on-off switch. Click! And you're gone."
+        },
+        {
+          "vi": "Có lẽ đó là lý do tôi không bao giờ thích đặt công tắc on-off trên thiết bị Apple.",
+          "who": "Jobs, mỉm cười nhẹ — lời kết toàn bộ tiểu sử",
+          "en": "Maybe that's why I never liked to put on-off switches on Apple devices."
+        },
+        {
+          "vi": "Ông ấy thông minh không? Không, không đặc biệt. Thay vào đó, ông ấy là thiên tài... người có hiểu biết đến bất ngờ và cần trực giác hơn sức mạnh xử lý thuần túy.",
+          "who": "Isaacson, phán quyết cuối",
+          "en": "Was he smart? No, not exceptionally. Instead, he was a genius."
+        },
+        {
+          "vi": "Lịch sử sẽ đặt ông vào điện thần cùng Edison và Ford. Hơn bất kỳ ai cùng thời, ông tạo ra những sản phẩm hoàn toàn đổi mới, kết hợp sức mạnh của thơ ca và vi xử lý.",
+          "who": "Isaacson",
+          "en": "History will place him in the pantheon right next to Edison and Ford."
+        },
+        {
+          "vi": "nếu bạn không bận rộn được sinh ra, thì bạn bận rộn đang chết.",
+          "who": "Jobs, trích Dylan",
+          "en": "if you're not busy being born, you're busy dying."
+        }
+      ],
+      "subevents": [
+        "Cuộc tranh open-vs-closed: hacker ethos Homebrew/Wozniak (Apple II mở, nhiều khe) đối lập Mac khép kín của Jobs; đến 2011 Google Android chia mảng, Apple vẫn khép kín nhưng thắng về biên lợi nhuận.",
+        "Lý thuyết suy thoái 'salesmen run the company': Akers ở IBM, Sculley ở Apple, Ballmer ở Microsoft — 'khi người bán hàng chạy công ty, người sản phẩm không còn quan trọng'. Jobs tiên đoán 'không gì thay đổi ở Microsoft chừng nào Ballmer còn điều hành'.",
+        "'And One More Thing...': Isaacson giải thích biographer đáng lẽ có lời cuối, nhưng đây là tiểu sử Jobs, nên để chính ông nói — từ đam mê xây công ty trường tồn đến coda on-off switch."
+      ],
+      "product": "Bộ tuyển sản phẩm: Apple II → Macintosh → Toy Story → Stores → iPod → iTunes → iPhone → iPad → iCloud — 'và chính Apple, mà Jobs coi là sáng tạo vĩ đại nhất'. 5/2000 Apple = 1/20 Microsoft; 5/2010 vượt Microsoft; 9/2011 hơn Microsoft 70%. Q1/2011: PC Windows giảm 1%, Mac tăng 28%. 2010: Apple có 7% doanh thu PC nhưng 35% lợi nhuận toàn ngành.",
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Steve_Jobs_Headshot_2010-CROP.jpg/960px-Steve_Jobs_Headshot_2010-CROP.jpg"
+    }
+  ],
+  "INSIGHTS": [
+    {
+      "cat": "product",
+      "year": "1976",
+      "title": "Giá $666,66 và 200 chiếc lịch sử",
+      "story": "Apple I được định giá $666,66 — Wozniak: 'Tôi luôn thích các con số lặp lại'. Số điện thoại dial-a-joke của ông là 255-6666. Cả hai không biết 666 là 'con số của thú vật' (The Omen ra mắt năm đó), và nhận được hàng tá khiếu nại. Chỉ ~200 chiếc được đóng: 50 cho Byte Shop, ~50 cho bạn bè, ~100 cho các cửa hàng bán lẻ. Năm 2010, một chiếc Apple I gốc bán tại đấu giá Christie's đạt $213.000 — gấp 319 lần giá gốc.",
+      "quote": {
+        "vi": "Tôi luôn thích các con số lặp lại.",
+        "who": "Wozniak về $666,66",
+        "en": "I was always into repeating digits."
+      }
+    },
+    {
+      "cat": "product",
+      "year": "1984",
+      "title": "Macintosh — máy tính đầu tiên tự giới thiệu",
+      "story": "Ngày 24/1/1984, Jobs kiên quyết 'tôi muốn Macintosh là máy tính đầu tiên tự giới thiệu chính mình!' Bằng giọng điện tử run run duyên dáng, Mac cất lời: 'Xin chào. Tôi là Macintosh. Thật tuyệt khi thoát khỏi cái túi đó... Đừng bao giờ tin một máy tính mà bạn không thể nhấc lên được... Tôi giới thiệu một người đã như cha đối với tôi, Steve Jobs.' Vỗ tay kéo dài 5 phút. Đám đông reo hét, nhảy lên nhảy xuống đấm tay — Jobs gật đầu chậm, nhìn xuống, nghẹn ngào.",
+      "quote": {
+        "vi": "Đừng bao giờ tin một máy tính mà bạn không thể nhấc lên được.",
+        "who": "Macintosh, 24/1/1984",
+        "en": "Never trust a computer you can't lift."
+      }
+    },
+    {
+      "cat": "product",
+      "year": "1986",
+      "title": "Khối lập phương NeXT hoàn hảo 90 độ",
+      "story": "Jobs ra lệnh NeXT Cube phải là 'khối lập phương tuyệt đối, mỗi cạnh đúng 1 foot, mỗi góc chính xác 90 độ' — không 'draft angle' nào để dễ rút khỏi khuôn. Sản xuất phải tách riêng 6 mặt, dùng khuôn đúc $650.000 tại xưởng chuyên dụng Chicago. Khi Jobs phát hiện một vết mốc nhỏ trên vỏ, ông bay tận Chicago đòi làm lại hoàn toàn. Ông mua máy chà nhám $150.000 và ép phủ đen mờ cả mặt TRONG của vỏ — dù chỉ thợ sửa nhìn thấy.",
+      "quote": {
+        "vi": "Không phải muộn. Nó hơn thời đại 5 năm.",
+        "who": "Jobs, khi hỏi vì sao NeXT trễ",
+        "en": "It's not late. It's five years ahead of its time."
+      }
+    },
+    {
+      "cat": "product",
+      "year": "1998",
+      "title": "Cái quai iMac — 'permission to touch'",
+      "story": "iMac G3 có tay cầm lõm trên nóc máy — máy để bàn, chẳng ai thực sự xách đi đâu. Ive giải thích đây là thiết kế cảm xúc cho người sợ công nghệ: 'Lúc đó người ta chưa thoải mái với công nghệ. Nếu bạn sợ thứ gì, bạn sẽ không chạm. Tôi tưởng tượng mẹ mình sợ chạm. Nên tôi nghĩ, nếu có cái quai này, nó tạo mối quan hệ có thể. Nó cho phép bạn CHẠM.' Kỹ sư đưa ra 38 lý do không thể. Jobs: 'Vì tôi là CEO, và tôi nghĩ có thể làm được.' Chi phí vỏ $60/đơn vị — gấp 3 lần vỏ thường.",
+      "quote": {
+        "vi": "Nó cho bạn phép được chạm vào. Nó mang lại cảm giác máy tính phục tùng bạn.",
+        "who": "Jony Ive",
+        "en": "It gives you permission to touch."
+      }
+    },
+    {
+      "cat": "product",
+      "year": "2001",
+      "title": "Ổ đĩa Toshiba cỡ đồng đô-la và tấm séc $10M",
+      "story": "Tháng 2/2001, kỹ sư Toshiba hờ hững nhắc ổ đĩa 1.8-inch trong phòng thí nghiệm — nhỏ bằng đồng đô-la bạc, chứa 5GB (~1.000 bài hát), chưa biết dùng vào đâu. Rubinstein lập tức nhận ra nhưng giữ poker face. Tối đó gặp Jobs tại Hotel Okura Tokyo: 'Tôi biết cách làm rồi. Tôi chỉ cần tấm séc $10 triệu.' Jobs phê duyệt ngay lập tức — và Rubinstein đàm phán ĐỘC QUYỀN mua sạch mọi ổ Toshiba sản xuất được, chặn chết đối thủ trước khi kịp biết sản phẩm tồn tại.",
+      "quote": {
+        "vi": "Một nghìn bài hát trong túi bạn.",
+        "who": "Jobs, slogan iPod",
+        "en": "A thousand songs in your pocket."
+      }
+    },
+    {
+      "cat": "product",
+      "year": "2003",
+      "title": "99 xu mỗi bài — bóc tách album",
+      "story": "Jobs thuyết phục 5 hãng đĩa bán từng bài hát $0,99 (hãng nhận $0,70) thay vì ép mua cả album — cuộc chiến lớn nhất. Ông lý lẽ: 'Mac chỉ 5% thị phần, thử nghiệm ít rủi ro.' Và SỞ HỮU không thuê: 'Ngài có thể mang Tái Lâm ra mô hình thuê bao mà nó có thể không thành công.' Eddy Cue dự đoán 1 triệu bài trong 6 tháng — BÁN 1 TRIỆU TRONG 6 NGÀY. Bill Gates email nội bộ lúc 10:46 tối: 'Khả năng tập trung của Steve Jobs... là những điều phi thường. Điều này thật kỳ lạ với tôi.'",
+      "quote": {
+        "vi": "Với iTunes, không còn ăn cắp nữa. Đó là karma tốt.",
+        "who": "Jobs tại Moscone 28/4/2003",
+        "en": "With iTunes, it's not stealing anymore. It's good karma."
+      }
+    },
+    {
+      "cat": "product",
+      "year": "2007",
+      "title": "Kính gorilla Corning — 'Đừng sợ'",
+      "story": "Jobs gọi tổng đài Corning đòi gặp CEO Wendell Weeks; trợ lý từ chối. 'Không, tôi là Steve Jobs.' Khi gặp, Weeks kể Corning phát triển quy trình trao đổi hóa học thập niên 1960, đặt tên 'gorilla glass', cực bền nhưng không có thị trường nên ngừng. Jobs bắt đầu giảng Weeks cách làm kính. Weeks chen: 'Im đi, để tôi dạy ông chút khoa học?' Jobs khựng, im lặng nghe về trao đổi ion. Rồi đòi hết gorilla trong 6 tháng. 'Không có công suất.' Jobs nhìn không chớp: 'Đừng sợ. Vâng, ông có thể làm được.' Corning cải tạo nhà máy Kentucky qua đêm.",
+      "quote": {
+        "vi": "Đừng sợ. Vâng, ông có thể làm được. Mở óc ra.",
+        "who": "Jobs ép Corning",
+        "en": "Don't be afraid. Yes, you can do it."
+      }
+    },
+    {
+      "cat": "product",
+      "year": "2011",
+      "title": "Di sản 11 sản phẩm — từ 1/20 đến hơn Microsoft 70%",
+      "story": "Isaacson liệt kê 11 sản phẩm biến đổi: Apple II, Macintosh, Toy Story, Apple Stores, iPod, iTunes, iPhone, App Store, iPad, iCloud — và kết: 'Chính Apple, mà Jobs coi là sáng tạo vĩ đại nhất.' Sự перев Formats: tháng 5/2000 Apple chỉ bằng 1/20 Microsoft. Tháng 5/2010 vượt Microsoft thành công ty công nghệ giá trị nhất thế giới. Đến 9/2011, Apple hơn Microsoft 70%. Q1/2011: PC Windows giảm 1%, Mac tăng 28%. 2010: Apple có 7% doanh thu PC nhưng 35% lợi nhuận toàn ngành.",
+      "quote": {
+        "vi": "Lịch sử sẽ đặt ông vào điện thần cùng Edison và Ford.",
+        "who": "Isaacson, phán quyết cuối",
+        "en": "History will place him in the pantheon right next to Edison and Ford."
+      }
+    },
+    {
+      "cat": "life",
+      "year": "1955",
+      "title": "Cảnh bãi cỏ — 'Bị bỏ rơi. Được chọn. Đặc biệt.'",
+      "story": "Năm 6-7 tuổi, cô bé hàng xón hỏi: 'Thế có nghĩa là bố mẹ ruột không cần con à?' 'Như có sét đánh trong đầu' — Jobs chạy ào vào nhà khóc. Paul và Clara nhìn thẳng vào mắt cậu, nói chậm rãi nhấn từng chữ: 'Chính chúng tôi đã chọn cậu.' Isaacson: ba khái niệm 'Bị bỏ rơi. Được chọn. Đặc biệt.' trở thành cốt lõi cách Jobs nhìn chính mình — và là động cơ của cả đời ông: khao khát chứng tỏ xứng đáng, nỗi sợ bị bỏ rơi. Chrisann Brennan (mẹ Lisa): 'Kẻ bị bỏ rơi rồi cũng trở thành kẻ bỏ rơi.'",
+      "quote": {
+        "vi": "Tôi chưa bao giờ cảm thấy bị bỏ rơi. Tôi luôn thấy mình đặc biệt. Cha mẹ đã khiến tôi thấy vậy.",
+        "who": "Jobs",
+        "en": "I've never felt abandoned. I've always felt special."
+      }
+    },
+    {
+      "cat": "life",
+      "year": "1974",
+      "title": "Đạo sĩ Himalaya cạo trọc đầu ông",
+      "story": "Tại một điền trang Himalaya, một đạo sĩ trẻ chỉ tay vào Jobs giữa đám đông và 'bắt đầu cười điên cuồng', chạy đến túm lấy ông, phát tiếng 'tooting' và nói: 'Ông giống như một đứa trẻ'. Nắm tay dẫn lên đồi giếng nước, rút ra một con dao cạo thẳng. 'Tôi nghĩ ổng là kẻ điên và bắt đầu lo. Rồi ổng lấy ra một bánh xà phòng... xà phòng lên tóc tôi và cạo trọc đầu tôi. Ổng bảo ổng đang cứu sức khoẻ tôi.' Bảy tháng sau về nhà: đầu trọc, áo bông Ấn, da nâu đỏ — cha mẹ đi ngang năm lần mới nhận ra: 'Steve?'",
+      "quote": {
+        "vi": "Trực giác là thứ rất mạnh, mạnh hơn trí tuệ theo tôi.",
+        "who": "Jobs, về di sản Ấn Độ",
+        "en": "Intuition is a very powerful thing, more powerful than intellect."
+      }
+    },
+    {
+      "cat": "life",
+      "year": "1985",
+      "title": "Thứ Sáu 24/5 — 'Đến lượt tôi hoặc Steve'",
+      "story": "Jobs bước vào phòng họp muộn, ghế cạnh Sculley đã bị chiếm. Sculley bỏ qua nghị sự: 'Tôi nghe nói ông muốn đuổi tôi... có đúng không?' Jobs nhìn chằm chằm không chớp: 'Tôi nghĩ ông có hại cho Apple. Ông không biết vận hành và chưa bao giờ biết.' Sculley bỏ phiếu cả phòng: 'Đến lượt tôi hoặc Steve, các người bầu ai?' Del Yocam, Al Eisenstat, Regis McKenna, Bill Campbell (giọng run) — từng người về Sculley. Jobs nói 'Tôi đoán biết mình đứng đâu', rồi CHẠY ra khỏi phòng. KHÔNG AI ĐUỔI THEO.",
+      "quote": {
+        "vi": "Khi tôi nhìn vào mắt đa số người, tôi thấy tâm hồn. Khi nhìn mắt ông, tôi thấy một hố không đáy, một vùng chết.",
+        "who": "Leezy Sculley, bãi đỗ Good Earth",
+        "en": "When I look into your eyes, I see a bottomless pit, a dead zone."
+      }
+    },
+    {
+      "cat": "life",
+      "year": "1985",
+      "title": "Khung ảnh Sculley bị đập vỡ",
+      "story": "Sáng 17/9/1985, Jobs mang thư từ chức in bằng LaserWriter mới tới nhà Markkula, ký 'steven p. jobs'. Khi nhân viên cơ sở tới dọn văn phòng Jobs, thấy khung ảnh trên sàn — Jobs và Sculley trò chuyện ân cần, ghi 'Here's to Great Ideas, Great Experiences, and a Great Friendship! John'. Kính vỡ nát. Jobs đã ném khung ảnh xuyên phòng trước khi rời đi. Từ ngày đó, ông KHÔNG BAO GIỜ nói chuyện với Sculley nữa. Cùng lúc Apple kiện ông 'vi phạm nghĩa vụ ủy thác' — tố ông 'bí mật lên kế hoạch, bí mật âm mưu, bí mật lôi kéo nhân viên chủ chốt'.",
+      "quote": {
+        "vi": "Khó nghĩ rằng một công ty $2 tỷ với 4.300 nhân viên không thể cạnh tranh với sáu người mặc quần jeans.",
+        "who": "Jobs đáp Newsweek",
+        "en": "It's hard to think that a $2 billion company couldn't compete with six people in blue jeans."
+      }
+    },
+    {
+      "cat": "life",
+      "year": "1997",
+      "title": "Cái bắt tay khép lại 11 năm giông bão",
+      "story": "Jobs bước vào phòng họp HĐQT nhìn thấy Mike Markkula — người từng là mentor, là 'father figure', nhưng đã đứng về phía Sculley lật đổ ông năm 1985. 'Họ chưa nói chuyện từ khi Markkula... đứng về Sculley năm 1985. Jobs bước tới và BẮT TAY.' Vết thương 11 năm khép lại. Nhưng chưa hết: một năm sau Jobs buộc đuổi chính Markkula khỏi HĐQT — việc ông không giao ai: tự lái xe đến dinh thự Woodside, rủ đi dạo rừng redwood đến bàn picnic. Rồi tháng 5/1998, Jobs mời Markkula đến Cupertino xem iMac trước riêng — vòng tròn khép kín giữa người sáng lập và người thầy.",
+      "quote": {
+        "vi": "Gassée là một trong số ít người trong đời tôi mà tôi dám gọi là thực sự tồi tệ. Hắn đã đâm sau lưng tôi năm 1985.",
+        "who": "Jobs",
+        "en": "Gassée is one of the few people... truly horrible."
+      }
+    },
+    {
+      "cat": "life",
+      "year": "2011",
+      "title": "Buổi chiều trong vườn — 'Click! Và bạn biến mất'",
+      "story": "Một buổi chiều nắng, khi không khỏe, Jobs ngồi trong vườn sau nhà suy ngẫm về cái chết. Ông kể trải nghiệm Ấn Độ gần 4 thập kỷ trước, nghiên cứu Phật giáo, quan điểm luân hồi. 'Tôi khoảng năm-mươi-năm về việc tin vào Chúa.' Im lặng rất dài. 'Nhưng mặt khác, có lẽ nó giống như một công tắc on-off. Clic! Và bạn biến mất.' Rồi mỉm cười nhẹ: 'Có lẽ đó là lý do tôi không bao giờ thích đặt công tắc on-off trên thiết bị Apple.' ĐÓ là câu cuối của toàn bộ cuốn sách — hoàn hảo trong sự tuần hoàn: người chối bỏ công tắc on-off cả đời đối mặt với đúng công tắc đó.",
+      "quote": {
+        "vi": "Có lẽ nó như công tắc on-off. Clic! Và ông biến mất.",
+        "who": "Jobs, câu cuối sách",
+        "en": "Perhaps it's like an on-off switch. Click! And you're gone."
+      }
+    },
+    {
+      "cat": "quote",
+      "year": "1984",
+      "title": "'Real artists ship'",
+      "story": "Tuần trước ngày giao 16/1/1984, kỹ sư thú nhận chưa viết xong code, xin thêm 2 tuần. Jobs gọi điện Chủ nhật từ Grand Hyatt Manhattan, giọng lạnh trầm: 'Không có cách nào chúng ta lùi lịch! Tôi sẽ xuất hành mã một tuần nữa với tên các bạn trên đó.' Steve Capps đáp: 'Vậy thì chúng ta phải hoàn thành nó.' Randy Wigginton mang tới túi lớn đậu espresso phủ sô-cô-la cho 3 đêm thức trắng. Sáng thứ Hai, Hertzfeld nằm gần như hôn mê trên ghế sa-lông. Câu thần chú 'Real artists ship' trở thành lời thề của đội Mac — thiên tài vô nghĩa nếu không giao hàng.",
+      "quote": {
+        "vi": "Nghệ sĩ đích thực là người giao hàng.",
+        "who": "Jobs, lời thề đội Mac",
+        "en": "Real artists ship."
+      }
+    },
+    {
+      "cat": "quote",
+      "year": "1997",
+      "title": "'Here's to the crazy ones'",
+      "story": "Chiến dịch Think Different ra đời sau khi Jobs khóc vì Lee Clow bay lên Cupertino 'pitching his heart out' sau 10 năm không thuyết trình. Văn bản do Clow, Segall, Tanimoto cùng Jobs viết — Jobs tự viết câu 'They push the human race forward'. Jobs còn tự thu âm voice-over, nhưng sáng hôm sau chọn giọng Richard Dreyfuss: 'Nếu dùng giọng tôi, khi người ta phát hiện ra họ sẽ bảo đó là về tôi. Không phải. Nó là về Apple.' Jobs từng tranh cãi ngữ pháp 'Think Different' vs 'Think Differently' — 'không đánh trúng ý nghĩa với tôi'.",
+      "quote": {
+        "vi": "Này, những kẻ khùng. Những kẻ lạc lõng. Những kẻ nổi loạn... Những kẻ điên đủ để nghĩ họ có thể thay đổi thế giới, chính là những người làm được.",
+        "who": "Think Different, Jobs đồng viết",
+        "en": "Here's to the crazy ones..."
+      }
+    },
+    {
+      "cat": "quote",
+      "year": "1997",
+      "title": "'The products suck!'",
+      "story": "Ngay sau khi sa thải Amelio, Jobs mặc quần đùi giày thể thao áo thun đen bước ra sân khấu hỏi nhân viên điều sai. Khi họ ấp úng, ông cắt ngang bằng giọng gào: 'LÀ SẢN PHẨM! Sản phẩm tồi! Không còn sex nào trong đó nữa!' Câu nói định hình ưu tiên tuyệt đối: sản phẩm trước, lợi nhuận sau. Nhiều năm sau ông giải thích với Isaacson: 'Đam mê của tôi là xây dựng một công ty trường tồn nơi con người được thúc đẩy làm ra sản phẩm tuyệt vời. Mọi thứ khác đều thứ yếu... sản phẩm, không phải lợi nhuận, mới là động lực.'",
+      "quote": {
+        "vi": "Sản phẩm tồi! Không còn sex nào trong đó nữa!",
+        "who": "Jobs khi trở lại Apple",
+        "en": "The products suck! There's no sex in them anymore!"
+      }
+    },
+    {
+      "cat": "quote",
+      "year": "1972",
+      "title": "'Lớp thư pháp định hình mọi máy tính'",
+      "story": "Khi thôi đóng học phí Reed, Jobs nghe lén lớp thư pháp: 'Tôi học về serif và sans-serif, về thay đổi khoảng cách giữa các tổ hợp chữ, về điều làm nên typography vĩ đại. Nó đẹp, mang tính lịch sử, tinh tế nghệ thuật theo cách mà khoa học không thể nắm bắt.' Mười năm sau khi thiết kế Mac, những bài học ấy trỗi dậy. 'Nếu tôi chưa từng nghe lén lớp đó, Mac sẽ không có nhiều kiểu chữ. Mà vì Windows chỉ chép Mac, có lẽ chẳng máy tính cá nhân nào có chúng.' Một lớp 'vô dụng' đã định hình chữ viết trên toàn bộ máy tính cá nhân thế giới.",
+      "quote": {
+        "vi": "Nếu tôi chưa từng nghe lén môn đó, Mac sẽ không có nhiều kiểu chữ. Và vì Windows chép Mac, có lẽ không máy tính nào có.",
+        "who": "Jobs, bài phát biểu Stanford",
+        "en": "If I had never dropped in on that single course, the Mac would have never had multiple typefaces."
+      }
+    },
+    {
+      "cat": "quote",
+      "year": "2011",
+      "title": "'Sản phẩm, không phải lợi nhuận'",
+      "story": "Trong lời tự bộc chương cuối, Jobs bộc bạch động cơ thực sự: 'Đam mê của tôi là xây dựng một công ty trường tồn nơi con người được thúc đẩy làm ra sản phẩm tuyệt vời. Mọi thứ khác đều thứ yếu.' Ông phát triển 'lý thuyết suy thoái': khi công ty thành độc quyền, 'chất lượng sản phẩm trở nên kém quan trọng... những người bán hàng chạy công ty' — dẫn chứng John Akers ở IBM, Sculley ở Apple, Ballmer ở Microsoft. 'Khi người bán hàng chạy công ty, người sản phẩm không còn quan trọng.' Ông tiên đoán 'không gì thay đổi ở Microsoft chừng nào Ballmer còn điều hành'.",
+      "quote": {
+        "vi": "Sản phẩm, không phải lợi nhuận, mới là động lực.",
+        "who": "Jobs, lời tự bộc chương cuối",
+        "en": "The products, not the profits, were the motivation."
+      }
+    },
+    {
+      "cat": "quote",
+      "year": "2011",
+      "title": "'Nếu không bận rộn sinh ra, thì đang chết'",
+      "story": "Jobs kể vụ Bob Dylan đi electric 1965: khi khán giả hô 'Judas!', Dylan không lùi bước mà bảo ban nhạc 'Play it fucking loud!' Jobs rút ra triết lý đổi mới suốt đời: 'Bạn luôn phải tiếp tục đẩy đổi mới... nếu bạn không bận rộn được sinh ra, thì bạn bận rộn đang chết.' Dylan là sao Bắc nghệ thuật định kỳ xuất hiện trong đời Jobs — từ Reed College (kho tàng bootleg khổng lồ) đến iPad launch (chơi 'Like a Rolling Stone'). Triết lý này giải thích vì sao ông liên tục tự ăn thịt sản phẩm mình: iPod ăn iTunes, iPhone ăn iPod.",
+      "quote": {
+        "vi": "Nếu bạn không bận rộn được sinh ra, thì bạn bận rộn đang chết.",
+        "who": "Jobs, trích Dylan",
+        "en": "If you're not busy being born, you're busy dying."
+      }
+    },
+    {
+      "cat": "quote",
+      "year": "1974",
+      "title": "'Trực giác mạnh hơn trí tuệ'",
+      "story": "Sau 7 tháng ở Ấn Độ, Jobs nhận ra: 'Tư duy hợp lý phương Tây không phải đặc tính bẩm sinh của con người; nó là học được. Ở các làng Ấn Độ họ không học nó. Họ học thứ khác... sức mạnh của trực giác.' Quay về Mỹ còn là cú sốc văn hóa lớn hơn đi Ấn: 'Người ta ở nông thôn Ấn không dùng trí tuệ như chúng ta, họ dùng trực giác thay'. Triết lý này trở thành nền tảng cho phương pháp sản phẩm chống focus-group, dẫn dắt bởi khẩu vị: 'Nhiệm vụ của chúng tôi là tìm ra điều họ sẽ muốn trước cả khi họ biết... đọc những thứ chưa có trên trang giấy.'",
+      "quote": {
+        "vi": "Trực giác là thứ rất mạnh, mạnh hơn trí tuệ theo tôi.",
+        "who": "Jobs, sau Ấn Độ",
+        "en": "Intuition is a very powerful thing, more powerful than intellect."
+      }
+    },
+    {
+      "cat": "quote",
+      "year": "1986",
+      "title": "'Tất cả những gì tôi yêu cầu là làm nó tuyệt vời'",
+      "story": "Mùa xuân 1988, tiền cạn Jobs triệu họp cắt chi tiêu sâu. Nhóm hoạt hình Lasseter 'gần như sợ hỏi' thêm ~$300.000 cho phim ngắn mới. Jobs ngồi im hoài nghi, rồi hỏi storyboards. 'Khi Lasseter bắt đầu trình bày — boards, giọng nói, đam mê — Jobs bắt đầu ấm lên.' Ông duyệt chỉ với một câu: 'Tất cả những gì tôi yêu cầu ông, John, là làm cho nó tuyệt vời.' Tin Toy thắng Oscar 1988 — phim CGI đầu tiên đoạt giải. Lasseter nâng tượng vàng tại nhà hàng Greens: 'Tất cả những gì ông yêu cầu là làm một bộ phim tuyệt vời.'",
+      "quote": {
+        "vi": "Tất cả những gì tôi yêu cầu ông, John, là làm cho nó tuyệt vời.",
+        "who": "Jobs duyệt Tin Toy",
+        "en": "All I ask of you, John, is to make it great."
+      }
+    }
+  ],
+  "LEGACY": {
+    "products": [
+      {
+        "year": "1977",
+        "name": "Apple II",
+        "desc": "Khởi đầu ngành máy tính cá nhân, bán gần 6 triệu chiếc trong 16 năm."
+      },
+      {
+        "year": "1984",
+        "name": "Macintosh",
+        "desc": "GUI + chuột đại chúng. Quảng cáo '1984' — vĩ đại nhất mọi thời."
+      },
+      {
+        "year": "1995",
+        "name": "Toy Story",
+        "desc": "Phim CGI dài đầu tiên. Top phòng vé năm, đưa Pixar lên IPO $1,2 tỷ."
+      },
+      {
+        "year": "2001",
+        "name": "Apple Stores",
+        "desc": "$1,2 tỷ doanh thu năm 2004 — kỷ lục ngành bán lẻ nhanh nhất."
+      },
+      {
+        "year": "2001",
+        "name": "iPod",
+        "desc": "'1.000 bài hát trong túi quần.' Thị phần 31%→74% trong 18 tháng."
+      },
+      {
+        "year": "2003",
+        "name": "iTunes Store",
+        "desc": "99 xu/bài, 1M bài trong 6 ngày. Cứu ngành âm nhạc khỏi cướp biển."
+      },
+      {
+        "year": "2007",
+        "name": "iPhone",
+        "desc": "Tái định nghĩa điện thoại. 90 triệu chiếc đến 2010, >50% lợi nhuận ngành."
+      },
+      {
+        "year": "2008",
+        "name": "App Store",
+        "desc": "Mở nền kinh tế ứng dụng — hàng triệu dev, hàng tỷ lượt tải."
+      },
+      {
+        "year": "2010",
+        "name": "iPad",
+        "desc": "1 triệu chiếc trong chưa đầy 1 tháng — thành công nhất lịch sử tiêu dùng."
+      },
+      {
+        "year": "2011",
+        "name": "iCloud",
+        "desc": "Dời 'trung tâm số' lên đám mây, thay thế MobileMe thảm họa."
+      }
+    ],
+    "stats": [
+      {
+        "big": "1/20",
+        "label": "Apple so với Microsoft (5/2000)",
+        "desc": "Apple chỉ bằng một phần hai mươi Microsoft"
+      },
+      {
+        "big": "#1",
+        "label": "Công ty công nghệ giá trị nhất thế giới (5/2010)",
+        "desc": "Vượt Microsoft"
+      },
+      {
+        "big": "+70%",
+        "label": "Hơn Microsoft (9/2011)",
+        "desc": "Đến khi Jobs qua đời"
+      },
+      {
+        "big": "+28%",
+        "label": "Mac tăng trưởng (Q1/2011)",
+        "desc": "Khi PC Windows giảm 1%"
+      },
+      {
+        "big": "35%",
+        "label": "Lợi nhuận PC toàn ngành (2010)",
+        "desc": "Chỉ từ 7% doanh thu"
+      },
+      {
+        "big": "6",
+        "label": "Ngành bị cách mạng hóa",
+        "desc": "PC, phim hoạt hình, nhạc, điện thoại, tablet, xuất bản số"
+      }
+    ],
+    "verdict": [
+      {
+        "vi": "Ông ấy thông minh không? Không, không đặc biệt. Thay vào đó, ông ấy là thiên tài... người có hiểu biết đến bất ngờ và cần trực giác hơn sức mạnh xử lý thuần túy.",
+        "who": "Walter Isaacson",
+        "en": "Was he smart? No, not exceptionally. Instead, he was a genius."
+      },
+      {
+        "vi": "Lịch sử sẽ đặt ông vào điện thần cùng Edison và Ford. Hơn bất kỳ ai cùng thời, ông tạo ra những sản phẩm hoàn toàn đổi mới, kết hợp sức mạnh của thơ ca và vi xử lý.",
+        "who": "Walter Isaacson",
+        "en": "History will place him in the pantheon right next to Edison and Ford."
+      }
+    ]
+  }
+}
