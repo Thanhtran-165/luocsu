@@ -203,11 +203,17 @@
   .act__label { font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); font-weight: 600; margin-bottom: 0.5rem; }
   .act__title { font-family: "Playfair Display", serif; font-weight: 900; font-size: clamp(1.8rem, 1.4rem + 2vw, 2.8rem); line-height: 1.1; margin-bottom: 0.6rem; }
   .act__range { color: var(--accent); letter-spacing: 0.15em; font-size: 0.85rem; }
-  .act__cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 1.1rem; max-width: 1140px; width: 100%; margin: 0 auto; }
-  @media (min-width: 900px) { .act__cards { grid-template-columns: repeat(3, 1fr); } }
+  .act__cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0.85rem; max-width: 1140px; width: 100%; margin: 0 auto; }
+  @media (min-width: 900px) { .act__cards { grid-template-columns: repeat(3, 1fr); gap: 0.85rem; } }
+  /* When cards would wrap to a 2nd row, bump the column count so they fit one row.
+     4 cards → 4 cols; 5 cards → 5 cols. Prevents a lone card overflowing on row 2. */
+  @media (min-width: 900px) {
+    .act__cards:has(.milestone:nth-child(5)) { grid-template-columns: repeat(5, 1fr); }
+    .act__cards:has(.milestone:nth-child(4)):not(:has(.milestone:nth-child(5))) { grid-template-columns: repeat(4, 1fr); }
+  }
   .act__cards .milestone {
     margin-left: 0; margin-bottom: 0; width: auto; text-align: left !important;
-    padding: 1.1rem 1.3rem;
+    padding: 0.9rem 1.1rem;
     transition: transform 0.15s ease-out, border-color 0.25s, box-shadow 0.25s;
   }
   .act__cards .milestone:hover {
@@ -852,7 +858,7 @@
 
 <!-- Sticky top navigation -->
 <nav class="topnav" id="topnav">
-  <a href="#hero" class="topnav__brand" data-scroll>● Steve Jobs</a>
+  <a href="#hero" class="topnav__brand" data-scroll id="topnav-brand">● </a>
   <button class="topnav__toggle" id="topnav-toggle" aria-label="Mở menu">☰</button>
   <div class="topnav__links" id="topnav-links">
     <a href="#hero" class="topnav__link is-active" data-scroll>Lược sử</a>
@@ -923,16 +929,10 @@ fetch(DATA_URL).then(r => r.json()).then((DATA) => {
   window.META = META;
   window.reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   window.deck = document.getElementById("deck");
-  // Personalize the static hero markup from META.
-  const titleEl = document.querySelector(".hero__title");
-  if (titleEl && META.name) titleEl.textContent = META.name;
-  const tagEl = document.querySelector(".hero__tagline");
-  if (tagEl && META.tagline) tagEl.textContent = META.tagline;
-  const yrsEl = document.querySelector(".hero__years");
-  if (yrsEl && META.years) yrsEl.textContent = META.years;
-  const portraitEl = document.querySelector(".hero__portrait img");
-  if (portraitEl && META.portrait) portraitEl.src = META.portrait;
+  // Personalize page-level chrome from META (hero slide is built from META in buildDeck).
   document.title = (META.name || "Timeline") + " — Lược sử một cuộc đời";
+  const brand = document.getElementById("topnav-brand");
+  if (brand) brand.textContent = "● " + (META.name || "");
   initInstrument();
 }).catch(err => {
   console.error("Failed to load data.json:", err);
@@ -979,15 +979,10 @@ function initInstrument() {
   addEventListener("resize", resize);
   loop();
 })();
-const CAT_LABELS = { product: "Sản phẩm", life: "Sự kiện đời", quote: "Câu nói" };
+// NOTE: CAT_LABELS, MILESTONES, INSIGHTS, LEGACY, IMG, ACTS, ACT_IMG, IMG_BY_YEAR
+// are all set on `window` by the data loader above (before initInstrument runs).
+// Do NOT redeclare them here as local consts — that would shadow the loaded data.
 
-// Act structure: which milestone indices belong to each act
-const ACTS = [
-  { title: "Hồi 1 — Vươn lên", range: "1955 — 1984", idxs: [0,1,2,3,4] },
-  { title: "Hồi 2 — Sụp đổ & Lưu đày", range: "1985 — 1986", idxs: [5,6] },
-  { title: "Hồi 3 — Phục hưng", range: "1997 — 2003", idxs: [7,8,9,10] },
-  { title: "Hồi 4 — Đỉnh cao", range: "2007 — 2011", idxs: [11,12] },
-];
 // Nav target slide indices (computed after build)
 let NAV_TARGETS = {};
 
@@ -1007,15 +1002,16 @@ function milestoneCardHTML(m, i) {
 }
 
 function buildDeck() {
-  // Slide 1: Hero
+  // Slide 1: Hero — built from META (loaded from data.json by the loader)
+  const M = window.META || {};
   const hero = document.createElement("section");
   hero.className = "slide slide--hero";
   hero.dataset.nav = "hero";
   hero.innerHTML = `
-    <div class="hero__portrait"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Steve_Jobs_Headshot_2010-CROP.jpg/960px-Steve_Jobs_Headshot_2010-CROP.jpg" alt="Chân dung Steve Jobs"></div>
-    <h1 class="hero__title">Steve Jobs</h1>
-    <p class="hero__tagline">Kẻ theo đuổi sự hoàn hảo — người đặt máy tính, âm nhạc và điện thoại vào tay hàng tỷ người.</p>
-    <p class="hero__years">1955 — 2011</p>
+    <div class="hero__portrait"><img src="${M.portrait || ""}" alt="${M.name || ""}"></div>
+    <h1 class="hero__title">${M.name || ""}</h1>
+    <p class="hero__tagline">${M.tagline || ""}</p>
+    <p class="hero__years">${M.years || ""}</p>
     <div class="hero__scroll">Dùng ← → để khám phá →</div>`;
   deck.appendChild(hero);
   NAV_TARGETS.hero = 0;
@@ -1081,12 +1077,12 @@ function buildDeck() {
     `<blockquote class="legacy__verdict-quote">"${q.vi}"<span class="who">— ${q.who}</span>${q.en ? `<span class="en">${q.en}</span>` : ""}</blockquote>`).join("");
   legacySlide.innerHTML = `
     <h2 class="legacy__heading">Di sản</h2>
-    <p class="legacy__intro">"Và chính Apple, mà Jobs coi là sáng tạo vĩ đại nhất — trở thành công ty giá trị nhất trên trái đất."</p>
-    <blockquote class="legacy__quote">"Perhaps it's like an on-off switch. Click! And you're gone."<cite>Steve Jobs · 2011</cite></blockquote>
+    <p class="legacy__intro">${LEGACY.intro || ""}</p>
+    <blockquote class="legacy__quote">"${LEGACY.epitaph ? LEGACY.epitaph.vi : ""}"<cite>${LEGACY.epitaph ? LEGACY.epitaph.who : ""}</cite></blockquote>
     <div class="legacy__block"><h3 class="legacy__block-title">Sản phẩm định hình kỷ nguyên</h3><div class="legacy__products">${productsHTML}</div></div>
     <div class="legacy__block"><h3 class="legacy__block-title">Bằng con số</h3><div class="legacy__stats">${statsHTML}</div></div>
     <div class="legacy__block"><h3 class="legacy__block-title">Phán quyết</h3><div class="legacy__verdict">${verdictHTML}</div></div>
-    <blockquote class="legacy__credo">"Sản phẩm, không phải lợi nhuận, mới là động lực."<cite>Steve Jobs</cite></blockquote>`;
+    ${LEGACY.credo ? `<blockquote class="legacy__credo">"${LEGACY.credo.vi}"<cite>${LEGACY.credo.who || ""}</cite></blockquote>` : ""}`;
   deck.appendChild(legacySlide);
   NAV_TARGETS.legacy = deck.children.length - 1;
 

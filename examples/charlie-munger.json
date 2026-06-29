@@ -1,0 +1,713 @@
+{
+  "META": {
+    "name": "Charlie Munger",
+    "tagline": "Người cõng một latticework tri thức — 'đối tác thầm lặng' của Berkshire, dạy thế giới tư duy đa ngành.",
+    "years": "1924 — 2023",
+    "portrait": "https://upload.wikimedia.org/wikipedia/commons/5/56/Charlie_Munger_%28cropped%29.jpg",
+    "lang": "vi",
+    "catProduct": "Sản phẩm & Tư duy",
+    "catLife": "Sự kiện đời",
+    "catQuote": "Câu nói"
+  },
+  "IMG": {
+    "portrait": "https://upload.wikimedia.org/wikipedia/commons/5/56/Charlie_Munger_%28cropped%29.jpg",
+    "portrait2": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Charlie_Munger_2_%28cropped%29.jpg/960px-Charlie_Munger_2_%28cropped%29.jpg",
+    "full": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Charlie_Munger.jpg/960px-Charlie_Munger.jpg",
+    "buffett": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Buffett_%26_Munger.jpg"
+  },
+  "IMG_BY_YEAR": [
+    {
+      "max": 1945,
+      "img": "full"
+    },
+    {
+      "max": 1965,
+      "img": "buffett"
+    },
+    {
+      "max": 1990,
+      "img": "portrait"
+    },
+    {
+      "max": 9999,
+      "img": "portrait2"
+    }
+  ],
+  "ACT_IMG": [
+    "full",
+    "buffett",
+    "buffett",
+    "portrait2"
+  ],
+  "ACTS": [
+    {
+      "title": "Hồi 1 — Omaha & Bài học cay đắng",
+      "range": "1924 — 1955",
+      "idxs": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "title": "Hồi 2 — Người kiến tạo",
+      "range": "1959 — 1972",
+      "idxs": [
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "title": "Hồi 3 — Lò luyện",
+      "range": "1973 — 1975",
+      "idxs": [
+        9,
+        10
+      ]
+    },
+    {
+      "title": "Hồi 4 — Bậc trí giả",
+      "range": "1978 — 2023",
+      "idxs": [
+        11,
+        12
+      ]
+    }
+  ],
+  "MILESTONES": [
+    {
+      "year": 1924,
+      "chapter": "Ch.1 · A Portrait of Charles T. Munger",
+      "title": "Omaha, mùng 1 tháng Giêng 1924",
+      "hook": "Điều gì đã khiến một cậu bé sinh ra giữa đồng cỏ Nebraska trở thành 'đối tác thầm lặng' của một trong những tập đoàn thành công nhất nước Mỹ?",
+      "story": "Charles Thomas Munger chào đời ngày 1/1/1924 tại Omaha, Nebraska — vùng lòng nước Mỹ đã sản sinh ra Will Rogers, Henry Fonda, Walt Disney, Gerald Ford và cả Warren Buffett. Bối cảnh Omaha thập niên 1920 là một 'nồi đồng nấu chảy': cửa nhà không khóa, lời nói được tin tưởng tuyệt đối. Charlie và các em gái Nancy, Carol được cha mẹ Al và Florence Munger nuôi dưỡng trong môi trường đề cao đọc sách.",
+      "motif": [
+        "Lifelong learning",
+        "Midwestern roots"
+      ],
+      "world": [
+        "Năm 1924: Calvin Coolidge đắc cử tổng thống Mỹ.",
+        "Năm 1924: Thế vận hội Mùa đông đầu tiên tại Chamonix, Pháp.",
+        "Năm 1924: Công ty IBM chính thức được thành lập."
+      ],
+      "scene": "Một buổi tối mùa hè tại Omaha thập niên 1920: lũ trẻ chơi trò 'Đá Lon' trên phố, cửa nhà để hở không khóa — bối cảnh tuổi thơ mà cậu bé Charlie sẽ lớn lên và sau này gặp lại đồng hương Warren Buffett.",
+      "people": [
+        "Al Munger — cha, luật sư thịnh vượng ở Omaha, thợ săn vịt thích dã ngoại",
+        "Florence Munger — mẹ, dạy Charlie đánh vần để đọc từ sớm",
+        "Warren Buffett — đồng hương Omaha, sau này đối tác kinh doanh suốt 60 năm"
+      ],
+      "quotes": [
+        {
+          "vi": "Warren từng gọi ông là 'abominable no-man' — 'kẻ nói Không ghê gớm'.",
+          "who": "Warren Buffett",
+          "en": "Warren once called him the \"abominable no-man\""
+        }
+      ]
+    },
+    {
+      "year": 1936,
+      "chapter": "Ch.1 · A Portrait of Charles T. Munger",
+      "title": "12 giờ mỗi ngày dưới tay ông nội Buffett",
+      "hook": "Làm sao một ca làm việc 12 tiếng không nghỉ bữa với mức lương 2 đô la/ngày lại in hằn bài học vào cả Charlie lẫn Buffett?",
+      "story": "Tuổi mới lớn, Charlie làm việc tại Buffett and Son, cửa hàng tạp hóa cao cấp cách nhà Munger sáu квартẻ. Ô chủ kiêm đồng sở hữu là Ernest Buffett — ông nội nội của Warren. Ernest xếp ca 12 tiếng không bữa ăn, không giải lao, buộc các cậu bé nộp lại hai xu mỗi cuối ca để 'gánh' chi phí, đổi lại mức lương 2 đô la/ngày kèm bài thuyết giáo rằng chủ nghĩa xã hội là cội rễ cái ác. Warren, kém Charlie sáu tuổi, sau đó cũng 'luyện' dưới tay Ernest.",
+      "motif": [
+        "Hard work",
+        "Formative labor"
+      ],
+      "world": [
+        "Tháng 8/1935: FDR ký Đạo luật An sinh Xã hội.",
+        "Giữa thập niên 1930: vùng Trung Tây chìm trong bão bụi (Dust Bowl)."
+      ],
+      "scene": "Cuối một ca 12 tiếng đứng chân tại Buffett and Son, cậu bé Charlie đặt hai đồng xu lên quầy theo quy định của ông chủ Ernest Buffett, nhận 2 đô la tiền công, rồi nghe một đoạn giảng dài về 'sự xấu xa của chủ nghĩa xã hội'.",
+      "people": [
+        "Ernest Buffett — ông chủ/đồng sở hữu, ông nội nội của Warren, kỷ luật thép",
+        "Warren Buffett — sau này cũng làm việc tại cùng cửa hàng",
+        "Charlie Munger — nhân viên nhỏ tuổi chịu ca 12 tiếng"
+      ],
+      "quotes": []
+    },
+    {
+      "year": 1943,
+      "chapter": "Ch.1 · A Portrait of Charles T. Munger",
+      "title": "Từ Michigan tới Caltech — binh nhì khí tượng học",
+      "hook": "Một sinh viên vừa tròn 19 tuổi làm sao bị luân chuyển qua ba trường để trở thành nhà khí tượng học quân sự?",
+      "story": "Vài ngày sau sinh nhật lần thứ 19, Charlie nhập ngũ Army Air Corps trong chương trình đưa ông lên thiếu úy. Ông được gửi Albuquerque học khoa học kỹ thuật, rồi chuyển tới Caltech danh giá ở Pasadena học nhiệt động lực học và khí tượng học — thiết yếu với phi công. Sau khi hoàn thành học phần, Charlie được điều động tới trạm đóng quân lạnh giá ở Nome, Alaska.",
+      "motif": [
+        "Scientific training",
+        "Caltech pedigree"
+      ],
+      "world": [
+        "1943: phe Đồng minh thắng Stalingrad, bước ngoặt mặt trận Đông.",
+        "1943: Đồng minh mở màn chiến dịch đổ bộ lên Ý."
+      ],
+      "scene": "Tại khuôn viên Caltech ở Pasadena, binh nhì Charlie say sưa học nhiệt động lực học và khí tượng học trước khi bị điều động tới trạm đóng quân lạnh giá ở Nome, Alaska.",
+      "people": [
+        "Charlie Munger — binh nhì Army Air Corps, 19 tuổi, tương lai thiếu úy và nhà khí tượng học"
+      ],
+      "quotes": []
+    },
+    {
+      "year": 1953,
+      "chapter": "Ch.1 · A Portrait of Charles T. Munger",
+      "title": "Ly hôn, rồi con trai Teddy bệnh máu trắng",
+      "hook": "Tuổi 29, ly hôn và đứa con không còn lối thoát — Charlie gồng gánh hai nỗi đau cùng lúc?",
+      "story": "Dù bề ngoài sáng sủa, hôn nhân lung lay và hai vợ chồng ly hôn năm 1953. Ngay sau đó, Charlie biết cậu con trai cưng Teddy mắc bệnh máu trắng (leukemia) giai đoạn cuối — gánh nặng nặng nề với một Charlie mới 29 tuổi. Trong thời đại trước kỷ nguyên ghép tủy xương, bệnh không còn hy vọng chữa. Một người bạn nhớ lại Charlie vào viện thăm con đang hấp hối rồi đi dạo quanh các phố Pasadena khóc nức nở.",
+      "motif": [
+        "Resilience",
+        "Unimaginable loss"
+      ],
+      "world": [
+        "1953: Stalin qua đời, chấm dứt một thời tại Liên Xô.",
+        "1953: Watson và Crick công bố cấu trúc xoắn kép DNA."
+      ],
+      "scene": "Các con phố Pasadena, 1953: Charlie rời phòng bệnh của Teddy, đi men những con phố ngoại ô và khóc — hình ảnh một người bạn ghi nhớ rõ nhất về giai đoạn đen tối nhất đời ông.",
+      "people": [
+        "Teddy Munger — con trai trưởng được Charlie vô cùng yêu mến, mắc leukemia giai đoạn cuối",
+        "Nancy (vợ đầu) — người ly hôn với Charlie năm 1953",
+        "Roy Tolles — bạn và đối tác luật, người sẽ sắp xếp bước ngoặt tiếp theo cho Charlie"
+      ],
+      "quotes": []
+    },
+    {
+      "year": 1956,
+      "chapter": "Ch.1 · A Portrait of Charles T. Munger",
+      "title": "Đám cưới tháng Giêng — Charlie gặp Nancy Borthwick",
+      "hook": "Sau cơn bão, tình yêu nào đã kéo Charlie ra khỏi những con phố khóc lóc ở Pasadena?",
+      "story": "Trong giai đoạn buồn nhất, bạn và đối tác Roy Tolles nhờ một người mai mối cho Charlie gặp Nancy Barry Borthwick ở Los Angeles. Nancy là cử nhân Stanford, có hai cậu con trai nhỏ gần tuổi các con gái anh. Hai người có nhiều điểm chung; sau vài tháng hẹn hò họ đính hôn. Đám cưới gia đình nhỏ diễn ra tháng Giêng 1956, cả bốn đứa trẻ — con gái anh và con trai cô, từ 4 đến 7 tuổi — đều tham dự. Nancy trở thành người bạn đời suốt đời và 'vận may tối thượng' của ông.",
+      "motif": [
+        "Second chance",
+        "Blended family"
+      ],
+      "world": [
+        "1956: Cách mạng Hungary và Khủng hoảng Kênh đào Suez.",
+        "1956: Elvis Presley xuất hiện trên truyền hình quốc gia."
+      ],
+      "scene": "Tháng Giêng 1956, một đám cưới gia đình nhỏ: bốn đứa trẻ 4–7 tuổi — hai con gái Charlie và hai con trai Nancy — đứng cạnh khi hai người chính thức kết hôn.",
+      "people": [
+        "Nancy Barry Borthwick — cử nhân Stanford, trở thành vợ thứ hai và người bạn đời suốt đời của Charlie",
+        "Roy Tolles — bạn và đối tác luật, đã nhờ người mai mối cuộc gặp giữa Charlie và Nancy"
+      ],
+      "quotes": [
+        {
+          "vi": "Nếu Charlie có chút may mắn nào trong đời, thì vận may tối thượng của ông là, và vẫn là, Nancy.",
+          "who": "Rick Guerin",
+          "en": "I think if Charlie's had any good luck in his life, his ultimate luck was, and is, Nancy."
+        }
+      ]
+    },
+    {
+      "year": 1959,
+      "chapter": "Ch.1 · A Portrait of Charles T. Munger",
+      "title": "Buổi tối ở Omaha — Charlie gặp Warren Buffett",
+      "hook": "Hai kẻ khổng lồ điệp khúc ai nhường ai — ai đã 'lấn át' sân khấu của ai trong đêm đầu tiên?",
+      "story": "Khi cha Charlie qua đời, ông về Omaha xử lý di sản. Để đón ông, gia đình Davis tổ chức bữa tiệc; bàn tiệc có cả Warren Buffett. Charlie nhận ra họ Buffett từ thời cửa hàng Buffett and Son. Vốn dĩ Dr. Davis đã giao 100.000 đô la tiết kiệm cho Warren vì 'Warren khiến ông nhớ đến Charlie Munger'. Buổi tối đó, Warren 29 tuổi và Charlie 35 tuổi đắm chìm trong đối thoại đến mức Susie Buffett kinh ngạc khi thấy Warren nhường sân khấu cho Charlie — điều bà 'chưa từng thấy bao giờ'.",
+      "motif": [
+        "Kindred spirits",
+        "Lifelong partnership begins"
+      ],
+      "world": [
+        "1959: Fidel Castro tiến vào Havana, Cách mạng Cuba thắng lợi.",
+        "1959: Alaska và Hawaii trở thành tiểu bang thứ 49 và 50."
+      ],
+      "scene": "Một nhà hàng ở Omaha năm 1959: giữa bữa, Charlie bắt đầu lăn ra sàn cười vì chính câu đùa của mình — khoảnh khắc Warren biết mình đã gặp một đồng điệu, và Susie Buffett chứng kiến Warren lần đầu đời nhường vai trò dẫn dắt cho người khác.",
+      "people": [
+        "Warren Buffett — 29 tuổi, đang gây vốn đầu tư ở Omaha",
+        "Dr. Ed Davis — giao $100.000 tiết kiệm cho Buffett vì 'Warren giống Charlie Munger'",
+        "Susie Buffett — vợ Warren, chứng kiến buổi tối hai cái tôi sụpổ",
+        "Neil Davis — con trai Dr. Davis, bạn thuở nhỏ của Charlie, người gắn hai ông lại"
+      ],
+      "quotes": [
+        {
+          "vi": "Khi Charlie bắt đầu lăn ra sàn cười vì chính những câu đùa của mình, tôi biết tôi đã gặp một người đồng điệu tâm hồn.",
+          "who": "Warren Buffett",
+          "en": "when Charlie started rolling on the floor laughing at his own jokes, I knew I had met a kindred spirit."
+        },
+        {
+          "vi": "Tôi nghĩ Warren cảm thấy Charlie là người thông minh nhất mà ông từng gặp.",
+          "who": "Susie Buffett",
+          "en": "I think Warren felt that Charlie was the smartest person he'd ever met."
+        },
+        {
+          "vi": "Khi bị ép phải rút gọn thành một từ, ông nói ông 'hợp lý' (rational).",
+          "who": "Warren Buffett",
+          "en": "when forced to boil it down to one word, he said that he was 'rational.'"
+        }
+      ],
+      "img": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Buffett_%26_Munger.jpg"
+    },
+    {
+      "year": 1961,
+      "chapter": "Ch.1 · A Portrait of Charles T. Munger",
+      "title": "$100,000 thành $300,000 — quả cầu tuyết bất động sản",
+      "hook": "Một đồng vốn sinh ba đồng lợi ngay dự án đầu tiên — Charlie rốt cuộc kiếm được bao nhiêu từ bất động sản?",
+      "story": "Năm 1961, Charlie lần đầu thử sức phát triển bất động sản, hợp tác với Otis Booth. Dự án xây căn hộ trên đất gần Caltech thành công rực rỡ: hai đối tác thu lợi nhuận khoảng 300.000 đô la từ khoản đầu tư 100.000 đô la. Charlie tái đầu tư toàn bộ lợi nhuận để những dự án ngày càng lớn hơn trở nên khả thi — và khi dừng lại năm 1960s, ông đã có 'tổ chim' trị giá 1 triệu đô la chỉ riêng từ bất động sản.",
+      "motif": [
+        "Compounding",
+        "Reinvest all profits"
+      ],
+      "world": [
+        "1961: Yuri Gagarin trở thành người đầu tiên bay vào không gian.",
+        "1961: Bức tường Berlin bắt đầu được xây."
+      ],
+      "scene": "Mảnh đất gần Caltech, 1961: Charlie và Otis Booth khởi công dự án căn hộ đầu tiên — bỏ ra 100.000 đô la, thu về 300.000 đô la lợi nhuận, khởi động chuỗi dự án Pasadena và một tổ chim một triệu đô la.",
+      "people": [
+        "Otis Booth — khách hàng và là bạn, đối tác của Charlie trong dự án căn hộ thành công rực rỡ",
+        "Charlie Munger — liên tục tái đầu tư toàn bộ lợi nhuận bất động sản để cuốn quả cầu tuyết lớn dần"
+      ],
+      "quotes": []
+    },
+    {
+      "year": 1962,
+      "chapter": "Ch.1 · A Portrait of Charles T. Munger",
+      "title": "Wheeler, Munger & Co. — 11 năm không một năm lỗ",
+      "hook": "Làm thế nào một quỹ đầu tư đạt 28,3%/năm mà không từng có một năm âm?",
+      "story": "Charlie xây cơ sở tài sản qua Wheeler, Munger & Co., quỹ hợp danh với Jack Wheeler. Vì Wheeler nắm hai ghế trên Pacific Coast Stock Exchange, quỹ trả phí giao dịch rất thấp và duy trì chi phí gần bằng không. Trong 11 năm đầu, Wheeler, Munger tăng trưởng kép 28,3% gộp (20,0% ròng) so với 6,7% của Dow Jones — không có một năm giảm nào. Cùng thời điểm lập hãng luật Munger, Tolles & Hills, Charlie đã bí mật thiết kế 'kế hoạch thoát' khỏi nghề luật.",
+      "motif": [
+        "Low cost structure",
+        "Concentration"
+      ],
+      "world": [
+        "1962: Khủng hoảng tên lửa Cuba đưa thế giới đến bờ chiến tranh hạt nhân.",
+        "1962: Marilyn Monroe qua đời, chấn động nước Mỹ."
+      ],
+      "scene": "Tháng Hai 1962: Charlie cùng Roy Tolles ký lập hãng Munger, Tolles & Hills — đồng thời lặng lẽ lập công ty đầu tư với Jack Wheeler làm 'kế hoạch thoát' khỏi nghề luật.",
+      "people": [
+        "Jack Wheeler — đối tác nắm hai ghế trên Pacific Coast Stock Exchange",
+        "Roy Tolles — đối tác sáng lập hãng luật Munger, Tolles & Hills",
+        "Charlie Munger — điều hành quỹ, tập trung đưa vốn vào hoạt động"
+      ],
+      "quotes": [
+        {
+          "vi": "(Hợp danh) hoạt động cực kỳ tốt trong 11 năm đầu, tăng trưởng kép 28,3% gộp so với 6,7% của Dow, không một năm nào giảm.",
+          "who": "Tác giả Ch.1",
+          "en": "It did exceptionally well for the first eleven years, compounding at 28.3 percent gross vs. 6.7 percent for the Dow, without a single down year."
+        }
+      ]
+    },
+    {
+      "year": 1965,
+      "chapter": "Ch.1 · A Portrait of Charles T. Munger",
+      "title": "Rời hành nghề luật — để lại vốn cho gia đình bạn mất vì ung thư",
+      "hook": "Lúc đứng trước sự nghiệp luật sư thành công, sao Charlie lại từ bỏ — và từ bỏ cả phần vốn của mình?",
+      "story": "Charlie rời Munger Tolles năm 1965 sau chỉ ba năm, nhưng tên ông vẫn đứng đầu danh sách 175 luật sư của hãng cho tới tận hôm nay. Khi ra đi, ông không lấy phần vốn của mình; thay vào đó, ông chỉ định chuyển số vốn đó cho di sản của người đối tác trẻ Fred Warder, người đã để lại vợ và các con khi qua đời vì ung thư. Charlie vẫn thường nhắc các luật sư: 'Anh không cần lấy đồng đô-la cuối cùng'.",
+      "motif": [
+        "Generosity",
+        "Reputation as moat"
+      ],
+      "world": [
+        "1965: Mỹ đổ quân Thủy quân lục chiến vào Đà Nẵng, leo thang Chiến tranh Việt Nam.",
+        "1965: Bạo loạn Watts bùng nổ tại Los Angeles."
+      ],
+      "scene": "Năm 1965 tại văn phòng Munger Tolles, Charlie ký quyết định rời hãng sau ba năm và chỉ định chuyển toàn bộ phần vốn của mình cho gia đình của Fred Warder — người đối tác trẻ vừa mất vì ung thư.",
+      "people": [
+        "Fred Warder — đối tác trẻ mất vì ung thư, để lại vợ và các con, được Charlie chuyển phần vốn cho di sản",
+        "Charlie Munger — đối tác sáng lập rời hãng 1965, để lại tên đứng đầu danh sách 175 luật sư"
+      ],
+      "quotes": [
+        {
+          "vi": "Anh không cần lấy đồng đô-la cuối cùng.",
+          "who": "Charlie Munger",
+          "en": "You don't need to take the last dollar."
+        },
+        {
+          "vi": "Hãy chọn khách hàng như cách anh chọn bạn bè.",
+          "who": "Charlie Munger",
+          "en": "Choose clients as you would choose friends."
+        }
+      ]
+    },
+    {
+      "year": 1973,
+      "chapter": "Ch.1 · A Portrait of Charles T. Munger",
+      "title": "Sự sụp đổ 1973-1974 — mất hơn nửa vốn",
+      "hook": "Chín năm liên tiếp thắng lợi, rồi chỉ hai năm đã mất hơn phân nửa — Charlie đã làm sai điều gì?",
+      "story": "Thị trường gấu tàn khốc 1973-1974 giáng đòn mạnh vào Wheeler, Munger khi quỹ giảm 31,9% rồi 31,5% trong hai năm liên tiếp, do hai khoản nắm giữ lớn nhất là Blue Chip Stamps và New America Fund lao dốc. Đáng chú ý là sự sụt giảm này diễn ra dù, theo lời Charlie, 'các khoản đầu tư chính gần như chắc chắn sẽ cuối cùng có thể bán được với giá cao hơn giá niêm yết thị trường'. Đây là một trong những lần hiếm hoi Charlie thất bại trong việc huy động vốn trực tiếp.",
+      "motif": [
+        "Mr. Market",
+        "Leverage cuts both ways"
+      ],
+      "world": [
+        "1973: Cấm vận dầu OPEC đẩy Mỹ vào khủng hoảng năng lượng.",
+        "1973: Vụ Watergate lật mặt chính quyền Nixon."
+      ],
+      "scene": "Trong đợt gấu 1973-1974, bảng điểm Wheeler, Munger nhuốm đỏ: hai năm liên tiếp trừ 31,9% và 31,5%, trong khi Blue Chip Stamps và New America Fund rơi tự do dù Charlie tin chắc nội tại của chúng còn giá trị hơn giá thị trường.",
+      "people": [
+        "Charlie Munger — quản lý quỹ chịu lỗ nặng 1973-1974",
+        "Jack Wheeler — đối tác đồng chịu đòn trong đợt gấu"
+      ],
+      "quotes": [
+        {
+          "vi": "Các khoản đầu tư chính gần như chắc chắn sẽ cuối cùng có thể bán được với giá cao hơn giá niêm yết thị trường.",
+          "who": "Charlie Munger",
+          "en": "having its major investments virtually sure of eventually being saleable at prices higher than the quoted market prices."
+        }
+      ]
+    },
+    {
+      "year": 1975,
+      "chapter": "Ch.1 · A Portrait of Charles T. Munger",
+      "title": "Phục hồi 73,2% rồi thanh lý — đánh cược tất cả vào Berkshire $38",
+      "hook": "Vừa bounce-back kỷ lục 73%, Charlie lại chọn đóng cửa quỹ — sao lại rời bàn thắng?",
+      "story": "Quỹ phục hồi mạnh năm 1975, tăng 73,2%. Sau cú sốc này, Charlie đi theo bước Warren (đã đóng các quỹ riêng năm 1969): ông không còn muốn quản lý vốn trực tiếp, mà quyết tâm xây vốn chủ sở hữu qua nắm giữ cổ phiếu trong một công ty holding. Khi Wheeler, Munger thanh lý, các bên góp vốn nhận cổ phiếu Blue Chip Stamps và Diversified Retailing — về sau đổi thành Berkshire Hathaway, kết năm 1975 ở mức 38 đô mỗi cổ phiếu. Hôm nay mỗi cổ phiếu trị giá hơn 500.000 đô.",
+      "motif": [
+        "Patient compounding",
+        "Permanence of capital"
+      ],
+      "world": [
+        "1975: Sài Gòn sụp đổ, kết thúc Chiến tranh Việt Nam.",
+        "1975: Bill Gates và Paul Allen thành lập Microsoft."
+      ],
+      "scene": "Khi Wheeler, Munger thanh lý năm 1975, các nhà đầu tư thay vì nhận tiền mặt lại cầm trên tay cổ phiếu Blue Chip Stamps và Diversified Retailing — rồi đổi thành Berkshire Hathaway ở giá đóng cửa 38 đô, hạt giống của một tài sản kếch xù về sau.",
+      "people": [
+        "Charlie Munger — quyết định đóng quỹ và chuyển sang nắm cổ phiếu holding",
+        "Warren Buffett — người đi trước, đóng các quỹ riêng từ 1969, dẫn đường cho quyết định của Charlie"
+      ],
+      "quotes": [
+        {
+          "vi": "Sau trải nghiệm khó khăn này, Charlie đi theo Warren khi kết luận rằng mình không còn muốn quản lý vốn trực tiếp cho nhà đầu tư nữa.",
+          "who": "Tác giả Ch.1",
+          "en": "After this difficult experience, Charlie followed Warren in concluding that he no longer wanted to manage funds directly for investors."
+        }
+      ]
+    },
+    {
+      "year": 1978,
+      "chapter": "Ch.1 · A Portrait of Charles T. Munger",
+      "title": "Phó chủ tịch Berkshire — phép nhân Buffett × Munger",
+      "hook": "Một cổ phiếu 38 đô năm 1975 đã lớn lên thành hơn 500.000 đô — đòn bẩy bí mật nào đã tạo ra phép màu?",
+      "story": "Dưới sự lãnh đạo của Warren và Charlie, Berkshire Hathaway nhận diện các công ty bị định giá thấp rồi mua cổ phần lớn hoặc thâu tóm hoàn toàn: GEICO, Coca-Cola, The Washington Post, Gillette, American Express, See's Candies, Buffalo Evening News. Phần lớn các khoản đầu tư chính được nắm giữ dài hạn — họ vẫn sở hữu gần như mọi doanh nghiệp từng thâu tóm hoàn toàn. Từ 1964 đến nay, giá trị thị trường Berkshire tăng trưởng kỳ diệu, đưa Charlie vào Forbes 400.",
+      "motif": [
+        "Permanence of capital",
+        "Circle of competence"
+      ],
+      "world": [
+        "1978: Hiệp định Camp David nền tảng hòa bình Ai Cập-Israel.",
+        "1979: Cú sốc dầu lần hai và khủng hoảng con tin Tehran rung chuyển thị trường Mỹ."
+      ],
+      "scene": "Tại trụ sở Berkshire ở Omaha, Warren và Charlie duyệt các báo cáo của những doanh nghiệp bị định giá thấp — từ GEICO đến Coca-Cola — quyết tâm nắm giữ chúng gần như mãi mãi, biến Berkshire thành một trong những công ty được ngưỡng mộ nhất lịch sử.",
+      "people": [
+        "Warren Buffett — chủ tịch điều hành, người phân bổ vốn chính",
+        "Charlie Munger — phó chủ tịch, người đọc và nhận diện doanh nghiệp chất lượng",
+        "Benjamin Graham — người ảnh hưởng triết lý định giá thấp"
+      ],
+      "quotes": [],
+      "img": "https://upload.wikimedia.org/wikipedia/commons/5/56/Charlie_Munger_%28cropped%29.jpg"
+    },
+    {
+      "year": 2023,
+      "chapter": "Ch.1 · A Portrait of Charles T. Munger",
+      "title": "99 tuổi — vĩ nhân cuối cùng của kỷ nguyên",
+      "hook": "Một người sống 99 năm, xây dựng Berkshire và dạy thế giới tư duy — di sản ông để lại là gì?",
+      "story": "Charlie Munger qua đời ngày 28/11/2023, chưa đầy một tháng trước sinh nhật lần thứ 100. Ông là phó chủ tịch Berkshire Hathaway trong 45 năm, chủ tịch Daily Journal Corporation, và là người phổ biến khái niệm 'latticework of mental models' (khung lưới mô hình tư duy) cho hàng triệu nhà đầu tư. Ông ngưỡng mộ Benjamin Franklin và sống theo hình mẫu đó: dùng của cải tự thân để đạt độc lập tài chính, rồi tập trung cải thiện xã hội qua Good Samaritan Hospital, Harvard-Westlake, Stanford, Huntington Library.",
+      "motif": [
+        "Eminent dead",
+        "Lifelong learning"
+      ],
+      "world": [
+        "2023: ChatGPT và AI tạo sinh bùng nổ, định hình lại nền kinh tế.",
+        "2023: Berkshire Hathaway đạt市值 hơn 780 tỷ đô la."
+      ],
+      "scene": "Tại đại hội cổ đông Berkshire 2023, Charlie 99 tuổi vẫn trả lời cổ đông sắc bén — đó là lần xuất hiện cuối cùng trước khi ông ra đi chưa đầy 7 tháng sau, để lại di sản tư duy dài hàng thế kỷ.",
+      "people": [
+        "Charlie Munger — vĩ nhân qua đời 99 tuổi, phó chủ tịch Berkshire 45 năm",
+        "Warren Buffett — 'khi Charlie ra đi, Berkshire không thể xây lại được một Charlie thứ hai'",
+        "Benjamin Franklin — người thầy qua sách mà Charlie ngưỡng mộ và sống theo"
+      ],
+      "quotes": [
+        {
+          "vi": "Tôi bản thân là một người nghiện tiểu sử. Làm bạn với 'những người đã khuất lỗi lạc' là cách tốt hơn trong cả cuộc sống lẫn giáo dục.",
+          "who": "Charlie Munger",
+          "en": "I am a biography nut myself. Making friends among the 'eminent dead' works better in life and work better in education."
+        },
+        {
+          "vi": "Khi bị ép phải rút gọn thành một từ, ông nói ông 'hợp lý' (rational).",
+          "who": "Warren Buffett",
+          "en": "when forced to boil it down to one word, he said that he was 'rational.'"
+        }
+      ],
+      "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Charlie_Munger_2_%28cropped%29.jpg/960px-Charlie_Munger_2_%28cropped%29.jpg"
+    }
+  ],
+  "INSIGHTS": [
+    {
+      "cat": "product",
+      "year": 1994,
+      "title": "Treo kiến thức lên khung lưới mô hình",
+      "story": "Munger khẳng định bạn không thể thực sự biết gì nếu chỉ nhớ các sự kiện rời rạc rồi nhại lại; sự kiện phải được treo lên một 'khung lưới lý thuyết' — tức các mô hình trong đầu — mới ở dạng dùng được. Ông ví những sinh viên chỉ học vẹt sẽ thất bại cả ở trường lẫn trong đời. Đây là quy tắc đầu tiên của 'trí tuệ thế gian cơ bản'.",
+      "quote": {
+        "vi": "Bạn không thể thực sự biết bất cứ điều gì nếu chỉ nhớ những sự kiện rời rạc rồi cố nhại lại. Nếu các sự kiện không treo chặt trên một khung lưới lý thuyết, bạn không nắm chúng ở dạng có thể dùng được.",
+        "who": "Charlie Munger",
+        "en": "you can't really know anything if you just remember isolated facts and try and bang 'em back."
+      }
+    },
+    {
+      "cat": "product",
+      "year": 1994,
+      "title": "Thị trường chứng khoán như sân đua pari-mutuel",
+      "story": "Munger mô hình hóa thị trường như hệ thống pari-mutuel ở trường đua: tỷ lệ thay đổi theo dòng tiền, hệt như giá cổ phiếu. Đánh bại nó rất khó vì 'hoa hồng' của sàn, nhưng một số ít người kỷ luật vẫn thắng. Điểm chung của mọi người thắng trong lịch sử rất đơn giản: họ cược rất hiếm. Buffett ví tấm thẻ chỉ có 20 lỗ đấm để ép bạn nghĩ thật kỹ trước mỗi lần đầu tư.",
+      "quote": {
+        "vi": "Điều duy nhất mà tất cả những người cược thắng có là khá đơn giản: họ đặt cược rất hiếm.",
+        "who": "Charlie Munger",
+        "en": "The one thing all those winning bettors have is quite simple: they bet very seldom."
+      }
+    },
+    {
+      "cat": "product",
+      "year": 1994,
+      "title": "Khi công nghệ giúp và khi nó giết bạn",
+      "story": "Bài học lớn của kinh tế vi mô là phân biệt khi công nghệ giúp và khi nó giết bạn. Khi Berkshire làm dệt may — nghề hàng hóa kém — nhân viên báo có máy dệt mới gấp đôi năng suất, Buffett nói 'Mong nó không chạy, vì nếu chạy tôi đóng cửa xưởng': anh biết mọi năng suất tăng sẽ chảy hết về tay người mua vải. Ngược lại, chủ tờ báo độc quyền thay máy mới thì toàn bộ tiết kiệm rơi xuống lợi nhuận.",
+      "quote": {
+        "vi": "Bài học lớn trong kinh tế vi mô là phân biệt khi công nghệ sẽ giúp bạn và khi nó sẽ giết bạn.",
+        "who": "Charlie Munger",
+        "en": "The great lesson in microeconomics is to discriminate between when technology is going to help you and when it's going to kill you."
+      }
+    },
+    {
+      "cat": "product",
+      "year": 1994,
+      "title": "Thị trường tự do là một hệ sinh thái",
+      "story": "Munger khuyên nghĩ về nền kinh tế như một hệ sinh thái, nơi sinh vật thịnh vượng nhờ chiếm ngách. 'Lợi thế quy mô' là yếu tố quyết định doanh nghiệp thắng thua: hiệu ứng kinh nghiệm, quảng cáo truyền thoại, lợi thế thông tin, 'bằng chứng xã hội' tâm lý, tới quy tắc 'số 1 hoặc số 2 hoặc rút lui' của Jack Welch ở GE.",
+      "quote": {
+        "vi": "Cũng như động vật thịnh vượng trong các ngách, những người chuyên môn hóa trong kinh doanh thường tìm được nền kinh tế tốt mà họ không thể có được cách nào khác.",
+        "who": "Charlie Munger",
+        "en": "Just as animals flourish in niches, similarly, people who specialize in the business world frequently find good economics."
+      }
+    },
+    {
+      "cat": "product",
+      "year": 1994,
+      "title": "Chỉ chơi trong vòng năng lực của bạn",
+      "story": "Mỗi người có một 'vòng năng lực' và rất khó mở rộng. Munger nói nếu phải kiếm sống bằng âm nhạc, anh không nghĩ ra mức nào đủ thấp để miêu tả vị trí của mình. Bạn phải tìm ra năng khiếu của mình: nếu chơi những trò người khác có năng khiếu mà bạn không có, bạn sẽ thua — gần như chắc chắn.",
+      "quote": {
+        "vi": "Bạn phải tìm ra năng khiếu của chính mình. Nếu bạn chơi những trò mà người khác có năng khiếu còn bạn thì không, bạn sẽ thua.",
+        "who": "Charlie Munger",
+        "en": "You have to figure out what your own aptitudes are. If you play games where other people have the aptitudes and you don't, you're going to lose."
+      }
+    },
+    {
+      "cat": "life",
+      "year": 1994,
+      "title": "Người chỉ có búa thấy mọi vấn đề là đinh",
+      "story": "Bạn phải có nhiều mô hình trong đầu; nếu chỉ có một hai cái, tâm lý con người sẽ bóp méo thực tại cho khớp với mô hình — như bác sĩ nắn xương coi mọi bệnh đều chữa bằng nắn cột sống. Các mô hình còn phải lấy từ nhiều ngành khác nhau vì trí tuệ thế gian không nằm gọn trong một khoa nào; chỉ chừng 80-90 mô hình là gánh vác khoảng 90% sức nặng.",
+      "quote": {
+        "vi": "Với người chỉ có búa, mọi vấn đề đều trông như cái đinh.",
+        "who": "Charlie Munger",
+        "en": "to the man with only a hammer, every problem looks like a nail"
+      }
+    },
+    {
+      "cat": "life",
+      "year": 1994,
+      "title": "Người thọt chân trong cuộc thi đá đít",
+      "story": "Munger nhấn mạnh phải làm chủ toán xác suất cơ bản của Fermat và Pascal. Vấn đề là mạng nơ-ron tự nhiên của não không theo xác suất Pascal — nó dùng lối tắt thô sơ — nên ta phải học cách vận dụng nó có chủ đích. Ai thiếu toán xác suất trong bộ công cụ sẽ đi suốt đời 'như người thọt chân trong cuộc thi đá đít'.",
+      "quote": {
+        "vi": "Nếu bạn không đưa toán xác suất cơ bản vào bộ công cụ của mình, bạn sẽ đi qua một cuộc đời dài như một người thọt chân trong cuộc thi đá đít.",
+        "who": "Charlie Munger",
+        "en": "If you don't get this elementary probability into your repertoire, you go through a long life like a one-legged man in an ass-kicking contest."
+      }
+    },
+    {
+      "cat": "life",
+      "year": 1994,
+      "title": "Tâm trí: vinh quang cũng là nỗi nhục của vũ trụ",
+      "story": "Munger dẫn lời Pascal: tâm trí con người vừa là vinh quang vừa là nỗi nhục của vũ trụ — sức mạnh to lớn nhưng cũng có những 'hỏng hóc tiêu chuẩn' khiến ta kết luận sai và dễ bị thao túng. Vì vậy ông dùng 'phân tích hai đường': trước hết xem xét lý trí các lợi ích thực, sau đó đánh giá các yếu tố tâm lý tiềm thức khiến ta kết luận sai.",
+      "quote": {
+        "vi": "Tâm trí con người, cùng một lúc, vừa là vinh quang vừa là nỗi nhục của vũ trụ.",
+        "who": "Charlie Munger (trích Pascal)",
+        "en": "The mind of man at one and the same time is both the glory and the shame of the universe."
+      }
+    },
+    {
+      "cat": "life",
+      "year": 1995,
+      "title": "Lực lượng siêu mạnh của phần thưởng và hình phạt",
+      "story": "Động cơ (incentive) thay đổi hành vi mạnh đến mức ai cũng tưởng mình hiểu nhưng luôn đánh giá thấp. Munger kể Federal Express từng vật lộn với ca đêm: trả lương theo giờ nhân viên cứ kéo dài, đến khi đổi sang trả theo ca và cho về nhà khi xong thì hệ thống mới vận hành êm ru. Ông cũng dẫn chuyện một bác sĩ phẫu thuật ở Lincoln, Nebraska năm này qua năm khác cắt bỏ hàng rổ mật bình thường vì khen thưởng khiến ông tin rằng mật là gốc rễ mọi bệnh.",
+      "quote": {
+        "vi": "Có lẽ quy tắc quan trọng nhất trong quản lý là: Hãy thiết kế động cơ cho đúng.",
+        "who": "Charlie Munger",
+        "en": "Perhaps the most important rule in management is 'Get the incentives right.'"
+      }
+    },
+    {
+      "cat": "life",
+      "year": 1995,
+      "title": "Bằng chứng xã hội và hành vi theo đám đông",
+      "story": "Con người tự động nghĩ và làm điều mình quan sát thấy người khác làm. Munger kể thí nghiệm kinh điển: khi mười người vào thang máy quay lưng về phía sau, người lạ bước vào cũng thường quay lưng theo. Ông cũng dẫn Kitty Genovese bị giết trong khi nhiều người qua đường đứng nhìn — sự bất động của đám đông trở thành 'bằng chứng xã hội' rằng bất động là đúng.",
+      "quote": {
+        "vi": "Hãy học cách bỏ qua những tấm gương sai của người khác, vì ít có kỹ năng nào đáng sở hữu hơn.",
+        "who": "Charlie Munger",
+        "en": "Learn how to ignore the examples from others when they are wrong, because few skills are more worth having."
+      }
+    },
+    {
+      "cat": "life",
+      "year": 1995,
+      "title": "Xu hướng qua lại và báo đáp ân tình",
+      "story": "Con người có xu hướng tự động báo đáp cả ân lẫn oán, thường ở mức tiềm thức nên dễ bị lợi dụng. Munger kể thí nghiệm của Cialdini: khi được nhờ giám sát tội phạm vị thành niên hai năm, 100% từ chối; nhưng khi người xin nhượng bộ xuống còn 'đưa đi sở thú một buổi' thì tỷ lệ đồng ý tăng gấp ba. Cialdini tin chính xu hướng báo đáp này khiến bộ trưởng tư pháp Mỹ chấp thuận vụ đột nhập Watergate.",
+      "quote": {
+        "vi": "Nếu được kiểm soát Bộ Quốc phòng, chính sách của tôi sẽ giống hệt Walton: không nhận một ân huệ nào từ nhà cung cấp.",
+        "who": "Charlie Munger",
+        "en": "If I controlled the Defense Department, its policies would mimic Walton's."
+      }
+    },
+    {
+      "cat": "life",
+      "year": 1995,
+      "title": "Phản ứng sai lệch theo sự tương phản",
+      "story": "Hệ thần kinh đo lường theo tương đối chứ không tuyệt đối, nên con người dễ bị lừa bởi so sánh. Munger kể mánh khóe của dân môi giới bất động sản: dẫn khách xem ba ngôi nhà tồi với giá cắt cổ, rồi mới giới thiệu một nhà chỉ hơi tệ ở giá vừa phải — thế là bán dễ dàng. Ông cũng ví von chuyện con ếch bị luộc từ từ trong nước nguội sẽ chết vì mỗi bước tăng nhiệt quá nhỏ để não nhận ra nguy hiểm.",
+      "quote": {
+        "vi": "Một vết thủng nhỏ sẽ làm chìm một con tàu vĩ đại.",
+        "who": "Charlie Munger",
+        "en": "A small leak will sink a great ship."
+      }
+    },
+    {
+      "cat": "quote",
+      "year": 2000,
+      "title": "Tránh nơi mình sẽ chết",
+      "story": "Đây là một trong những câu nói khoái khẩu nhất của Munger, thể hiện phương pháp 'đảo ngược vấn đề' (inversion) mà ông học từ nhà toán học Jacobi. Thay vì tự hỏi làm sao để thành công, ông luôn hỏi trước: làm sao để tránh thảm họa? Bằng cách loại bỏ nhanh các phần 'bàn cờ' tồi tệ, ông dồn toàn bộ thời gian vào những vùng sinh lời cao.",
+      "quote": {
+        "vi": "Tất cả những gì tôi muốn biết là tôi sẽ chết ở đâu, để tôi không bao giờ đến đó.",
+        "who": "Charlie Munger",
+        "en": "All I want to know is where I'm going to die, so I'll never go there."
+      }
+    },
+    {
+      "cat": "quote",
+      "year": 2000,
+      "title": "Ngồi im giữ tiền cần tính cách",
+      "story": "Munger nổi tiếng với 'đầu tư ngồi im': mua ít, nắm giữ lâu, sẵn sàng ôm núi tiền mặt nhiều năm chờ đợi một 'quả bóng chạy chậm, thẳng, đúng tâm'. Câu này giải thích vì sao kỷ luật và kiên nhẫn quan trọng hơn thông minh — phần lớn thời gian việc tốt nhất là không làm gì.",
+      "quote": {
+        "vi": "Cần có tính cách để ngồi đó với cả đống tiền mặt mà không làm gì cả. Tôi không đến được vị trí ngày hôm nay bằng cách chạy theo những cơ hội tầm thường.",
+        "who": "Charlie Munger",
+        "en": "It takes character to sit there with all that cash and do nothing. I didn't get to where I am by going after mediocre opportunities."
+      }
+    },
+    {
+      "cat": "quote",
+      "year": 2000,
+      "title": "Ba giỏ: Có, Không, và Quá khó",
+      "story": "Munger giới hạn trường đầu tư chỉ vào những ứng viên đơn giản, dễ hiểu bằng một màn hình loại trừ (vòng năng lực). Ông chia mọi cơ hội thành ba giỏ — có, không, và 'quá khó để hiểu'. Các ngành bị yêu thích như dược phẩm hay công nghệ thường đi thẳng vào giỏ 'quá khó', còn những thương vụ IPO được thổi phồng thì lập tức vào giỏ 'không'.",
+      "quote": {
+        "vi": "Chúng tôi có ba giỏ để đầu tư: có, không, và quá khó để hiểu.",
+        "who": "Charlie Munger",
+        "en": "We have three baskets for investing: yes, no, and too tough to understand."
+      }
+    },
+    {
+      "cat": "quote",
+      "year": 2000,
+      "title": "Chỉ vung khi là quả bóng ngọt",
+      "story": "Để giải thích triết lý kỷ luật, Munger dùng huyền thoại bóng chày Ted Williams — người duy nhất đạt tỷ lệ đánh 0.400 trong bảy thập kỷ. Williams chia vùng strike thành 77 ô và chỉ vung vợt ở những ô tốt nhất, chấp nhận rút lui chứ không vung vào bóng xấu. Nhà đầu tư cũng vậy: phần lớn thời gian ngồi nhìn, chỉ 'vung mạnh' khi gặp quả bóng chậm, thẳng, đúng tâm điểm.",
+      "quote": {
+        "vi": "Khi đầu tư, cũng như bóng chày, để ghi điểm lên bảng, ta phải nhìn sân bóng chứ không phải nhìn bảng điểm.",
+        "who": "Charlie Munger",
+        "en": "In investing, just as in baseball, to put runs on the scoreboard, one must watch the playing field, not the scoreboard."
+      }
+    },
+    {
+      "cat": "quote",
+      "year": 2004,
+      "title": "Đừng xài cocaine, đừng đua tàu hỏa",
+      "story": "Tại đại hội cổ đông Berkshire 2004, một cổ đông trẻ hỏi Buffett cách thành công. Sau khi Buffett trả lời, Munger chốt gọn bằng ba lời khuyên tưởng như đùa nhưng thực chất phản ánh đúng phương pháp cốt lõi của ông: xác định những điều cần TRÁNH trước khi nghĩ đến điều nên làm — phiên bản ngắn gọn của nguyên lý 'inversion'.",
+      "quote": {
+        "vi": "Đừng xài cocaine. Đừng đua tàu hỏa. Và tránh những tình huống lây AIDS.",
+        "who": "Charlie Munger",
+        "en": "Don't do cocaine. Don't race trains. And avoid AIDS situations."
+      }
+    }
+  ],
+  "LEGACY": {
+    "intro": "\"Charlie Munger — người dạy thế giới rằng để thành công, hãy học cách tránh sự ngu ngốc trước khi tìm kiếm sự vĩ đại.\"",
+    "epitaph": {
+      "vi": "Tôi không có gì để thêm.",
+      "who": "Charlie Munger (câu cửa miệng nổi tiếng tại Berkshire)",
+      "en": "I have nothing to add."
+    },
+    "products": [
+      {
+        "year": "1962",
+        "name": "Munger, Tolles & Olson",
+        "desc": "Hãng luật do Charlie sáng lập, tên ông vẫn đứng đầu dù đã rời 60 năm."
+      },
+      {
+        "year": "1962",
+        "name": "Wheeler, Munger & Co.",
+        "desc": "Quỹ đầu tư 28,3%/năm trong 11 năm, không một năm lỗ."
+      },
+      {
+        "year": "1978",
+        "name": "Berkshire Hathaway",
+        "desc": "Phó chủ tịch 45 năm. Cổ phiếu từ $38 (1975) lên >$500.000."
+      },
+      {
+        "year": "1972",
+        "name": "See's Candies",
+        "desc": "Thương vụ mẫu mực dạy Berkshire sức mạnh của nhãn hiệu."
+      },
+      {
+        "year": "1986",
+        "name": "Daily Journal Corp.",
+        "desc": "Chủ tịch — biến công ty xuất bản thành công ty đầu tư thành công."
+      },
+      {
+        "year": "1994",
+        "name": "Mental Models (Latticework)",
+        "desc": "Khái niệm phổ biến — tư duy đa ngành cho hàng triệu nhà đầu tư."
+      },
+      {
+        "year": "1995",
+        "name": "Psychology of Human Misjudgment",
+        "desc": "Bài thuyết trình kinh điển về 25 khuynh hướng nhận thức."
+      }
+    ],
+    "stats": [
+      {
+        "big": "99",
+        "label": "Tuổi khi qua đời (2023)",
+        "desc": "Sống đầy đủ gần một thế kỷ, tư duy sắc bén đến ngày cuối."
+      },
+      {
+        "big": "45",
+        "label": "Năm làm phó chủ tịch Berkshire",
+        "desc": "Đối tác thầm lặng của Warren Buffett từ 1978."
+      },
+      {
+        "big": "28.3%",
+        "label": "Lợi nhuận/năm Wheeler Munger (gross)",
+        "desc": "11 năm liên tiếp, không một năm giảm."
+      },
+      {
+        "big": "$2.6B",
+        "label": "Tài sản ròng khi qua đời",
+        "desc": "Forbes 400 — dù ông tiếc vì tên mình xuất hiện công khai."
+      },
+      {
+        "big": "80-90",
+        "label": "Mô hình tư duy cần nắm",
+        "desc": "Theo Munger, gánh vác 90% sức nặng quyết định."
+      },
+      {
+        "big": "60",
+        "label": "Năm cộng sự với Buffett",
+        "desc": "Không bao giờ cãi vã, không bao giờ nghi ngờ lại quyết định của nhau."
+      }
+    ],
+    "verdict": [
+      {
+        "vi": "Khi bị ép phải rút gọn thành một từ, ông nói ông 'hợp lý' (rational). Ông được trang bị sẵn cho sự hợp lý, và áp dụng nó trong kinh doanh.",
+        "who": "Warren Buffett",
+        "en": "when forced to boil it down to one word, he said that he was 'rational.'"
+      },
+      {
+        "vi": "Tôi nghĩ Warren cảm thấy Charlie là người thông minh nhất mà ông từng gặp, còn Charlie cảm thấy Warren là người thông minh nhất.",
+        "who": "Rick Guerin",
+        "en": "I think Warren felt Charlie was the smartest person he'd ever met, and Charlie felt Warren was the smartest."
+      }
+    ]
+  }
+}
